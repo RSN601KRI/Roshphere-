@@ -32,7 +32,6 @@ const About = () => {
               animationDuration: `${2 + Math.random() * 2}s`
             }}
             onClick={(e) => {
-              // Create sparkle effect on click
               const sparkle = document.createElement('div');
               sparkle.className = 'absolute w-2 h-2 bg-blue-300 rounded-full animate-ping pointer-events-none';
               sparkle.style.left = e.currentTarget.style.left;
@@ -50,17 +49,13 @@ const About = () => {
             {/* Left Sidebar */}
             <div className="lg:w-1/3">
               <div className="sticky top-32 space-y-6">
-                <div className="flex flex-col sm:flex-row lg:flex-col items-center lg:items-start justify-between">
-                  <div className="flex flex-col items-center lg:items-start mb-6 lg:mb-4">
-                    <img 
-                      src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
-                      alt="Roshni Kumari" 
-                      className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-blue-400/30 object-cover mb-4 hover:scale-105 transition-transform duration-300"
-                    />
-                    <h2 className="text-xl font-semibold text-center lg:text-left">Roshni Kumari</h2>
-                    <p className="text-blue-400 text-center lg:text-left">Data Science & DevOps Engineer</p>
-                  </div>
-                  <button className="flex items-center bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition-all duration-300 hover:scale-105">
+                <div className="flex flex-col items-center lg:items-start">
+                  <img 
+                    src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
+                    alt="Roshni Kumari" 
+                    className="w-32 h-32 rounded-full border-4 border-blue-400/30 object-cover mb-6 hover:scale-105 transition-transform duration-300"
+                  />
+                  <button className="flex items-center bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 mb-6">
                     <Calendar className="w-4 h-4 mr-2" />
                     Schedule a call
                   </button>
@@ -99,10 +94,10 @@ const About = () => {
             {/* Main Content */}
             <div className="lg:w-2/3 space-y-12">
               {/* Header */}
-              <div>
-                <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center lg:text-left">Roshni Kumari</h1>
-                <p className="text-lg sm:text-xl text-white/70 mb-6 text-center lg:text-left">
-                  Microsoft Certified | β MLSA | Data Science & DevOps Engineer
+              <div className="text-center lg:text-left">
+                <h1 className="text-4xl sm:text-5xl font-bold mb-4">Roshni Kumari</h1>
+                <p className="text-lg sm:text-xl text-white/70 mb-6 leading-relaxed">
+                  AWS Cloud Captain'25 • 3X @OCFA Certified • Business Fellow @perplexity • IEEE GU • Fellow @World Bank @McKinsey Forward • Flipkart Runner'24 • Fellow @AspireInstitute • β MLSA • AWS AL/ML Scholar'24
                 </p>
                 
                 <div className="flex flex-wrap gap-4 mb-8 justify-center lg:justify-start">
@@ -123,7 +118,7 @@ const About = () => {
                   </button>
                 </div>
 
-                <p className="text-base sm:text-lg text-white/80 leading-relaxed text-center lg:text-left">
+                <p className="text-base sm:text-lg text-white/80 leading-relaxed">
                   Roshni Kumari is a tech enthusiast and engineer with a passion for solving 
                   complex problems using Data Science, Machine Learning, and DevOps. 
                   With expertise in Microsoft Azure, Python, and cloud-native technologies, I 
@@ -138,12 +133,12 @@ const About = () => {
                 
                 <div className="space-y-8">
                   <div className="border-l-2 border-blue-500 pl-6">
-                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                    <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
                       <div>
                         <h3 className="text-2xl font-semibold">AlgoArtisans</h3>
                         <p className="text-green-400 font-medium">Data Science Intern</p>
                       </div>
-                      <span className="text-white/60 text-sm sm:text-base mt-2 sm:mt-0">June 2024 – Dec 2024 | Remote – Bhutan</span>
+                      <span className="text-white/60 text-sm lg:text-base mt-2 lg:mt-0">June 2024 – Dec 2024 | Remote – Bhutan</span>
                     </div>
                     <ul className="text-white/80 space-y-2">
                       <li>• Developed machine learning models for predictive analytics, improving accuracy by 25%</li>
@@ -154,12 +149,12 @@ const About = () => {
                   </div>
 
                   <div className="border-l-2 border-purple-500 pl-6">
-                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                    <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
                       <div>
                         <h3 className="text-2xl font-semibold">TechCorp Solutions</h3>
                         <p className="text-purple-400 font-medium">DevOps Engineer Intern</p>
                       </div>
-                      <span className="text-white/60 text-sm sm:text-base mt-2 sm:mt-0">Jan 2024 – May 2024 | Remote</span>
+                      <span className="text-white/60 text-sm lg:text-base mt-2 lg:mt-0">Jan 2024 – May 2024 | Remote</span>
                     </div>
                     <ul className="text-white/80 space-y-2">
                       <li>• Automated deployment processes using Azure DevOps and GitHub Actions</li>
@@ -182,6 +177,89 @@ const About = () => {
                     Specialized in Data Science and Machine Learning. Relevant coursework: 
                     Algorithms, Database Systems, Machine Learning, Cloud Computing, Software Engineering.
                   </p>
+                </div>
+              </section>
+
+              {/* Projects Section - No Images */}
+              <section id="projects">
+                <h2 className="text-3xl font-bold mb-8">Projects</h2>
+                <div className="space-y-8">
+                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors">
+                    <div className="flex items-center mb-4">
+                      <img 
+                        src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
+                        alt="Profile" 
+                        className="w-8 h-8 rounded-full mr-3 object-cover"
+                      />
+                      <span className="text-white/60 text-sm">Roshni Kumari</span>
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3">DevOps Project: Flask App Deployment on Azure</h3>
+                    <p className="text-white/80 mb-4">
+                      Designed and deployed a Flask app on Azure using Docker, Terraform, and GitHub Actions, automating deployments and reducing manual effort by 80%.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {["Azure", "Docker", "Terraform", "CI/CD"].map((tag) => (
+                        <span key={tag} className="px-3 py-1 bg-white/10 rounded-full text-sm border border-white/20">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex space-x-4">
+                      <button className="text-green-400 hover:text-green-300 transition-colors text-sm">
+                        Read case study →
+                      </button>
+                      <button className="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+                        View project ↗
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors">
+                    <div className="flex items-center mb-4">
+                      <img 
+                        src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
+                        alt="Profile" 
+                        className="w-8 h-8 rounded-full mr-3 object-cover"
+                      />
+                      <span className="text-white/60 text-sm">Roshni Kumari</span>
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3">YouTube Slide Extractor: AI-Powered Presentation Generator</h3>
+                    <p className="text-white/80 mb-4">
+                      Engineered an AI-powered Python application to automate the creation of editable PowerPoint presentations from YouTube videos.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {["Python", "AI", "OpenCV", "Machine Learning"].map((tag) => (
+                        <span key={tag} className="px-3 py-1 bg-white/10 rounded-full text-sm border border-white/20">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex space-x-4">
+                      <button className="text-green-400 hover:text-green-300 transition-colors text-sm">
+                        Read case study →
+                      </button>
+                      <button className="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+                        View project ↗
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Latest from the blog */}
+              <section>
+                <h2 className="text-3xl font-bold mb-8">Latest from the blog</h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors">
+                    <h3 className="text-xl font-semibold mb-3">How Machine Learning and DevOps Are Revolutionizing Data-Driven Decision Making</h3>
+                    <p className="text-white/60 text-sm mb-3">March 15, 2025</p>
+                    <span className="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Data Science</span>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors">
+                    <h3 className="text-xl font-semibold mb-3">The Role of AI in Modern DevOps: Automating the Future of Software Development</h3>
+                    <p className="text-white/60 text-sm mb-3">February 20, 2025</p>
+                    <span className="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">DevOps</span>
+                  </div>
                 </div>
               </section>
 

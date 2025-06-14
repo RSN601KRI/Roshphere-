@@ -74,17 +74,29 @@ const Hero = () => {
           
           <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6 text-base sm:text-lg text-white/80 leading-relaxed px-4">
             <p>
-              I'm <span className="text-white font-semibold">Roshni Kumari</span>, a <span className="text-blue-400">Microsoft Certified</span> professional and 
-              <span className="text-purple-400"> β MLSA</span> with expertise in <span className="text-green-400">Data Science</span>, <span className="text-blue-400">Machine Learning</span>,
-              and <span className="text-yellow-400">DevOps</span>. I specialize in building scalable data-driven
-              solutions, automating workflows, and deploying machine
-              learning models to solve real-world problems.
+              I'm <span className="text-white font-bold">Roshni Kumari</span> — a passionate <span className="text-blue-400 font-semibold">Developer</span>, 
+              <span className="text-green-400 font-semibold"> Cloud Captain</span> and <span className="text-purple-400 font-semibold">AI/ML Scholar</span> driven by purpose and impact. 💡
             </p>
             <p>
-              With a strong foundation in <span className="text-orange-400">Python</span>, <span className="text-blue-400">Azure</span>, and <span className="text-green-400">CI/CD
-              pipelines</span>, I'm passionate about leveraging technology to
-              drive innovation and deliver measurable results. Let's
-              collaborate to transform your ideas into impactful solutions!
+              As an <span className="text-orange-400 font-semibold">AWS Cloud Captain '25</span> and <span className="text-yellow-400 font-semibold">3X OCFA Certified Developer</span>, 
+              I lead a thriving AWS Cloud Club with 50+ members, deliver cloud-based workshops and build tools to democratize technical education. 🧠☁️
+            </p>
+            <p>
+              <span className="text-white font-semibold">Currently, I'm a:</span>
+            </p>
+            <div className="text-left max-w-2xl mx-auto">
+              <p>💎 Business Fellow @<span className="text-blue-400">Perplexity AI</span></p>
+              <p>💎 Aspire Fellow @<span className="text-green-400">Harvard-backed Aspire Institute</span></p>
+              <p>💎 Forward Fellow @<span className="text-purple-400">McKinsey</span></p>
+            </div>
+            <p>
+              ...where I combine <span className="text-orange-400 font-semibold">leadership</span>, <span className="text-blue-400 font-semibold">data</span> and 
+              <span className="text-green-400 font-semibold"> community</span> to drive innovation in AI, cloud and product strategy.
+            </p>
+            <p>
+              As an <span className="text-purple-400 font-semibold">MLSA</span>, <span className="text-blue-400 font-semibold">AWS AI/ML Scholar</span> and 
+              <span className="text-green-400 font-semibold"> Web3 Contributor</span>, I regularly create content and host webinars to guide 5K+ monthly learners 
+              through the evolving landscape of tech. From cloud-native solutions to deep learning models, I build tools that solve real-world problems.
             </p>
           </div>
         </div>

@@ -10,6 +10,7 @@ import Work from "./pages/Work";
 import Blog from "./pages/Blog";
 import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
+import SparkleEffect from "./components/SparkleEffect";
 
 const queryClient = new QueryClient();
 
@@ -18,11 +19,12 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <SparkleEffect />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
-          <Route path="/work" element={<Work />} />
+          <Route path="/work" element={<Link />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="*" element={<NotFound />} />

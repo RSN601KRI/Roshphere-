@@ -7,31 +7,60 @@ const About = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
       <Navigation />
       
-      {/* Grid Pattern Background */}
+      {/* Animated Grid Pattern Background */}
       <div 
         className="absolute inset-0 opacity-20"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
+            linear-gradient(rgba(135,206,235,0.3) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(135,206,235,0.3) 1px, transparent 1px)
           `,
           backgroundSize: '50px 50px'
         }}
       />
 
+      {/* Sparkle Animation Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(15)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-blue-400 rounded-full animate-pulse cursor-pointer"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 2}s`,
+              animationDuration: `${2 + Math.random() * 2}s`
+            }}
+            onClick={(e) => {
+              // Create sparkle effect on click
+              const sparkle = document.createElement('div');
+              sparkle.className = 'absolute w-2 h-2 bg-blue-300 rounded-full animate-ping pointer-events-none';
+              sparkle.style.left = e.currentTarget.style.left;
+              sparkle.style.top = e.currentTarget.style.top;
+              document.body.appendChild(sparkle);
+              setTimeout(() => sparkle.remove(), 1000);
+            }}
+          />
+        ))}
+      </div>
+
       <div className="relative z-10 pt-32 pb-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Left Sidebar */}
             <div className="lg:w-1/3">
               <div className="sticky top-32 space-y-6">
-                <div className="flex items-center justify-between">
-                  <img 
-                    src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face" 
-                    alt="Roshni Kumari" 
-                    className="w-32 h-32 rounded-full border-4 border-white/20"
-                  />
-                  <button className="flex items-center bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition-all duration-300">
+                <div className="flex flex-col sm:flex-row lg:flex-col items-center lg:items-start justify-between">
+                  <div className="flex flex-col items-center lg:items-start mb-6 lg:mb-4">
+                    <img 
+                      src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
+                      alt="Roshni Kumari" 
+                      className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-blue-400/30 object-cover mb-4 hover:scale-105 transition-transform duration-300"
+                    />
+                    <h2 className="text-xl font-semibold text-center lg:text-left">Roshni Kumari</h2>
+                    <p className="text-blue-400 text-center lg:text-left">Data Science & DevOps Engineer</p>
+                  </div>
+                  <button className="flex items-center bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition-all duration-300 hover:scale-105">
                     <Calendar className="w-4 h-4 mr-2" />
                     Schedule a call
                   </button>
@@ -39,27 +68,27 @@ const About = () => {
 
                 <div className="space-y-4">
                   <nav className="space-y-2">
-                    <a href="#introduction" className="block text-white/70 hover:text-white transition-colors py-2 border-l-2 border-transparent hover:border-orange-500 pl-4">
+                    <a href="#introduction" className="block text-white/70 hover:text-white transition-colors py-2 border-l-2 border-transparent hover:border-blue-500 pl-4">
                       Introduction
                     </a>
-                    <a href="#experience" className="block text-white/70 hover:text-white transition-colors py-2 border-l-2 border-transparent hover:border-orange-500 pl-4">
+                    <a href="#experience" className="block text-white/70 hover:text-white transition-colors py-2 border-l-2 border-transparent hover:border-blue-500 pl-4">
                       Professional Experience
                     </a>
-                    <a href="#education" className="block text-white/70 hover:text-white transition-colors py-2 border-l-2 border-transparent hover:border-orange-500 pl-4">
+                    <a href="#education" className="block text-white/70 hover:text-white transition-colors py-2 border-l-2 border-transparent hover:border-blue-500 pl-4">
                       Education
                     </a>
-                    <a href="#projects" className="block text-white/70 hover:text-white transition-colors py-2 border-l-2 border-transparent hover:border-orange-500 pl-4">
+                    <a href="#projects" className="block text-white/70 hover:text-white transition-colors py-2 border-l-2 border-transparent hover:border-blue-500 pl-4">
                       Projects
                     </a>
                   </nav>
 
-                  <div className="flex items-center space-x-2 text-white/70">
+                  <div className="flex items-center space-x-2 text-white/70 justify-center lg:justify-start">
                     <span className="inline-flex items-center">
                       🌍 Asia/Kolkata
                     </span>
                   </div>
 
-                  <div className="flex space-x-2">
+                  <div className="flex space-x-2 justify-center lg:justify-start">
                     <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">English</span>
                     <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">Hindi</span>
                   </div>
@@ -71,12 +100,12 @@ const About = () => {
             <div className="lg:w-2/3 space-y-12">
               {/* Header */}
               <div>
-                <h1 className="text-5xl font-bold mb-4">Roshni Kumari</h1>
-                <p className="text-xl text-white/70 mb-6">
+                <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center lg:text-left">Roshni Kumari</h1>
+                <p className="text-lg sm:text-xl text-white/70 mb-6 text-center lg:text-left">
                   Microsoft Certified | β MLSA | Data Science & DevOps Engineer
                 </p>
                 
-                <div className="flex space-x-4 mb-8">
+                <div className="flex flex-wrap gap-4 mb-8 justify-center lg:justify-start">
                   <button className="flex items-center bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-colors">
                     <Github className="w-4 h-4 mr-2" />
                     GitHub
@@ -94,7 +123,7 @@ const About = () => {
                   </button>
                 </div>
 
-                <p className="text-lg text-white/80 leading-relaxed">
+                <p className="text-base sm:text-lg text-white/80 leading-relaxed text-center lg:text-left">
                   Roshni Kumari is a tech enthusiast and engineer with a passion for solving 
                   complex problems using Data Science, Machine Learning, and DevOps. 
                   With expertise in Microsoft Azure, Python, and cloud-native technologies, I 
@@ -109,12 +138,12 @@ const About = () => {
                 
                 <div className="space-y-8">
                   <div className="border-l-2 border-blue-500 pl-6">
-                    <div className="flex justify-between items-start mb-4">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
                       <div>
                         <h3 className="text-2xl font-semibold">AlgoArtisans</h3>
                         <p className="text-green-400 font-medium">Data Science Intern</p>
                       </div>
-                      <span className="text-white/60">June 2024 – Dec 2024 | Remote – Bhutan</span>
+                      <span className="text-white/60 text-sm sm:text-base mt-2 sm:mt-0">June 2024 – Dec 2024 | Remote – Bhutan</span>
                     </div>
                     <ul className="text-white/80 space-y-2">
                       <li>• Developed machine learning models for predictive analytics, improving accuracy by 25%</li>
@@ -125,12 +154,12 @@ const About = () => {
                   </div>
 
                   <div className="border-l-2 border-purple-500 pl-6">
-                    <div className="flex justify-between items-start mb-4">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
                       <div>
                         <h3 className="text-2xl font-semibold">TechCorp Solutions</h3>
                         <p className="text-purple-400 font-medium">DevOps Engineer Intern</p>
                       </div>
-                      <span className="text-white/60">Jan 2024 – May 2024 | Remote</span>
+                      <span className="text-white/60 text-sm sm:text-base mt-2 sm:mt-0">Jan 2024 – May 2024 | Remote</span>
                     </div>
                     <ul className="text-white/80 space-y-2">
                       <li>• Automated deployment processes using Azure DevOps and GitHub Actions</li>
@@ -156,7 +185,6 @@ const About = () => {
                 </div>
               </section>
 
-              {/* Skills */}
               <section>
                 <h2 className="text-3xl font-bold mb-8">Technical Skills</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -164,7 +192,7 @@ const About = () => {
                     'Python', 'Azure', 'Machine Learning', 'Docker', 'Kubernetes', 'Git',
                     'SQL', 'Power BI', 'Pandas', 'NumPy', 'Scikit-learn', 'TensorFlow'
                   ].map((skill) => (
-                    <div key={skill} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-3 text-center">
+                    <div key={skill} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-3 text-center hover:bg-white/10 transition-colors">
                       {skill}
                     </div>
                   ))}

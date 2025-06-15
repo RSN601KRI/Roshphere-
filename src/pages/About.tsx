@@ -27,17 +27,17 @@ const About = () => {
               <div className="sticky top-32 space-y-8">
                 {/* Profile Section */}
                 <div className="flex flex-col items-center lg:items-start">
-                  {/* Location above photo */}
-                  <div className="flex items-center text-white/60 mb-4">
-                    <span className="text-orange-400 mr-2">📍</span>
-                    <span>Asia/Kolkata</span>
-                  </div>
-                  
                   <img 
                     src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
                     alt="Roshni Kumari" 
-                    className="w-32 h-32 rounded-full border-4 border-white/20 object-cover mb-6"
+                    className="w-32 h-32 rounded-full border-4 border-white/20 object-cover mb-4"
                   />
+                  
+                  {/* Location below photo */}
+                  <div className="flex items-center text-white/60 mb-6">
+                    <span className="text-orange-400 mr-2">📍</span>
+                    <span>Asia/Kolkata</span>
+                  </div>
                 </div>
 
                 {/* Navigation Menu */}
@@ -46,7 +46,7 @@ const About = () => {
                     — Introduction
                   </a>
                   <a href="#internship" className="flex items-center text-white hover:text-white transition-colors py-2 text-sm font-medium">
-                    — Internship
+                    — Internship Experience
                   </a>
                   <a href="#education" className="flex items-center text-white/70 hover:text-white transition-colors py-2 text-sm">
                     — Education
@@ -108,53 +108,39 @@ const About = () => {
                 </p>
               </section>
 
-              {/* Internship */}
+              {/* Internship Experience */}
               <section id="internship">
-                <h2 className="text-4xl font-bold mb-12">Internship</h2>
+                <h2 className="text-4xl font-bold mb-12">Internship Experience</h2>
                 
                 <div className="space-y-12">
                   <div className="relative">
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-6">
                       <div>
-                        <h3 className="text-2xl font-bold text-white mb-2">AlgoArtisans</h3>
-                        <p className="text-green-400 font-medium">Data Science Intern</p>
+                        <h3 className="text-2xl font-bold text-white mb-2">Amazon Web Services (Accenture)</h3>
+                        <p className="text-green-400 font-medium">AI/ML Scholar Research Intern: Neural Network with Transformer Models</p>
                       </div>
-                      <span className="text-white/50 text-sm mt-2 sm:mt-0">June 2024 – Dec 2024 | Remote – Bhutan</span>
+                      <span className="text-white/50 text-sm mt-2 sm:mt-0">June 2024 – Oct 2024 | Seattle, United Kingdom (Remote)</span>
                     </div>
                     
                     <div className="space-y-4">
                       <div className="flex items-start">
                         <span className="text-green-400 mr-3 mt-1">•</span>
                         <p className="text-white/80">
-                          <strong>Focus Areas:</strong> Supply Chain Optimization, Demand Forecasting, Machine Learning, CI/CD.
+                          Built own Deep Learning AI Image Classifier using Python, CNN, PyTorch and CLI on cloud GPU (CUDA) infrastructure.
                         </p>
                       </div>
                       
                       <div className="flex items-start">
                         <span className="text-green-400 mr-3 mt-1">•</span>
                         <p className="text-white/80">
-                          <strong>Data Collection & EDA:</strong> Cleaned and analyzed time-series data to uncover trends and seasonality.
+                          Identified issues, analysed information and provided solutions to problems related to data from different parameters.
                         </p>
                       </div>
                       
                       <div className="flex items-start">
                         <span className="text-green-400 mr-3 mt-1">•</span>
                         <p className="text-white/80">
-                          <strong>Model Development:</strong> Built ARIMA, Prophet, CROSTON, and XGBoost models for forecasting and anomaly detection.
-                        </p>
-                      </div>
-                      
-                      <div className="flex items-start">
-                        <span className="text-green-400 mr-3 mt-1">•</span>
-                        <p className="text-white/80">
-                          <strong>Deployment & Automation:</strong> Developed CI/CD pipelines for seamless model deployment in Azure.
-                        </p>
-                      </div>
-                      
-                      <div className="flex items-start">
-                        <span className="text-green-400 mr-3 mt-1">•</span>
-                        <p className="text-white/80">
-                          <strong>Business Impact:</strong> Presented insights and recommendations, improving supply chain efficiency and decision-making.
+                          Collaborated with a team to analyze, design and integrate components for business solutions.
                         </p>
                       </div>
                     </div>
@@ -163,17 +149,31 @@ const About = () => {
                   <div className="relative">
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-6">
                       <div>
-                        <h3 className="text-2xl font-bold text-white mb-2">Unstop</h3>
-                        <p className="text-green-400 font-medium">Student Director</p>
+                        <h3 className="text-2xl font-bold text-white mb-2">Perplexity</h3>
+                        <p className="text-green-400 font-medium">Business Fellow</p>
                       </div>
-                      <span className="text-white/50 text-sm mt-2 sm:mt-0">Oct 2024 – Present | Remote</span>
+                      <span className="text-white/50 text-sm mt-2 sm:mt-0">Feb 2025 – Present | SF, USA (Remote)</span>
                     </div>
                     
                     <div className="space-y-4">
                       <div className="flex items-start">
                         <span className="text-green-400 mr-3 mt-1">•</span>
                         <p className="text-white/80">
-                          Spearheaded leadership and branding initiatives to enhance student participation.
+                          Develop AI‑driven research and analysis to enhance business decision‑making using real‑time data and proprietary insights.
+                        </p>
+                      </div>
+                      
+                      <div className="flex items-start">
+                        <span className="text-green-400 mr-3 mt-1">•</span>
+                        <p className="text-white/80">
+                          Deep Research capabilities to generate expert‑level reports, optimize AI workflows and contribute to innovative problem‑solving strategies.
+                        </p>
+                      </div>
+                      
+                      <div className="flex items-start">
+                        <span className="text-green-400 mr-3 mt-1">•</span>
+                        <p className="text-white/80">
+                          Worked on Intelligent reflecting Models beyond exiting LLMs.
                         </p>
                       </div>
                     </div>

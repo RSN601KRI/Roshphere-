@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+Hi Techies! 
 
-## Project info
+I’m 𝗥𝗼𝘀𝗵𝗻𝗶 𝗞𝘂𝗺𝗮𝗿𝗶 — a passionate 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫, 𝐂𝐥𝐨𝐮𝐝 𝐂𝐚𝐩𝐭𝐚𝐢𝐧 𝐚𝐧𝐝 𝐀𝐈/𝐌𝐋 𝐒𝐜𝐡𝐨𝐥𝐚𝐫 driven by purpose and impact. 💡
 
-**URL**: https://lovable.dev/projects/e424f66e-b421-4f45-82fb-8a3dad179a85
+As an 𝐀𝐖𝐒 𝐂𝐥𝐨𝐮𝐝 𝐂𝐚𝐩𝐭𝐚𝐢𝐧 '𝟐𝟓 𝐚𝐧𝐝 𝟑𝐗 𝐎𝐂𝐅𝐀 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐞𝐝 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫, I lead a thriving AWS Cloud Club with 50+ members, deliver cloud-based workshops and build tools to democratize technical education. 🧠☁️
 
-## How can I edit this code?
+𝐂𝐮𝐫𝐫𝐞𝐧𝐭𝐥𝐲, 𝐈’𝐦 𝐚:
 
-There are several ways of editing your application.
+💎 Business Fellow @Perplexity AI
+💎 Aspire Fellow @Harvard-backed Aspire Institute
+💎 Forward Fellow @McKinsey
+ ...where I combine 𝐥𝐞𝐚𝐝𝐞𝐫𝐬𝐡𝐢𝐩, 𝐝𝐚𝐭𝐚 𝐚𝐧𝐝 𝐜𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲 to drive innovation in AI, cloud and product strategy.
 
-**Use Lovable**
+As an 𝐌𝐋𝐒𝐀, 𝐀𝐖𝐒 𝐀𝐈/𝐌𝐋 𝐒𝐜𝐡𝐨𝐥𝐚𝐫 𝐚𝐧𝐝 𝐖𝐞𝐛𝟑 𝐂𝐨𝐧𝐭𝐫𝐢𝐛𝐮𝐭𝐨𝐫, I regularly create content and host webinars to guide 5K+ monthly learners through the evolving landscape of tech. From cloud-native solutions to deep learning models, I build tools that solve real-world problems.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e424f66e-b421-4f45-82fb-8a3dad179a85) and start prompting.
+I’ve hosted 3+ workshops, delivered 5+ podcasts, community with 50+ learners and contributed to open source while managing team and tech strategy.⚙️🎤
 
-Changes made via Lovable will be committed automatically to this repo.
+𝐊𝐞𝐲 𝐡𝐢𝐠𝐡𝐥𝐢𝐠𝐡𝐭𝐬:
 
-**Use your preferred IDE**
+> Developed a CNN image classifier with 98%+ accuracy
+> Built a chatbot with Gemini Pro API using Streamlit 🤖
+> Scaled engagement in AWS webinars by 60% YoY
+> Worked on a fraud detection model using generative AI 🧠
+> Interned at Career Cops and volunteered at Muskurahat Foundation to apply tech for both corporate and social impact.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+• Organizing events @IEEE GU
+• Working as a Core Frontend Developer @Codebooter
+• Exploring cloud retail data solutions & Kubernetes scaling
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+💬 I’m deeply passionate about 𝐜𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐢𝐞𝐬, 𝐡𝐚𝐜𝐤𝐚𝐭𝐡𝐨𝐧𝐬 𝐚𝐧𝐝 𝐬𝐭𝐨𝐫𝐲𝐭𝐞𝐥𝐥𝐢𝐧𝐠 through tech. If you’re building something meaningful in AI, Web3, or Cloud — let’s collaborate!
 
-Follow these steps:
+🔗 𝐋𝐢𝐧𝐤𝐬:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+💼 𝐋𝐢𝐧𝐤𝐞𝐝𝐈𝐧: https://www.linkedin.com/in/roshnikumari1
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+💻 𝐆𝐢𝐭𝐇𝐮𝐛: https://github.com/RSN601KRI
 
-# Step 3: Install the necessary dependencies.
-npm i
+🌍 𝐏𝐨𝐫𝐭𝐟𝐨𝐥𝐢𝐨: https://bento.me/roshnikri
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+📹 𝐘𝐨𝐮𝐓𝐮𝐛𝐞: https://www.youtube.com/@roshnikum_11
 
-**Edit a file directly in GitHub**
+📆 𝐖𝐨𝐫𝐤𝐬𝐡𝐨𝐩𝐬: https://lu.ma/user/rsnkrzx
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🐦 𝐓𝐰𝐢𝐭𝐭𝐞𝐫: https://twitter.com/rsnkyx
 
-**Use GitHub Codespaces**
+✍️ 𝐁𝐥𝐨𝐠: https://medium.com/@roshni_k06
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🔗 𝐋𝐢𝐧𝐤𝐭𝐫𝐞𝐞: https://linktr.ee/roshniikri
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e424f66e-b421-4f45-82fb-8a3dad179a85) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+🧠 𝐇𝐚𝐬𝐡𝐧𝐨𝐝𝐞: https://rsnkrxz.hashnode.dev

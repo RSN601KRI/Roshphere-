@@ -67,36 +67,27 @@ const ProjectsSection = () => {
         {/* Projects Section */}
         <div className="space-y-8 sm:space-y-12">
           {featuredProjects.map((project, index) => (
-            <div key={index} className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-8">
-              <div className="flex-1 text-left lg:text-left">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-3">{project.title}</h3>
-                <p className="text-sm sm:text-base text-white/70 mb-4 max-w-2xl leading-relaxed">
-                  {project.description}
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <button className="flex items-center text-green-400 hover:text-green-300 transition-colors font-medium text-sm">
-                    Read case study
-                    <ArrowRight className="w-3 h-3 ml-2" />
-                  </button>
-                  <a 
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-white/60 hover:text-white transition-colors font-medium text-sm"
-                  >
-                    View project
-                    <ExternalLink className="w-3 h-3 ml-2" />
-                  </a>
+            <div key={index} className="flex items-start gap-4">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-white/10 rounded-full border border-white/20 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
+                    alt="Profile" 
+                    className="w-8 h-8 rounded-full"
+                  />
                 </div>
               </div>
               
-              <div className="w-full lg:w-48 h-32 bg-white/5 rounded-lg border border-white/10 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
-                  alt="Project preview" 
-                  className="w-8 h-8 rounded-full opacity-60"
-                />
+              <div className="flex-1 text-left">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{project.title}</h3>
+                <p className="text-sm text-white/70 mb-3 leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <button className="flex items-center text-green-400 hover:text-green-300 transition-colors font-medium text-sm">
+                  Read case study
+                  <ArrowRight className="w-3 h-3 ml-2" />
+                </button>
               </div>
             </div>
           ))}

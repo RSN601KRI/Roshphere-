@@ -1,3 +1,4 @@
+
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -13,15 +14,15 @@ const Hero = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-900">
-      {/* Animated Grid Pattern Background with smaller boxes */}
+      {/* Animated Grid Pattern Background with smaller 1x1 boxes */}
       <div 
-        className="absolute inset-0 opacity-20 transition-transform duration-300"
+        className="absolute inset-0 opacity-15 transition-transform duration-300"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(135,206,235,0.3) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(135,206,235,0.3) 1px, transparent 1px)
+            linear-gradient(rgba(135,206,235,0.4) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(135,206,235,0.4) 1px, transparent 1px)
           `,
-          backgroundSize: '20px 20px',
+          backgroundSize: '10px 10px',
           transform: `translateY(${scrollY * 0.1}px)`
         }}
       />

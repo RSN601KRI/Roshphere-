@@ -36,7 +36,7 @@ const Work = () => {
       title: "DeFi Loan Options - Cross-Chain AI Agent",
       description: "DeFi loan options across blockchains using AI-powered autonomous agents with Fetch.ai's Agentverse and powered by the ASI1-mini LLM.",
       tags: ["DeFi", "AI", "Cross-Chain", "Autonomous Agents"],
-      projectLink: "https://crosschain-loan-whisperer.vercel.app/"
+      projectLink: "https://github.com/RSN601KRI/Cross-Chain-Loan-Agent"
     }
   ];
 

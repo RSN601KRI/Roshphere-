@@ -35,7 +35,7 @@ const ProjectsSection = () => {
       title: "DeFi Loan Options - Cross-Chain AI Agent",
       description: "A cutting-edge Web3-native tool that simplifies decentralized finance lending through agent-based AI architecture. Built with Fetch.ai's Agentverse and powered by ASI1-mini LLM, it autonomously discovers, ranks, and explains optimal loan options across multiple blockchains including Ethereum, Polygon, and BNB Chain, enabling users to make informed decisions in the fragmented DeFi lending ecosystem.",
       profileImage: "/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png",
-      projectLink: "https://crosschain-loan-whisperer.vercel.app/"
+      projectLink: "https://github.com/RSN601KRI/Cross-Chain-Loan-Agent"
     }
   ];
 

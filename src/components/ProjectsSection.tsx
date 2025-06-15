@@ -66,7 +66,7 @@ const ProjectsSection = () => {
         {/* Projects Section */}
         <div className="space-y-8 sm:space-y-12">
           {featuredProjects.map((project, index) => (
-            <div key={index} className="flex items-start gap-4">
+            <div key={index} className="flex items-start gap-4 bg-blue-500/10 p-6 rounded-lg border border-blue-500/20 backdrop-blur-sm">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 bg-white/10 rounded-full border border-white/20 flex items-center justify-center">
                   <img 
@@ -104,7 +104,7 @@ const ProjectsSection = () => {
 
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
             {blogPosts.map((post, index) => (
-              <div key={index} className="text-left space-y-3">
+              <div key={index} className="text-left space-y-3 bg-blue-500/10 p-6 rounded-lg border border-blue-500/20 backdrop-blur-sm">
                 <h3 className="text-lg sm:text-xl font-bold text-white leading-tight">
                   {post.title}
                 </h3>

@@ -1,5 +1,4 @@
 
-
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 import { useState } from 'react';
@@ -8,10 +7,11 @@ const About = () => {
   const [clickEffect, setClickEffect] = useState(false);
 
   const handleScheduleClick = () => {
+    console.log('Schedule button clicked'); // Debug log
     setClickEffect(true);
     setTimeout(() => setClickEffect(false), 600);
-    // Open Calendly link in a new tab
-    window.open('https://calendly.com/roshnikumari', '_blank', 'noopener,noreferrer');
+    // Open your Calendly link in a new tab
+    window.open('https://calendly.com/roshni06k2004/30min', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -81,7 +81,7 @@ const About = () => {
               <div className="flex justify-start">
                 <button 
                   onClick={handleScheduleClick}
-                  className={`relative flex items-center px-8 py-4 bg-white/5 border border-white/20 text-white rounded-xl transition-all duration-300 hover:bg-white/10 hover:border-blue-400/50 hover:scale-105 hover:shadow-lg backdrop-blur-sm ${
+                  className={`relative flex items-center px-8 py-4 bg-white/5 border border-white/20 text-white rounded-xl transition-all duration-300 hover:bg-white/10 hover:border-blue-400/50 hover:scale-105 hover:shadow-lg backdrop-blur-sm cursor-pointer ${
                     clickEffect ? 'animate-pulse' : ''
                   }`}
                 >

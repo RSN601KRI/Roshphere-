@@ -1,4 +1,3 @@
-
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -14,7 +13,7 @@ const Hero = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-900">
-      {/* Animated Grid Pattern Background */}
+      {/* Animated Grid Pattern Background with smaller boxes */}
       <div 
         className="absolute inset-0 opacity-20 transition-transform duration-300"
         style={{
@@ -22,26 +21,10 @@ const Hero = () => {
             linear-gradient(rgba(135,206,235,0.3) 1px, transparent 1px),
             linear-gradient(90deg, rgba(135,206,235,0.3) 1px, transparent 1px)
           `,
-          backgroundSize: '50px 50px',
+          backgroundSize: '20px 20px',
           transform: `translateY(${scrollY * 0.1}px)`
         }}
       />
-      
-      {/* Sparkle Animation Elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-blue-400 rounded-full animate-pulse"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 2}s`,
-              animationDuration: `${2 + Math.random() * 2}s`
-            }}
-          />
-        ))}
-      </div>
       
       {/* Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center relative z-10">

@@ -1,4 +1,3 @@
-
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -51,7 +50,7 @@ const ProjectsSection = () => {
 
   return (
     <section className="py-12 sm:py-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative">
-      {/* Grid Pattern Background */}
+      {/* Grid Pattern Background with smaller boxes */}
       <div 
         className="absolute inset-0 opacity-10"
         style={{
@@ -59,7 +58,7 @@ const ProjectsSection = () => {
             linear-gradient(rgba(135,206,235,0.2) 1px, transparent 1px),
             linear-gradient(90deg, rgba(135,206,235,0.2) 1px, transparent 1px)
           `,
-          backgroundSize: '50px 50px'
+          backgroundSize: '20px 20px'
         }}
       />
       

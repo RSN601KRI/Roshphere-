@@ -63,7 +63,7 @@ const SparkleEffect = () => {
       {sparkles.map(sparkle => (
         <div
           key={sparkle.id}
-          className="absolute bg-blue-400 rounded-full animate-ping"
+          className="absolute bg-green-400 rounded-full animate-ping"
           style={{
             left: sparkle.x - sparkle.size / 2,
             top: sparkle.y - sparkle.size / 2,

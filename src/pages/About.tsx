@@ -281,9 +281,13 @@ const About = () => {
                       <p className="text-white/80 mb-4">
                         Engineered an AI-powered Python application to automate the creation of editable PowerPoint presentations from YouTube videos.
                       </p>
-                      <div>
+                      <div className="mb-4">
                         <span className="text-green-400 font-medium">Tech Stack: </span>
                         <span className="text-white/70">Python, OpenCV, pytesseract, yt-dlp, Streamlit, PowerPoint (pptx).</span>
+                      </div>
+                      <div>
+                        <span className="text-green-400 font-medium">Outcome: </span>
+                        <span className="text-white/70">Processed 50+ videos, helping students and educators generate structured slides from lecture videos.</span>
                       </div>
                     </div>
                   </div>

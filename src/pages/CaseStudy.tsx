@@ -270,25 +270,102 @@ const CaseStudy = () => {
       hackathonInfo: "Submitted to Industrial47 x Superteam India Hackathon, SolarShare showcases the first steps toward community-owned renewable energy networks through the Solana ecosystem."
     },
     trendpulse: {
-      title: "TrendPulse - AI Trading News Application",
+      title: "TrendPulse - An AI-Powered Trading News Dashboard for Modern Retail Investors",
       subtitle: "AI-Powered Trading Intelligence Platform",
       date: "September 25, 2024",
-      overview: "I developed TrendPulse, an intuitive and powerful trading news application designed for modern retail investors. Track real-time market signals, social trends and on-chain data with ease—backed by AI and a sleek, dashboard-style interface.",
-      strategies: [
+      introduction: "TrendPulse is an advanced, AI-driven trading news and analytics platform that caters to modern retail investors. Inspired by platforms like Robinhood and professional trading terminals, it fuses real-time market data, social sentiment, and on-chain analytics into one dynamic, responsive, and visually engaging interface. Designed with both novice traders and seasoned strategists in mind, TrendPulse enables informed decision-making at speed, blending the power of AI signals and community wisdom.",
+      objective: "To build an all-in-one platform where AI meets market data, providing real-time signals, insights, and community-driven strategies for smart trading in a volatile, multi-source investment landscape. Key goals include providing actionable insights using real-time data streams, offering AI-curated trading signals and social sentiment metrics, presenting blockchain intelligence in a visual, digestible format, and enabling strategy building and collaboration within a trading community.",
+      architecture: [
+        { component: "Frontend", stack: "React.js, Tailwind CSS, Chart.js / Recharts" },
+        { component: "Backend", stack: "Node.js, Express.js, WebSocket (for live feeds)" },
+        { component: "Database", stack: "MongoDB (for user data, alerts), PostgreSQL (for structured analytics logs)" },
+        { component: "External APIs", stack: "CoinGecko, Alpha Vantage (market), Twitter/X & Reddit (sentiment), Glassnode, Etherscan (blockchain)" },
+        { component: "AI/ML Layer", stack: "Custom Python models for signal generation and sentiment scoring" }
+      ],
+      features: [
         {
-          title: "Real-time Market Analysis",
-          points: [
-            "Used AI algorithms to analyze market sentiment from multiple data sources.",
-            "Implemented real-time alerts for significant market movements and trends."
-          ]
+          feature: "🤖 AI-Driven Signals",
+          description: "AI/ML models track live market patterns to issue actionable buy/sell signals."
         },
         {
-          title: "Social Trading Intelligence",
-          points: [
-            "Built social sentiment analysis tools to track market psychology.",
-            "Created personalized trading recommendations based on user preferences."
-          ]
+          feature: "📊 Social Sentiment",
+          description: "Aggregates Twitter/X, Reddit trends to highlight bullish/bearish sentiment."
+        },
+        {
+          feature: "⛓️ On-chain Analytics",
+          description: "Visual insights into whale moves, token flows, and smart contract interactions."
+        },
+        {
+          feature: "🔔 Custom Alerts",
+          description: "Personalized alerts on price changes, volume surges, sentiment shifts, etc."
+        },
+        {
+          feature: "📈 Strategy Builder",
+          description: "Build and backtest strategies with a blend of indicators and AI insights."
+        },
+        {
+          feature: "👥 Community Insights",
+          description: "Discover crowd-sourced strategies from high-performing community traders."
         }
+      ],
+      designPhilosophy: [
+        {
+          element: "Dashboard-Style Layout",
+          implementation: "Aggregates diverse data into one interactive interface."
+        },
+        {
+          element: "Metallic Gradients + Shadows",
+          implementation: "Futuristic tone mimicking professional terminals."
+        },
+        {
+          element: "Fluid Animations",
+          implementation: "Smooth transitions and state changes enhance UX without distracting."
+        },
+        {
+          element: "Mobile & Desktop Responsiveness",
+          implementation: "Fully optimized experience across screen sizes."
+        },
+        {
+          element: "Visual Indicators",
+          implementation: "Charts, volume graphs, whale flows, trend arrows—all interactively presented."
+        }
+      ],
+      techHighlights: [
+        "Real-Time Multi-Source Feed - Integrates market, social, and blockchain data into a unified dashboard.",
+        "AI-Enhanced Signal System - Combines pattern detection with historical trend learning.",
+        "On-Chain + Social Fusion - Correlates blockchain activity with public sentiment for higher accuracy.",
+        "Crowd-Powered Strategy Layer - Promotes community knowledge sharing through verified strategies."
+      ],
+      useCases: [
+        {
+          title: "Casual Retail Investor",
+          description: "Uses alerts and AI signals to time small trades with minimal risk."
+        },
+        {
+          title: "Technical Trader",
+          description: "Builds and backtests strategies using chart-based insights."
+        },
+        {
+          title: "DeFi Analyst",
+          description: "Tracks whale/token movements and contract interactions."
+        },
+        {
+          title: "Crypto Influencer",
+          description: "Shares strategies and observes social mood for content direction."
+        }
+      ],
+      marketContext: [
+        "AI in Trading: AI-powered platforms have grown by over 37% CAGR (Allied Market Research, 2024).",
+        "Social Sentiment Tools: Over 65% of traders now monitor social signals to anticipate volatility.",
+        "DeFi Analysis: On-chain data, especially wallet tracking and whale analytics, is increasingly pivotal in crypto strategy design.",
+        "Retail Revolution: Tools like TrendPulse aim to democratize access to high-end analytics once reserved for institutions."
+      ],
+      installation: [
+        "Prerequisites: Node.js, npm, MongoDB/PostgreSQL, Twitter & Etherscan API keys",
+        "Clone repository: git clone https://github.com/your-username/trendpulse.git",
+        "Backend setup: cd server && npm install && npm run dev",
+        "Frontend setup: cd ../client && npm install && npm start",
+        "Documentation available in /docs folder covering System Architecture, Signal Generation Model, Strategy Builder Components, Integration APIs, and Real-time Data Handling via WebSockets"
       ]
     },
     defi: {
@@ -321,9 +398,9 @@ const CaseStudy = () => {
     return <div>Project not found</div>;
   }
 
-  // For Budgetlyzer, render the comprehensive case study
-  if (projectId === 'budgetlyzer') {
-    const budgetlyzerProject = project as typeof projectData.budgetlyzer;
+  // For TrendPulse, render the comprehensive case study
+  if (projectId === 'trendpulse') {
+    const trendpulseProject = project as typeof projectData.trendpulse;
     
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
@@ -354,7 +431,7 @@ const CaseStudy = () => {
 
             {/* Header */}
             <div className="mb-12">
-              <h1 className="text-3xl sm:text-4xl font-bold mb-4">{budgetlyzerProject.title}</h1>
+              <h1 className="text-3xl sm:text-4xl font-bold mb-4">{trendpulseProject.title}</h1>
               
               <div className="flex items-center gap-4 mb-8">
                 <img 
@@ -362,15 +439,15 @@ const CaseStudy = () => {
                   alt="Profile" 
                   className="w-10 h-10 rounded-full object-cover"
                 />
-                <span className="text-white/60">{budgetlyzerProject.date}</span>
+                <span className="text-white/60">{trendpulseProject.date}</span>
               </div>
             </div>
 
             {/* Introduction */}
             <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🧠 Introduction</h3>
+              <h3 className="text-2xl font-bold mb-6">📱 Introduction</h3>
               <p className="text-lg text-white/80 leading-relaxed">
-                {budgetlyzerProject.introduction}
+                {trendpulseProject.introduction}
               </p>
             </div>
 
@@ -378,54 +455,13 @@ const CaseStudy = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6">🎯 Objective</h3>
               <p className="text-lg text-white/80 leading-relaxed">
-                {budgetlyzerProject.objective}
+                {trendpulseProject.objective}
               </p>
             </div>
 
-            {/* Architecture Overview */}
+            {/* Platform Features */}
             <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🏗️ Architecture Overview</h3>
-              <div className="overflow-x-auto">
-                <table className="w-full border border-white/20 rounded-lg">
-                  <thead>
-                    <tr className="border-b border-white/20">
-                      <th className="text-left p-4 font-bold">Component</th>
-                      <th className="text-left p-4 font-bold">Stack / Tooling</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {budgetlyzerProject.architecture.map((item, index) => (
-                      <tr key={index} className="border-b border-white/10">
-                        <td className="p-4 text-white/90">{item.component}</td>
-                        <td className="p-4 text-white/80">{item.stack}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* How Budgetlyzer Works */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🔍 How Budgetlyzer Works</h3>
-              <div className="space-y-6">
-                {budgetlyzerProject.workflow.map((step, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">
-                      {index + 1}
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-bold mb-2">{step.step}</h4>
-                      <p className="text-white/80">{step.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Key Features & Innovations */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🚀 Key Features & Innovations</h3>
+              <h3 className="text-2xl font-bold mb-6">🔧 Platform Features</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border border-white/20 rounded-lg">
                   <thead>
@@ -435,7 +471,7 @@ const CaseStudy = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {budgetlyzerProject.features.map((item, index) => (
+                    {trendpulseProject.features.map((item, index) => (
                       <tr key={index} className="border-b border-white/10">
                         <td className="p-4 text-white/90 font-medium">{item.feature}</td>
                         <td className="p-4 text-white/80">{item.description}</td>
@@ -446,11 +482,37 @@ const CaseStudy = () => {
               </div>
             </div>
 
-            {/* Tech Highlights */}
+            {/* UI/UX Design Philosophy */}
             <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🧪 Tech Highlights</h3>
+              <h3 className="text-2xl font-bold mb-6">🖥️ UI/UX Design Philosophy</h3>
+              <p className="text-lg text-white/80 leading-relaxed mb-6">
+                TrendPulse is crafted with a futuristic design language, aiming to bridge form and function.
+              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full border border-white/20 rounded-lg">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left p-4 font-bold">Design Element</th>
+                      <th className="text-left p-4 font-bold">Implementation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {trendpulseProject.designPhilosophy.map((item, index) => (
+                      <tr key={index} className="border-b border-white/10">
+                        <td className="p-4 text-white/90 font-medium">{item.element}</td>
+                        <td className="p-4 text-white/80">{item.implementation}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Innovation Snapshot */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🧠 Innovation Snapshot</h3>
               <div className="space-y-3">
-                {budgetlyzerProject.techHighlights.map((highlight, index) => (
+                {trendpulseProject.techHighlights.map((highlight, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-white/80">{highlight}</p>
@@ -459,161 +521,19 @@ const CaseStudy = () => {
               </div>
             </div>
 
-            {/* Use Cases */}
+            {/* Architecture & Tech Stack */}
             <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🧾 Use Cases</h3>
-              <div className="space-y-6">
-                {budgetlyzerProject.useCases.map((useCase, index) => (
-                  <div key={index}>
-                    <h4 className="text-xl font-bold mb-2">{index + 1}. {useCase.title}</h4>
-                    <p className="text-white/80 ml-6">{useCase.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Market Context */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">📈 Market Context</h3>
-              <div className="space-y-3">
-                {budgetlyzerProject.marketContext.map((context, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-white/80">{context}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* User Testimonials */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">👥 User Testimonials</h3>
-              <div className="space-y-6">
-                {budgetlyzerProject.testimonials.map((testimonial, index) => (
-                  <div key={index} className="bg-white/5 p-6 rounded-lg border border-white/10">
-                    <p className="text-white/90 italic mb-4">"{testimonial.quote}"</p>
-                    <p className="text-white/60">— {testimonial.author}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Future Improvements */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🛠 Future Improvements</h3>
-              <div className="space-y-3">
-                {budgetlyzerProject.futureImprovements.map((improvement, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-white/80">{improvement}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Conclusion */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">📌 Conclusion</h3>
-              <p className="text-lg text-white/80 leading-relaxed">
-                Budgetlyzer addresses a pressing gap in real-time, intelligent budget management. Through Payman AI integration and a robust AI backbone, it offers an efficient, secure, and scalable solution for modern, multi-project businesses.
-              </p>
-              <p className="text-lg text-white/80 leading-relaxed mt-4">
-                Whether you are a developer, researcher, or financial manager—Budgetlyzer is a prime example of how AI is redefining financial operations.
-              </p>
-            </div>
-
-            {/* Live Demo */}
-            <div className="text-center">
-              <a 
-                href="https://budgetlyzer.vercel.app" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
-              >
-                🔗 Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // For Nexalyst, render the comprehensive forensic analysis case study
-  if (projectId === 'nexalyst') {
-    const nexalystProject = project as typeof projectData.nexalyst;
-    
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
-        <Navigation />
-        
-        {/* Grid Pattern Background */}
-        <div 
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(135,206,235,0.2) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(135,206,235,0.2) 1px, transparent 1px)
-            `,
-            backgroundSize: '20px 20px'
-          }}
-        />
-
-        <div className="relative z-10 pt-32 pb-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            {/* Back Button */}
-            <button 
-              onClick={() => navigate('/work')}
-              className="flex items-center text-white/70 hover:text-white transition-colors mb-8"
-            >
-              <ArrowLeft className="w-5 h-5 mr-2" />
-              Projects
-            </button>
-
-            {/* Header */}
-            <div className="mb-12">
-              <h1 className="text-3xl sm:text-4xl font-bold mb-4">{nexalystProject.title}</h1>
-              <h2 className="text-xl sm:text-2xl text-white/80 mb-6">{nexalystProject.subtitle}</h2>
-              
-              <div className="flex items-center gap-4 mb-8">
-                <img 
-                  src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
-                  alt="Profile" 
-                  className="w-10 h-10 rounded-full object-cover"
-                />
-                <span className="text-white/60">{nexalystProject.date}</span>
-              </div>
-            </div>
-
-            {/* Introduction */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🔍 Introduction</h3>
-              <p className="text-lg text-white/80 leading-relaxed">
-                {nexalystProject.introduction}
-              </p>
-            </div>
-
-            {/* Objective */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🎯 Objective</h3>
-              <p className="text-lg text-white/80 leading-relaxed">
-                {nexalystProject.objective}
-              </p>
-            </div>
-
-            {/* Architecture Overview */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🛠 Architecture Overview</h3>
+              <h3 className="text-2xl font-bold mb-6">⚙️ Architecture & Tech Stack</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border border-white/20 rounded-lg">
                   <thead>
                     <tr className="border-b border-white/20">
                       <th className="text-left p-4 font-bold">Component</th>
-                      <th className="text-left p-4 font-bold">Technologies Used</th>
+                      <th className="text-left p-4 font-bold">Technology Used</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {nexalystProject.architecture.map((item, index) => (
+                    {trendpulseProject.architecture.map((item, index) => (
                       <tr key={index} className="border-b border-white/10">
                         <td className="p-4 text-white/90">{item.component}</td>
                         <td className="p-4 text-white/80">{item.stack}</td>
@@ -624,47 +544,11 @@ const CaseStudy = () => {
               </div>
             </div>
 
-            {/* Core Features */}
+            {/* Use Case Scenarios */}
             <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🧠 Core Features</h3>
-              <div className="overflow-x-auto">
-                <table className="w-full border border-white/20 rounded-lg">
-                  <thead>
-                    <tr className="border-b border-white/20">
-                      <th className="text-left p-4 font-bold">Feature</th>
-                      <th className="text-left p-4 font-bold">Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {nexalystProject.features.map((item, index) => (
-                      <tr key={index} className="border-b border-white/10">
-                        <td className="p-4 text-white/90 font-medium">{item.feature}</td>
-                        <td className="p-4 text-white/80">{item.description}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* Technical Innovations */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🧪 Technical Innovations</h3>
-              <div className="space-y-3">
-                {nexalystProject.techHighlights.map((highlight, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-white/80">{highlight}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Target Users */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">👥 Target Users</h3>
+              <h3 className="text-2xl font-bold mb-6">🔍 Use Case Scenarios</h3>
               <div className="space-y-6">
-                {nexalystProject.useCases.map((useCase, index) => (
+                {trendpulseProject.useCases.map((useCase, index) => (
                   <div key={index}>
                     <h4 className="text-xl font-bold mb-2">{useCase.title}</h4>
                     <p className="text-white/80 ml-6">{useCase.description}</p>
@@ -673,37 +557,11 @@ const CaseStudy = () => {
               </div>
             </div>
 
-            {/* Market Context */}
+            {/* Setup & Installation */}
             <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">📊 Market Context</h3>
+              <h3 className="text-2xl font-bold mb-6">🔧 Setup & Installation (Dev Mode)</h3>
               <div className="space-y-3">
-                {nexalystProject.marketContext.map((context, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-white/80">{context}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Security & Privacy */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🔒 Security & Privacy</h3>
-              <div className="space-y-6">
-                {nexalystProject.securityFeatures.map((feature, index) => (
-                  <div key={index}>
-                    <h4 className="text-lg font-bold mb-2">{feature.feature}</h4>
-                    <p className="text-white/80 ml-6">{feature.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Installation & Usage */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">⚙️ Installation & Usage</h3>
-              <div className="space-y-3">
-                {nexalystProject.installation.map((step, index) => (
+                {trendpulseProject.installation.map((step, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-white/80">{step}</p>
@@ -712,235 +570,24 @@ const CaseStudy = () => {
               </div>
             </div>
 
-            {/* Quote */}
+            {/* Research & Industry Context */}
             <div className="mb-12">
-              <div className="bg-white/5 p-6 rounded-lg border border-white/10 text-center">
-                <p className="text-white/90 italic text-lg mb-4">"Security is not a product, but a process."</p>
-                <p className="text-white/60">— Bruce Schneier</p>
-              </div>
-            </div>
-
-            {/* Conclusion */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">📌 Conclusion</h3>
-              <p className="text-lg text-white/80 leading-relaxed">
-                The Solana Forensic Analysis Tool is a vital innovation for blockchain intelligence. By combining on-chain data with intelligent visualization and clustering, it equips professionals to analyze, detect, and prevent financial crime in the Solana ecosystem.
-              </p>
-              <p className="text-lg text-white/80 leading-relaxed mt-4">
-                With robust architecture, secure practices, and open-source collaboration, it lays the foundation for the future of crypto compliance and security research.
-              </p>
-            </div>
-
-            {/* Live Demo */}
-            <div className="text-center">
-              <a 
-                href="https://solana-trace-nexus.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
-              >
-                🔗 Live Tool
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // For SolarShare, render the comprehensive case study
-  if (projectId === 'solarshare') {
-    const solarShareProject = project as typeof projectData.solarshare;
-    
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
-        <Navigation />
-        
-        {/* Grid Pattern Background */}
-        <div 
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(135,206,235,0.2) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(135,206,235,0.2) 1px, transparent 1px)
-            `,
-            backgroundSize: '20px 20px'
-          }}
-        />
-
-        <div className="relative z-10 pt-32 pb-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            {/* Back Button */}
-            <button 
-              onClick={() => navigate('/work')}
-              className="flex items-center text-white/70 hover:text-white transition-colors mb-8"
-            >
-              <ArrowLeft className="w-5 h-5 mr-2" />
-              Projects
-            </button>
-
-            {/* Header */}
-            <div className="mb-12">
-              <h1 className="text-3xl sm:text-4xl font-bold mb-4">{solarShareProject.title}</h1>
-              
-              <div className="flex items-center gap-4 mb-8">
-                <img 
-                  src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
-                  alt="Profile" 
-                  className="w-10 h-10 rounded-full object-cover"
-                />
-                <span className="text-white/60">{solarShareProject.date}</span>
-              </div>
-            </div>
-
-            {/* Introduction */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🔍 Introduction</h3>
-              <p className="text-lg text-white/80 leading-relaxed">
-                {solarShareProject.introduction}
-              </p>
-            </div>
-
-            {/* Objective */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🎯 Objective</h3>
-              <p className="text-lg text-white/80 leading-relaxed">
-                {solarShareProject.objective}
-              </p>
-            </div>
-
-            {/* Key Features */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🌟 Key Features</h3>
-              <div className="overflow-x-auto">
-                <table className="w-full border border-white/20 rounded-lg">
-                  <thead>
-                    <tr className="border-b border-white/20">
-                      <th className="text-left p-4 font-bold">Feature</th>
-                      <th className="text-left p-4 font-bold">Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {solarShareProject.features.map((item, index) => (
-                      <tr key={index} className="border-b border-white/10">
-                        <td className="p-4 text-white/90 font-medium">{item.feature}</td>
-                        <td className="p-4 text-white/80">{item.description}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* Architecture Overview */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🏗️ Architecture Overview</h3>
-              <div className="overflow-x-auto">
-                <table className="w-full border border-white/20 rounded-lg">
-                  <thead>
-                    <tr className="border-b border-white/20">
-                      <th className="text-left p-4 font-bold">Layer</th>
-                      <th className="text-left p-4 font-bold">Technology Stack</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {solarShareProject.architecture.map((item, index) => (
-                      <tr key={index} className="border-b border-white/10">
-                        <td className="p-4 text-white/90">{item.component}</td>
-                        <td className="p-4 text-white/80">{item.stack}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* Installation Guide */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">⚙️ Installation Guide</h3>
-              <div className="bg-gray-800/50 p-6 rounded-lg border border-white/10">
-                <h4 className="text-lg font-bold mb-4">Prerequisites:</h4>
-                <ul className="list-disc list-inside space-y-2 text-white/80 mb-6">
-                  <li>Node.js & npm</li>
-                  <li>Phantom Wallet (set to Devnet)</li>
-                  <li>Git</li>
-                </ul>
-                
-                <h4 className="text-lg font-bold mb-4">Steps:</h4>
-                <div className="bg-black/30 p-4 rounded font-mono text-sm text-green-400">
-                  git clone https://github.com/your-username/solarshare.git<br />
-                  cd solarshare<br />
-                  npm install<br />
-                  npm run dev
-                </div>
-              </div>
-            </div>
-
-            {/* Why SolarShare */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🧠 Why SolarShare?</h3>
+              <h3 className="text-2xl font-bold mb-6">🏗️ Research & Industry Context</h3>
               <div className="space-y-3">
-                {solarShareProject.whySolarShare.map((reason, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-white/80">{reason}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Technical Innovations */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🧪 Technical Innovations</h3>
-              <div className="space-y-3">
-                {solarShareProject.techHighlights.map((highlight, index) => (
+                {trendpulseProject.marketContext.map((context, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-white/80">{highlight}</p>
+                    <p className="text-white/80">{context}</p>
                   </div>
                 ))}
               </div>
-            </div>
-
-            {/* Use Case Scenarios */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">📈 Use Case Scenarios</h3>
-              <div className="space-y-6">
-                {solarShareProject.useCases.map((useCase, index) => (
-                  <div key={index}>
-                    <h4 className="text-xl font-bold mb-2">{useCase.title}</h4>
-                    <p className="text-white/80 ml-6">{useCase.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Environmental & Social Impact */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🌱 Environmental & Social Impact</h3>
-              <div className="space-y-3">
-                {solarShareProject.environmentalImpact.map((impact, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-white/80">{impact}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Hackathon Submission */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🏆 Hackathon Submission</h3>
-              <p className="text-lg text-white/80 leading-relaxed">
-                {solarShareProject.hackathonInfo}
-              </p>
             </div>
 
             {/* Quote */}
             <div className="mb-12">
               <div className="bg-white/5 p-6 rounded-lg border border-white/10 text-center">
-                <p className="text-white/90 italic text-lg mb-4">"The sun shines for everyone—let's build the systems that let it empower everyone."</p>
-                <p className="text-white/60">— SolarShare Vision Statement</p>
+                <p className="text-white/90 italic text-lg mb-4">"In markets, data is the currency of insight—TrendPulse ensures you never trade in the dark."</p>
+                <p className="text-white/60">— TrendPulse Manifesto</p>
               </div>
             </div>
 
@@ -948,22 +595,22 @@ const CaseStudy = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6">📌 Conclusion</h3>
               <p className="text-lg text-white/80 leading-relaxed">
-                SolarShare is not just a tech project—it's a vision for a decentralized, equitable, and sustainable energy future. By leveraging blockchain, IoT simulation, and community participation, it introduces a scalable model for clean energy distribution in developing nations.
+                TrendPulse represents the future of retail trading platforms, democratizing access to institutional-grade analytics through AI-powered insights and community-driven strategies. By combining real-time market data, social sentiment, and blockchain intelligence, it empowers traders of all levels to make informed decisions in today's fast-paced markets.
               </p>
               <p className="text-lg text-white/80 leading-relaxed mt-4">
-                This project exemplifies how Web3 can power real-world change—one solar panel at a time.
+                This platform showcases how modern web technologies can create sophisticated trading tools that rival traditional financial institutions while remaining accessible to everyday investors.
               </p>
             </div>
 
             {/* Live Demo */}
             <div className="text-center">
               <a 
-                href="https://solana-depin.vercel.app/" 
+                href="https://trendpulse.vercel.app" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
               >
-                🔗 Live Preview
+                🔗 Live Preview (Coming Soon)
               </a>
             </div>
           </div>

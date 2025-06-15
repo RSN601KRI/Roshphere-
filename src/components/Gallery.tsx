@@ -2,28 +2,28 @@
 const Gallery = () => {
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-      alt: "Woman working on laptop"
+      src: "/lovable-uploads/1515876d-049d-4ff7-bbbf-7296661a9c1d.png",
+      alt: "Web Development Project"
     },
     {
-      src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      alt: "Gray laptop computer"
+      src: "/lovable-uploads/cbc33d3c-5a4d-4292-9f93-d4173c06f41e.png",
+      alt: "Circuit Board Design"
     },
     {
-      src: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      alt: "Circuit board"
+      src: "/lovable-uploads/f2a2c04d-24c0-442f-a85a-47f640d709b4.png",
+      alt: "Google Cloud Certificate - Image Captioning Models"
     },
     {
-      src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-      alt: "Java programming"
+      src: "/lovable-uploads/5b1b3909-9b75-44db-b8b5-0549d6f87766.png",
+      alt: "Microsoft Learn Student Ambassador Certificate"
     },
     {
-      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-      alt: "Woman using laptop"
+      src: "/lovable-uploads/97fa3b22-669b-40ad-9fe3-008640fd000d.png",
+      alt: "DevFest Delhi 2023 Speaking"
     },
     {
-      src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-      alt: "MacBook with code"
+      src: "/lovable-uploads/d6cf12bf-b70e-4360-acef-875ef9a3f8fa.png",
+      alt: "LinkedIn Marketing Labs Certificate"
     }
   ];
 

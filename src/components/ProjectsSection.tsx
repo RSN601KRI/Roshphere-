@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 
 const ProjectsSection = () => {
@@ -8,7 +7,7 @@ const ProjectsSection = () => {
       title: "Budgetlyzer – AI-Powered Budgeting for Project-Based Businesses",
       description: "An intelligent budgeting platform that helps project-based businesses track, analyze, and optimize expenses in real-time through Payman AI's multi-account system. Built with React.js/Next.js frontend, Node.js/Python backend, and PostgreSQL/Firebase database, it features AI-powered transaction monitoring, predictive analytics, custom reporting, automated alerts, and secure multi-account budget tracking. The platform addresses critical challenges for freelancers, startups, enterprises, and NGOs by providing real-time financial monitoring, contextual project-based segregation, and intelligent forecasting capabilities.",
       profileImage: "/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png",
-      projectLink: "https://budgetlyzer.vercel.app/"
+      projectLink: "https://github.com/RSN601KRI/Budgetlyzer"
     },
     {
       id: "nexalyst",

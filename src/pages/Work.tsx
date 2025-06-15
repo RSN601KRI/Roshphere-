@@ -1,4 +1,3 @@
-
 import Navigation from '../components/Navigation';
 import { ExternalLink } from 'lucide-react';
 
@@ -9,7 +8,7 @@ const Work = () => {
       title: "Budgetlyzer - AI-Powered Budgeting Tool",
       description: "An AI-powered budgeting tool designed for project-based businesses. It leverages Payman AI's multi-account feature to help businesses efficiently track, analyze, and manage their project budgets in real-time.",
       tags: ["AI", "Budgeting", "Project Management", "Real-time Analytics"],
-      projectLink: "https://budgetlyzer.vercel.app/"
+      projectLink: "https://github.com/RSN601KRI/Budgetlyzer"
     },
     {
       id: "nexalyst",

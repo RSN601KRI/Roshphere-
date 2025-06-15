@@ -50,7 +50,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative">
+    <section className="py-12 sm:py-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative">
       {/* Grid Pattern Background */}
       <div 
         className="absolute inset-0 opacity-10"
@@ -63,54 +63,64 @@ const ProjectsSection = () => {
         }}
       />
       
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Projects Section */}
-        <div className="space-y-12 sm:space-y-16">
+        <div className="space-y-8 sm:space-y-12">
           {featuredProjects.map((project, index) => (
-            <div key={index} className="text-center">
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">{project.title}</h3>
-              <p className="text-base sm:text-lg text-white/80 mb-6 max-w-3xl mx-auto leading-relaxed">
-                {project.description}
-              </p>
+            <div key={index} className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-8">
+              <div className="flex-1 text-left lg:text-left">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-3">{project.title}</h3>
+                <p className="text-sm sm:text-base text-white/70 mb-4 max-w-2xl leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                  <button className="flex items-center text-green-400 hover:text-green-300 transition-colors font-medium text-sm">
+                    Read case study
+                    <ArrowRight className="w-3 h-3 ml-2" />
+                  </button>
+                  <a 
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center text-white/60 hover:text-white transition-colors font-medium text-sm"
+                  >
+                    View project
+                    <ExternalLink className="w-3 h-3 ml-2" />
+                  </a>
+                </div>
+              </div>
               
-              <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                <button className="flex items-center justify-center text-green-400 hover:text-green-300 transition-colors font-medium text-base">
-                  Read case study
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </button>
-                <a 
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center text-white/60 hover:text-white transition-colors font-medium text-base"
-                >
-                  View project
-                  <ExternalLink className="w-4 h-4 ml-2" />
-                </a>
+              <div className="w-full lg:w-48 h-32 bg-white/5 rounded-lg border border-white/10 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
+                  alt="Project preview" 
+                  className="w-8 h-8 rounded-full opacity-60"
+                />
               </div>
             </div>
           ))}
         </div>
 
         {/* Latest from the blog Section */}
-        <div className="mt-20 sm:mt-24">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2">
+        <div className="mt-16 sm:mt-20">
+          <div className="mb-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2 text-left">
               Latest from
               <br />
               the blog
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
             {blogPosts.map((post, index) => (
-              <div key={index} className="text-center space-y-4">
-                <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight">
+              <div key={index} className="text-left space-y-3">
+                <h3 className="text-lg sm:text-xl font-bold text-white leading-tight">
                   {post.title}
                 </h3>
-                <p className="text-white/60 text-sm">{post.date}</p>
-                <div className="inline-block">
-                  <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                <p className="text-white/50 text-xs">{post.date}</p>
+                <div>
+                  <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                     post.category === 'Data Science' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' :
                     'bg-green-500/20 text-green-400 border border-green-500/30'
                   }`}>
@@ -122,10 +132,10 @@ const ProjectsSection = () => {
           </div>
         </div>
 
-        <div className="text-center mt-16 sm:mt-20">
+        <div className="mt-12 sm:mt-16">
           <Link 
             to="/work"
-            className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-white hover:bg-white/15 transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 text-white text-sm hover:bg-white/15 transition-all duration-300 hover:scale-105"
           >
             View All Projects
             <ArrowRight className="w-4 h-4 ml-2" />

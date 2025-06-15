@@ -268,7 +268,14 @@ const CaseStudy = () => {
         "Decentralizes power ownership, reducing grid stress.",
         "Educates users on sustainable energy economics."
       ],
-      hackathonInfo: "Submitted to Industrial47 x Superteam India Hackathon, SolarShare showcases the first steps toward community-owned renewable energy networks through the Solana ecosystem."
+      hackathonInfo: "Submitted to Industrial47 x Superteam India Hackathon, SolarShare showcases the first steps toward community-owned renewable energy networks through the Solana ecosystem.",
+      installation: [
+        "Prerequisites: Node.js & npm, Phantom Wallet (set to Devnet), Git",
+        "Clone repository: git clone https://github.com/your-username/solarshare.git",
+        "Install dependencies: cd solarshare && npm install",
+        "Start development: npm run dev",
+        "Visit Live Preview to experience the marketplace"
+      ]
     },
     trendpulse: {
       title: "TrendPulse - An AI-Powered Trading News Dashboard for Modern Retail Investors",
@@ -804,8 +811,8 @@ const CaseStudy = () => {
               </div>
             </div>
 
-            {/* Installation */}
-            {project.installation && (
+            {/* Installation - Only show if exists */}
+            {'installation' in project && (
               <div className="mb-12">
                 <h3 className="text-2xl font-bold mb-6">Installation</h3>
                 <div className="space-y-3">

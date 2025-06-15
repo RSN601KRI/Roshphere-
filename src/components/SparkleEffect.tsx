@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 
-interface Sparkle {
+interface Glow {
   id: number;
   x: number;
   y: number;
@@ -10,42 +10,42 @@ interface Sparkle {
 }
 
 const SparkleEffect = () => {
-  const [sparkles, setSparkles] = useState<Sparkle[]>([]);
+  const [glows, setGlows] = useState<Glow[]>([]);
 
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
-      const newSparkle: Sparkle = {
+      const newGlow: Glow = {
         id: Date.now(),
         x: e.clientX,
         y: e.clientY,
-        size: Math.random() * 8 + 4,
-        opacity: 1
+        size: Math.random() * 100 + 50,
+        opacity: 0.8
       };
 
-      setSparkles(prev => [...prev, newSparkle]);
+      setGlows(prev => [...prev, newGlow]);
 
-      // Remove sparkle after animation
+      // Remove glow after animation
       setTimeout(() => {
-        setSparkles(prev => prev.filter(s => s.id !== newSparkle.id));
-      }, 1000);
+        setGlows(prev => prev.filter(g => g.id !== newGlow.id));
+      }, 2000);
     };
 
     const handleScroll = () => {
-      // Add sparkles on scroll
-      if (Math.random() > 0.95) {
-        const newSparkle: Sparkle = {
+      // Add glow on scroll
+      if (Math.random() > 0.97) {
+        const newGlow: Glow = {
           id: Date.now(),
           x: Math.random() * window.innerWidth,
           y: Math.random() * window.innerHeight,
-          size: Math.random() * 6 + 2,
-          opacity: 0.7
+          size: Math.random() * 80 + 40,
+          opacity: 0.6
         };
 
-        setSparkles(prev => [...prev, newSparkle]);
+        setGlows(prev => [...prev, newGlow]);
 
         setTimeout(() => {
-          setSparkles(prev => prev.filter(s => s.id !== newSparkle.id));
-        }, 2000);
+          setGlows(prev => prev.filter(g => g.id !== newGlow.id));
+        }, 3000);
       }
     };
 
@@ -60,17 +60,19 @@ const SparkleEffect = () => {
 
   return (
     <div className="fixed inset-0 pointer-events-none z-50">
-      {sparkles.map(sparkle => (
+      {glows.map(glow => (
         <div
-          key={sparkle.id}
-          className="absolute bg-green-400 rounded-full animate-ping"
+          key={glow.id}
+          className="absolute rounded-full animate-ping"
           style={{
-            left: sparkle.x - sparkle.size / 2,
-            top: sparkle.y - sparkle.size / 2,
-            width: sparkle.size,
-            height: sparkle.size,
-            opacity: sparkle.opacity,
-            animationDuration: '1s'
+            left: glow.x - glow.size / 2,
+            top: glow.y - glow.size / 2,
+            width: glow.size,
+            height: glow.size,
+            background: 'radial-gradient(circle, rgba(34, 197, 94, 0.4) 0%, rgba(34, 197, 94, 0.2) 50%, transparent 100%)',
+            opacity: glow.opacity,
+            animationDuration: '2s',
+            filter: 'blur(1px)'
           }}
         />
       ))}

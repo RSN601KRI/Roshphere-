@@ -1,5 +1,5 @@
+
 import { ArrowRight, ExternalLink } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const ProjectsSection = () => {
   const featuredProjects = [
@@ -120,16 +120,6 @@ const ProjectsSection = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="mt-12 sm:mt-16">
-          <Link 
-            to="/work"
-            className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 text-white text-sm hover:bg-white/15 transition-all duration-300 hover:scale-105"
-          >
-            View All Projects
-            <ArrowRight className="w-4 h-4 ml-2" />
-          </Link>
         </div>
       </div>
     </section>

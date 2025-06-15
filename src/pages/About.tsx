@@ -1,3 +1,4 @@
+
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 import { useState } from 'react';
@@ -236,8 +237,14 @@ const About = () => {
                         Budgetlyzer is an AI-powered budgeting tool designed for project-based businesses. It leverages Payman AI's multi-account feature to help businesses efficiently track, analyze, and manage their project budgets in real-time.
                       </p>
                       <div className="mb-4">
+                        <span className="text-green-400 font-medium">Tech Stack: </span>
+                        <span className="text-white/70">React, AI-powered analytics, Payman AI integration, Real-time data processing.</span>
+                      </div>
+                      <div className="mb-4">
+                        <span className="text-green-400 font-medium">Results: </span>
+                        <span className="text-white/70">Enhanced budget management efficiency for project-based businesses, accessible at: </span>
                         <a href="https://budgetlyzer.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
-                          https://budgetlyzer.vercel.app/
+                          budgetlyzer.vercel.app
                         </a>
                       </div>
                     </div>
@@ -250,8 +257,14 @@ const About = () => {
                         Nexalyst is a powerful web-based forensic analysis platform for the Solana blockchain that enables security researchers, investigators and compliance teams to visualise, track and analyse on-chain fund movements precisely and clearly.
                       </p>
                       <div className="mb-4">
+                        <span className="text-green-400 font-medium">Tech Stack: </span>
+                        <span className="text-white/70">Solana blockchain integration, Web3 technologies, Data visualization, Forensic analysis tools.</span>
+                      </div>
+                      <div className="mb-4">
+                        <span className="text-green-400 font-medium">Outcome: </span>
+                        <span className="text-white/70">Providing comprehensive blockchain forensic capabilities for security professionals, accessible at: </span>
                         <a href="https://solana-trace-nexus.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
-                          https://solana-trace-nexus.vercel.app/
+                          solana-trace-nexus.vercel.app
                         </a>
                       </div>
                     </div>

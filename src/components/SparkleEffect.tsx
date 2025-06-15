@@ -1,77 +1,85 @@
 
 import { useEffect, useState } from 'react';
 
-interface Glow {
+interface Sparkle {
   id: number;
   x: number;
   y: number;
   size: number;
   opacity: number;
+  delay: number;
 }
 
 const SparkleEffect = () => {
-  const [glows, setGlows] = useState<Glow[]>([]);
+  const [sparkles, setSparkles] = useState<Sparkle[]>([]);
 
   useEffect(() => {
-    const handleClick = (e: MouseEvent) => {
-      const newGlow: Glow = {
-        id: Date.now(),
-        x: e.clientX,
-        y: e.clientY,
-        size: Math.random() * 100 + 50,
-        opacity: 0.8
-      };
+    // Create initial sparkles on page load/refresh
+    const createInitialSparkles = () => {
+      const initialSparkles: Sparkle[] = [];
+      for (let i = 0; i < 8; i++) {
+        initialSparkles.push({
+          id: Date.now() + i,
+          x: Math.random() * window.innerWidth,
+          y: Math.random() * window.innerHeight,
+          size: Math.random() * 60 + 30,
+          opacity: Math.random() * 0.6 + 0.4,
+          delay: i * 200
+        });
+      }
+      setSparkles(initialSparkles);
 
-      setGlows(prev => [...prev, newGlow]);
-
-      // Remove glow after animation
+      // Remove initial sparkles after animation
       setTimeout(() => {
-        setGlows(prev => prev.filter(g => g.id !== newGlow.id));
-      }, 2000);
+        setSparkles([]);
+      }, 3000);
     };
 
+    // Create sparkles on page load
+    createInitialSparkles();
+
     const handleScroll = () => {
-      // Add glow on scroll
-      if (Math.random() > 0.97) {
-        const newGlow: Glow = {
+      // Add sparkle on scroll with reduced frequency
+      if (Math.random() > 0.95) {
+        const newSparkle: Sparkle = {
           id: Date.now(),
           x: Math.random() * window.innerWidth,
           y: Math.random() * window.innerHeight,
-          size: Math.random() * 80 + 40,
-          opacity: 0.6
+          size: Math.random() * 50 + 25,
+          opacity: Math.random() * 0.5 + 0.3,
+          delay: 0
         };
 
-        setGlows(prev => [...prev, newGlow]);
+        setSparkles(prev => [...prev, newSparkle]);
 
         setTimeout(() => {
-          setGlows(prev => prev.filter(g => g.id !== newGlow.id));
-        }, 3000);
+          setSparkles(prev => prev.filter(s => s.id !== newSparkle.id));
+        }, 2000);
       }
     };
 
-    document.addEventListener('click', handleClick);
     document.addEventListener('scroll', handleScroll);
 
     return () => {
-      document.removeEventListener('click', handleClick);
       document.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
     <div className="fixed inset-0 pointer-events-none z-50">
-      {glows.map(glow => (
+      {sparkles.map(sparkle => (
         <div
-          key={glow.id}
+          key={sparkle.id}
           className="absolute rounded-full animate-ping"
           style={{
-            left: glow.x - glow.size / 2,
-            top: glow.y - glow.size / 2,
-            width: glow.size,
-            height: glow.size,
-            background: 'radial-gradient(circle, rgba(34, 197, 94, 0.4) 0%, rgba(34, 197, 94, 0.2) 50%, transparent 100%)',
-            opacity: glow.opacity,
+            left: sparkle.x - sparkle.size / 2,
+            top: sparkle.y - sparkle.size / 2,
+            width: sparkle.size,
+            height: sparkle.size,
+            background: 'radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, rgba(59, 130, 246, 0.2) 50%, transparent 100%)',
+            opacity: sparkle.opacity,
             animationDuration: '2s',
+            animationDelay: `${sparkle.delay}ms`,
             filter: 'blur(1px)'
           }}
         />

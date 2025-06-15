@@ -3,27 +3,33 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "Budgetlyzer - AI-Powered Budgeting Tool",
-      description: "An AI-powered budgeting tool designed for project-based businesses. It leverages Payman AI's multi-account feature to help businesses efficiently track, analyze, and manage their project budgets in real-time.",
+      description: "An intelligent budgeting platform designed for project-based businesses, leveraging Payman AI's multi-account system for real-time budget tracking and analysis. Features AI-powered expense monitoring, predictive analytics, custom reporting, and automated alerts to help businesses optimize their financial management across multiple projects and accounts.",
       profileImage: "/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png",
-      caseStudyLink: "#"
+      caseStudyLink: "/case-study/budgetlyzer"
     },
     {
       title: "Nexalyst - Solana Blockchain Forensic Platform",
-      description: "A powerful web-based forensic analysis platform for the Solana blockchain enables security researchers, investigators and compliance teams to visualise, track and analyse on-chain fund movements precisely and clearly.",
+      description: "A comprehensive web-based forensic analysis platform for the Solana blockchain that empowers security researchers, investigators, and compliance teams to visualize, track, and analyze on-chain fund movements with precision. Features transaction flow mapping, wallet analysis, clustering algorithms, and entity labeling to detect suspicious patterns and ensure regulatory compliance in the DeFi ecosystem.",
       profileImage: "/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png",
-      caseStudyLink: "#"
+      caseStudyLink: "/case-study/nexalyst"
     },
     {
       title: "SolarShare - DePIN Solar Energy Marketplace",
-      description: "A DePIN (Decentralized Physical Infrastructure Network) project built on Solana, designed to revolutionize how communities in India share solar energy. Leveraging blockchain technology, SolarShare allows users to sell and buy excess solar energy locally through a secure, real-time marketplace.",
+      description: "A revolutionary DePIN (Decentralized Physical Infrastructure Network) project built on Solana blockchain, designed to transform how communities in India share and trade solar energy. This platform enables peer-to-peer energy trading through a secure, real-time marketplace where households can monetize excess solar power, promoting sustainable energy distribution and community ownership in developing regions.",
       profileImage: "/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png",
-      caseStudyLink: "#"
+      caseStudyLink: "/case-study/solarshare"
     },
     {
-      title: "TreadPulse - AI Trading News Application",
-      description: "An intelligent trading news application that leverages artificial intelligence to provide real-time market insights, sentiment analysis, and personalized trading recommendations for cryptocurrency and traditional markets.",
+      title: "TrendPulse - AI Trading News Application",
+      description: "An advanced AI-driven trading intelligence platform that fuses real-time market data, social sentiment analysis, and blockchain analytics into a unified dashboard. Designed for modern retail investors, it provides AI-curated trading signals, community-driven strategies, and actionable insights through an intuitive interface that rivals professional trading terminals while remaining accessible to everyday traders.",
       profileImage: "/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png",
-      caseStudyLink: "#"
+      caseStudyLink: "/case-study/trendpulse"
+    },
+    {
+      title: "DeFi Loan Options - Cross-Chain AI Agent",
+      description: "A cutting-edge Web3-native tool that simplifies decentralized finance lending through agent-based AI architecture. Built with Fetch.ai's Agentverse and powered by ASI1-mini LLM, it autonomously discovers, ranks, and explains optimal loan options across multiple blockchains including Ethereum, Polygon, and BNB Chain, enabling users to make informed decisions in the fragmented DeFi lending ecosystem.",
+      profileImage: "/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png",
+      caseStudyLink: "/case-study/defi"
     }
   ];
 
@@ -35,7 +41,7 @@ const ProjectsSection = () => {
             Projects
           </h2>
           <p className="text-white/70 text-base max-w-2xl mx-auto">
-            Explore a curated selection of my most impactful projects, showcasing innovation and technical expertise.
+            Explore a curated selection of my most impactful projects, showcasing innovation and technical expertise across AI, Blockchain, and Cloud technologies.
           </p>
         </div>
 

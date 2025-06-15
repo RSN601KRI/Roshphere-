@@ -72,19 +72,19 @@ const Hero = () => {
             Data & Technology
           </h1>
           
-          <div className="max-w-3xl mx-auto space-y-6 text-lg text-white/80 leading-relaxed">
+          <div className="max-w-4xl mx-auto space-y-6 text-lg text-white/80 leading-relaxed">
             <p>
-              I'm <span className="text-white font-bold">Roshni Kumari</span>, a passionate <span className="text-blue-400 font-semibold">Developer</span>, 
-              <span className="text-green-400 font-semibold"> Cloud Captain</span> and <span className="text-purple-400 font-semibold">AI/ML Scholar</span> driven by purpose and impact. 💡
+              I'm <span className="text-white font-bold">Roshni Kumari</span>, a passionate <span className="text-blue-400 font-semibold">𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</span>, 
+              <span className="text-green-400 font-semibold"> 𝐂𝐥𝐨𝐮𝐝 𝐂𝐚𝐩𝐭𝐚𝐢𝐧</span> and <span className="text-purple-400 font-semibold">𝐀𝐈/𝐌𝐋 𝐒𝐜𝐡𝐨𝐥𝐚𝐫</span> driven by purpose and impact. 💡
             </p>
             <p>
               As an <span className="text-orange-400 font-semibold">AWS Cloud Captain '25</span>, <span className="text-yellow-400 font-semibold">3X OCFA Certified Developer</span>, 
               <span className="text-purple-400 font-semibold">MLSA</span>, and <span className="text-blue-400 font-semibold">AWS AI/ML Scholar</span>, 
-              I create content and host webinars guiding 5K+ monthly learners through the evolving tech landscape.
+              I regularly create content and host webinars to guide 5K+ monthly learners through the evolving landscape of tech. From cloud-native solutions to deep learning models, I build tools that solve real-world problems.
             </p>
             <p>
-              I'm passionate about <span className="text-orange-400 font-semibold">communities</span>, <span className="text-blue-400 font-semibold">hackathons</span> and 
-              <span className="text-green-400 font-semibold"> storytelling</span> through tech. Let's collaborate on meaningful AI, Web3, or Cloud solutions!
+              I'm deeply passionate about <span className="text-orange-400 font-semibold">𝐜𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐢𝐞𝐬</span>, <span className="text-blue-400 font-semibold">𝐡𝐚𝐜𝐤𝐚𝐭𝐡𝐨𝐧𝐬</span> and 
+              <span className="text-green-400 font-semibold"> 𝐬𝐭𝐨𝐫𝐲𝐭𝐞𝐥𝐥𝐢𝐧𝐠</span> through tech. If you're building something meaningful in AI, Web3, or Cloud — let's collaborate!
             </p>
           </div>
         </div>

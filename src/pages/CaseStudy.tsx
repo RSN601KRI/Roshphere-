@@ -1,3 +1,4 @@
+
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -369,25 +370,77 @@ const CaseStudy = () => {
       ]
     },
     defi: {
-      title: "DeFi Loan Options - Cross-Chain AI Agent",
+      title: "🌐 Cross-Chain Loan Agent",
       subtitle: "Cross-Chain DeFi Lending Platform",
       date: "August 30, 2024",
-      overview: "I developed a DeFi loan options platform across blockchains using AI-powered autonomous agents with Fetch.ai's Agentverse and powered by the ASI1-mini LLM.",
-      strategies: [
+      introduction: "The Cross-Chain Loan Agent is a cutting-edge Web3-native tool that simplifies decentralized finance (DeFi) lending through agent-based AI architecture. Built with Fetch.ai's Agentverse and powered by ASI1-mini LLM, it autonomously discovers, ranks, and explains loan options across multiple chains—empowering users to make informed decisions in a fragmented lending ecosystem.",
+      objective: "DeFi lending spans across dozens of chains and protocols, making optimal loan discovery a time-consuming and error-prone task. This project solves that by automating discovery of lending offers across Ethereum, Polygon, BNB Chain, and others, ranking offers based on customizable preferences (e.g., lowest collateral, best APR), explaining choices using conversational AI with LLM-powered reasoning, and delivering insights in real-time via a user-friendly web interface.",
+      architecture: [
+        { component: "Agents", stack: "Fetch.ai Agentverse, uAgents Framework" },
+        { component: "AI/LLM", stack: "ASI1-mini for question understanding and reasoning" },
+        { component: "Interface", stack: "ASI:One Web App, React.js, Tailwind CSS" },
+        { component: "Web3", stack: "Web3.js / Ethers.js for blockchain interaction" },
+        { component: "Backend", stack: "Node.js, Express (optional for caching or additional logic)" },
+        { component: "APIs", stack: "Aave, Compound, Venus, DeFiLlama, and cross-chain blockchain endpoints" }
+      ],
+      features: [
         {
-          title: "Cross-Chain Integration",
-          points: [
-            "Used Fetch.ai's Agentverse for autonomous cross-chain loan discovery.",
-            "Implemented ASI1-mini LLM for intelligent loan matching and recommendations."
-          ]
+          feature: "🤖 Conversational UI",
+          description: "Users ask natural language questions through the ASI:One Web App."
         },
         {
-          title: "AI-Powered Optimization",
-          points: [
-            "Built automated loan comparison across multiple DeFi protocols.",
-            "Created risk assessment tools for loan evaluation and portfolio management."
-          ]
+          feature: "📊 Loan Comparison Dashboard",
+          description: "Visual table of interest rates, collateral ratios, and durations."
+        },
+        {
+          feature: "🔗 Cross-Chain Aggregation",
+          description: "Fetches loan offers from top DeFi protocols on Ethereum, Polygon, BNB Chain."
+        },
+        {
+          feature: "⚙️ Agent Architecture",
+          description: "Built with uAgents using Fetch.ai's chat protocol for collaborative querying."
+        },
+        {
+          feature: "🧠 LLM-Powered Reasoning",
+          description: "Responses are generated and explained using the ASI1-mini model."
         }
+      ],
+      techHighlights: [
+        "Fully decentralized architecture using Fetch.ai chat protocol",
+        "No user PII or private key storage",
+        "All smart contract interactions are transparent and verifiable",
+        "Real-time DeFi protocol updates and push notifications"
+      ],
+      useCases: [
+        {
+          title: "DeFi Newcomers",
+          description: "Simplified loan discovery without technical complexity."
+        },
+        {
+          title: "Yield Farmers",
+          description: "Quick comparison of borrowing costs across protocols."
+        },
+        {
+          title: "Portfolio Managers",
+          description: "Risk assessment and optimal capital allocation."
+        },
+        {
+          title: "Arbitrage Traders",
+          description: "Real-time rate monitoring for profitable opportunities."
+        }
+      ],
+      futureEnhancements: [
+        "Wallet integration for customized loan suggestions",
+        "Real-time DeFi protocol updates + push notifications",
+        "Support for NFT-backed loans and Real World Assets (RWAs)",
+        "AI-powered risk scoring system for loans"
+      ],
+      installation: [
+        "Prerequisites: Node.js v18+, Fetch.ai Agentverse account, Access to the ASI:One Web App",
+        "Clone repository: git clone https://github.com/your-username/cross-chain-loan-agent.git",
+        "Install dependencies: cd cross-chain-loan-agent && npm install",
+        "Start development: npm run dev",
+        "Note: Agent registration and simulation must be completed via Agentverse"
       ]
     }
   };
@@ -619,89 +672,160 @@ const CaseStudy = () => {
     );
   }
 
-  // For other projects, use the original format
-  const standardProject = project as typeof projectData.trendpulse | typeof projectData.defi;
-  
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
-      <Navigation />
-      
-      {/* Grid Pattern Background */}
-      <div 
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(135,206,235,0.2) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(135,206,235,0.2) 1px, transparent 1px)
-          `,
-          backgroundSize: '20px 20px'
-        }}
-      />
+  // For other projects with full structure, use detailed template
+  if (projectId === 'nexalyst' || projectId === 'solarshare' || projectId === 'budgetlyzer' || projectId === 'defi') {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+        <Navigation />
+        
+        {/* Grid Pattern Background */}
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(135,206,235,0.2) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(135,206,235,0.2) 1px, transparent 1px)
+            `,
+            backgroundSize: '20px 20px'
+          }}
+        />
 
-      <div className="relative z-10 pt-32 pb-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          {/* Back Button */}
-          <button 
-            onClick={() => navigate('/work')}
-            className="flex items-center text-white/70 hover:text-white transition-colors mb-8"
-          >
-            <ArrowLeft className="w-5 h-5 mr-2" />
-            Projects
-          </button>
+        <div className="relative z-10 pt-32 pb-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            {/* Back Button */}
+            <button 
+              onClick={() => navigate('/work')}
+              className="flex items-center text-white/70 hover:text-white transition-colors mb-8"
+            >
+              <ArrowLeft className="w-5 h-5 mr-2" />
+              Projects
+            </button>
 
-          {/* Header */}
-          <div className="mb-12">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4">{standardProject.title}</h1>
-            <h2 className="text-xl sm:text-2xl text-white/80 mb-6">{standardProject.subtitle}</h2>
-            
-            <div className="flex items-center gap-4 mb-8">
-              <img 
-                src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
-                alt="Profile" 
-                className="w-10 h-10 rounded-full object-cover"
-              />
-              <span className="text-white/60">{standardProject.date}</span>
+            {/* Header */}
+            <div className="mb-12">
+              <h1 className="text-4xl sm:text-5xl font-bold mb-4">{project.title}</h1>
+              <h2 className="text-xl sm:text-2xl text-white/80 mb-6">{project.subtitle}</h2>
+              
+              <div className="flex items-center gap-4 mb-8">
+                <img 
+                  src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
+                  alt="Profile" 
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <span className="text-white/60">{project.date}</span>
+              </div>
             </div>
-          </div>
 
-          {/* Overview Section */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-6">Overview</h3>
-            <p className="text-lg text-white/80 leading-relaxed">
-              {standardProject.overview}
-            </p>
-          </div>
+            {/* Introduction */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">Introduction</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                {project.introduction}
+              </p>
+            </div>
 
-          {/* Key Strategies Section */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-8">Key Strategies</h3>
-            
-            <div className="space-y-8">
-              {standardProject.strategies.map((strategy, index) => (
-                <div key={index} className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-blue-500 rounded-sm flex items-center justify-center">
-                      <div className="w-3 h-3 bg-white rounded-sm"></div>
-                    </div>
-                    <h4 className="text-xl font-bold">{strategy.title}</h4>
-                  </div>
-                  
-                  <div className="ml-9 space-y-3">
-                    {strategy.points.map((point, pointIndex) => (
-                      <div key={pointIndex} className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-white/80 leading-relaxed">{point}</p>
-                      </div>
+            {/* Objective */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">Objective</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                {project.objective}
+              </p>
+            </div>
+
+            {/* Features */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">Features</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border border-white/20 rounded-lg">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left p-4 font-bold">Feature</th>
+                      <th className="text-left p-4 font-bold">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {project.features.map((item, index) => (
+                      <tr key={index} className="border-b border-white/10">
+                        <td className="p-4 text-white/90 font-medium">{item.feature}</td>
+                        <td className="p-4 text-white/80">{item.description}</td>
+                      </tr>
                     ))}
-                  </div>
-                </div>
-              ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
+
+            {/* Architecture */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">Architecture</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border border-white/20 rounded-lg">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left p-4 font-bold">Component</th>
+                      <th className="text-left p-4 font-bold">Technology</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {project.architecture.map((item, index) => (
+                      <tr key={index} className="border-b border-white/10">
+                        <td className="p-4 text-white/90">{item.component}</td>
+                        <td className="p-4 text-white/80">{item.stack}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Tech Highlights */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">Technical Highlights</h3>
+              <div className="space-y-3">
+                {project.techHighlights.map((highlight, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{highlight}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Use Cases */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">Use Cases</h3>
+              <div className="space-y-6">
+                {project.useCases.map((useCase, index) => (
+                  <div key={index}>
+                    <h4 className="text-xl font-bold mb-2">{useCase.title}</h4>
+                    <p className="text-white/80 ml-6">{useCase.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Installation */}
+            {project.installation && (
+              <div className="mb-12">
+                <h3 className="text-2xl font-bold mb-6">Installation</h3>
+                <div className="space-y-3">
+                  {project.installation.map((step, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-white/80">{step}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
+
+  // Fallback for unknown projects
+  return <div>Project not found</div>;
 };
 
 export default CaseStudy;

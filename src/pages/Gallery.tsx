@@ -254,6 +254,51 @@ const Gallery = () => {
       image: '/lovable-uploads/a2d3debd-84de-4e61-802c-f98a8ff6cd7b.png',
       color: 'bg-gradient-to-br from-gray-600 to-gray-800',
       size: 'large'
+    },
+    {
+      type: 'swag',
+      title: 'Cloud Clubs Captain Kit',
+      subtitle: 'AWS Cloud Clubs Captain merchandise and accessories',
+      image: '/lovable-uploads/90d655fd-3cad-4af7-a4b1-541f92e941ed.png',
+      brand: 'AWS Cloud Clubs',
+      color: 'bg-gradient-to-br from-orange-600 to-red-700',
+      size: 'medium'
+    },
+    {
+      type: 'swag',
+      title: 'AWS Cloud Clubs T-Shirt',
+      subtitle: 'AWS Cloud Clubs branded apparel and merchandise',
+      image: '/lovable-uploads/11098ce0-5cb7-49e5-adb6-c0169191454d.png',
+      brand: 'AWS Cloud Clubs',
+      color: 'bg-gradient-to-br from-purple-600 to-indigo-700',
+      size: 'large'
+    },
+    {
+      type: 'swag',
+      title: 'Google Cloud Wooden Stand',
+      subtitle: 'Google Cloud branded wooden phone stand and merchandise',
+      image: '/lovable-uploads/e120d0df-45b8-4290-bd39-475b19d87631.png',
+      brand: 'Google Cloud',
+      color: 'bg-gradient-to-br from-blue-500 to-cyan-600',
+      size: 'medium'
+    },
+    {
+      type: 'event',
+      title: 'Google Cloud Summit Networking',
+      subtitle: 'Professional networking at Google Cloud Summit event',
+      image: '/lovable-uploads/6fa8d849-21d7-4781-afed-4f48c3085595.png',
+      brand: 'Google Cloud',
+      color: 'bg-gradient-to-br from-blue-600 to-indigo-700',
+      size: 'large'
+    },
+    {
+      type: 'swag',
+      title: 'Groww Paper Bag',
+      subtitle: 'Groww fintech company branded merchandise and swag',
+      image: '/lovable-uploads/f333b372-e815-447c-84b2-6b4e8a3ea44b.png',
+      brand: 'Groww',
+      color: 'bg-gradient-to-br from-green-600 to-teal-700',
+      size: 'medium'
     }
   ];
 

@@ -10,6 +10,8 @@ const About = () => {
   const handleScheduleClick = () => {
     setClickEffect(true);
     setTimeout(() => setClickEffect(false), 600);
+    // Open Calendly link in a new tab
+    window.open('https://calendly.com/roshnikumari', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -303,4 +305,3 @@ const About = () => {
 };
 
 export default About;
-

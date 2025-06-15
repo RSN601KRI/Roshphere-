@@ -41,61 +41,65 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative">
+    <section className="py-20 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Projects
           </h2>
-          <p className="text-white/70 text-base max-w-2xl mx-auto">
+          <p className="text-white/70 text-lg max-w-2xl mx-auto">
             Explore a curated selection of my most impactful projects, showcasing innovation and technical expertise across AI, Blockchain, and Cloud technologies.
           </p>
         </div>
 
-        <div className="space-y-6 max-w-4xl mx-auto">
+        <div className="space-y-20 max-w-5xl mx-auto">
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className="group relative overflow-hidden rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 p-6"
+              className="group relative"
             >
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <img 
-                    src={project.profileImage}
-                    alt="Profile"
-                    className="w-10 h-10 rounded-full object-cover border-2 border-white/20"
-                  />
-                </div>
-                
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold text-white mb-2">
+              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+                <div className="lg:w-2/3">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
                     {project.title}
                   </h3>
                   
-                  <p className="text-white/80 text-sm mb-3 leading-relaxed">
+                  <div className="flex items-center mb-6">
+                    <img 
+                      src={project.profileImage}
+                      alt="Profile"
+                      className="w-8 h-8 rounded-full object-cover border border-white/20 mr-3"
+                    />
+                    <span className="text-white/60 text-sm">Roshni Kumari</span>
+                  </div>
+                  
+                  <p className="text-white/80 text-base leading-relaxed mb-8">
                     {project.description}
                   </p>
                   
-                  <div className="flex items-center justify-between">
-                    <a 
-                      href={project.projectLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-green-400 hover:text-green-300 transition-colors text-xs font-medium inline-flex items-center"
+                  <a 
+                    href={project.projectLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-green-400 hover:text-green-300 transition-colors text-sm font-medium group"
+                  >
+                    Read case study
+                    <svg 
+                      className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
                     >
-                      Read Case Study →
-                    </a>
-                    <a 
-                      href={project.projectLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-400 hover:text-blue-300 transition-colors text-xs font-medium inline-flex items-center"
-                    >
-                      View project →
-                    </a>
-                  </div>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </a>
                 </div>
               </div>
+              
+              {/* Divider line except for last item */}
+              {index < projects.length - 1 && (
+                <div className="mt-20 border-b border-white/10"></div>
+              )}
             </div>
           ))}
         </div>

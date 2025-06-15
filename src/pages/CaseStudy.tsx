@@ -1,3 +1,4 @@
+
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -204,6 +205,8 @@ const CaseStudy = () => {
 
   // For Budgetlyzer, render the comprehensive case study
   if (projectId === 'budgetlyzer') {
+    const budgetlyzerProject = project as typeof projectData.budgetlyzer;
+    
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
         <Navigation />
@@ -233,7 +236,7 @@ const CaseStudy = () => {
 
             {/* Header */}
             <div className="mb-12">
-              <h1 className="text-3xl sm:text-4xl font-bold mb-4">{project.title}</h1>
+              <h1 className="text-3xl sm:text-4xl font-bold mb-4">{budgetlyzerProject.title}</h1>
               
               <div className="flex items-center gap-4 mb-8">
                 <img 
@@ -241,7 +244,7 @@ const CaseStudy = () => {
                   alt="Profile" 
                   className="w-10 h-10 rounded-full object-cover"
                 />
-                <span className="text-white/60">{project.date}</span>
+                <span className="text-white/60">{budgetlyzerProject.date}</span>
               </div>
             </div>
 
@@ -249,7 +252,7 @@ const CaseStudy = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6">🧠 Introduction</h3>
               <p className="text-lg text-white/80 leading-relaxed">
-                {project.introduction}
+                {budgetlyzerProject.introduction}
               </p>
             </div>
 
@@ -257,7 +260,7 @@ const CaseStudy = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6">🎯 Objective</h3>
               <p className="text-lg text-white/80 leading-relaxed">
-                {project.objective}
+                {budgetlyzerProject.objective}
               </p>
             </div>
 
@@ -273,7 +276,7 @@ const CaseStudy = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {project.architecture.map((item, index) => (
+                    {budgetlyzerProject.architecture.map((item, index) => (
                       <tr key={index} className="border-b border-white/10">
                         <td className="p-4 text-white/90">{item.component}</td>
                         <td className="p-4 text-white/80">{item.stack}</td>
@@ -288,7 +291,7 @@ const CaseStudy = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6">🔍 How Budgetlyzer Works</h3>
               <div className="space-y-6">
-                {project.workflow.map((step, index) => (
+                {budgetlyzerProject.workflow.map((step, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">
                       {index + 1}
@@ -314,7 +317,7 @@ const CaseStudy = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {project.features.map((item, index) => (
+                    {budgetlyzerProject.features.map((item, index) => (
                       <tr key={index} className="border-b border-white/10">
                         <td className="p-4 text-white/90 font-medium">{item.feature}</td>
                         <td className="p-4 text-white/80">{item.description}</td>
@@ -329,7 +332,7 @@ const CaseStudy = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6">🧪 Tech Highlights</h3>
               <div className="space-y-3">
-                {project.techHighlights.map((highlight, index) => (
+                {budgetlyzerProject.techHighlights.map((highlight, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-white/80">{highlight}</p>
@@ -342,7 +345,7 @@ const CaseStudy = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6">🧾 Use Cases</h3>
               <div className="space-y-6">
-                {project.useCases.map((useCase, index) => (
+                {budgetlyzerProject.useCases.map((useCase, index) => (
                   <div key={index}>
                     <h4 className="text-xl font-bold mb-2">{index + 1}. {useCase.title}</h4>
                     <p className="text-white/80 ml-6">{useCase.description}</p>
@@ -355,7 +358,7 @@ const CaseStudy = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6">📈 Market Context</h3>
               <div className="space-y-3">
-                {project.marketContext.map((context, index) => (
+                {budgetlyzerProject.marketContext.map((context, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-white/80">{context}</p>
@@ -368,7 +371,7 @@ const CaseStudy = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6">👥 User Testimonials</h3>
               <div className="space-y-6">
-                {project.testimonials.map((testimonial, index) => (
+                {budgetlyzerProject.testimonials.map((testimonial, index) => (
                   <div key={index} className="bg-white/5 p-6 rounded-lg border border-white/10">
                     <p className="text-white/90 italic mb-4">"{testimonial.quote}"</p>
                     <p className="text-white/60">— {testimonial.author}</p>
@@ -381,7 +384,7 @@ const CaseStudy = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6">🛠 Future Improvements</h3>
               <div className="space-y-3">
-                {project.futureImprovements.map((improvement, index) => (
+                {budgetlyzerProject.futureImprovements.map((improvement, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-white/80">{improvement}</p>
@@ -419,6 +422,8 @@ const CaseStudy = () => {
   }
 
   // For other projects, use the original format
+  const standardProject = project as typeof projectData.nexalyst;
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
       <Navigation />
@@ -448,8 +453,8 @@ const CaseStudy = () => {
 
           {/* Header */}
           <div className="mb-12">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4">{project.title}</h1>
-            <h2 className="text-xl sm:text-2xl text-white/80 mb-6">{project.subtitle}</h2>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4">{standardProject.title}</h1>
+            <h2 className="text-xl sm:text-2xl text-white/80 mb-6">{standardProject.subtitle}</h2>
             
             <div className="flex items-center gap-4 mb-8">
               <img 
@@ -457,7 +462,7 @@ const CaseStudy = () => {
                 alt="Profile" 
                 className="w-10 h-10 rounded-full object-cover"
               />
-              <span className="text-white/60">{project.date}</span>
+              <span className="text-white/60">{standardProject.date}</span>
             </div>
           </div>
 
@@ -465,7 +470,7 @@ const CaseStudy = () => {
           <div className="mb-12">
             <h3 className="text-2xl font-bold mb-6">Overview</h3>
             <p className="text-lg text-white/80 leading-relaxed">
-              {project.overview}
+              {standardProject.overview}
             </p>
           </div>
 
@@ -474,7 +479,7 @@ const CaseStudy = () => {
             <h3 className="text-2xl font-bold mb-8">Key Strategies</h3>
             
             <div className="space-y-8">
-              {project.strategies.map((strategy, index) => (
+              {standardProject.strategies.map((strategy, index) => (
                 <div key={index} className="space-y-4">
                   <div className="flex items-center gap-3">
                     <div className="w-6 h-6 bg-blue-500 rounded-sm flex items-center justify-center">

@@ -75,7 +75,7 @@ const Hero = () => {
           <div className="max-w-4xl mx-auto space-y-6 text-lg text-white/80 leading-relaxed">
             <p>
               I'm <span className="text-white font-bold">Roshni Kumari</span>, a passionate <span className="text-blue-400 font-semibold">𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</span>, 
-              <span className="text-green-400 font-semibold"> 𝐂𝐥𝐨𝐮𝐝 𝐂𝐚𝐩𝐭𝐚𝐢𝐧</span> and <span className="text-purple-400 font-semibold">𝐀𝐈/𝐌𝐋 𝐒𝐜𝐡𝐨𝐥𝐚𝐫</span> driven by purpose and impact. 💡
+              <span className="text-green-400 font-semibold"> 𝐂𝐥𝐨𝐮𝐝 𝐂𝐚𝐩𝐭𝐚𝐢𝐧</span> and <span className="text-purple-400 font-semibold">𝐀𝐈/𝐌𝐋 𝐒𝐜𝐡𝐨𝐥𝐚𝐫</span>.
             </p>
             <p>
               As an <span className="text-orange-400 font-semibold">AWS Cloud Captain '25</span>, <span className="text-yellow-400 font-semibold">3X OCFA Certified Developer</span>, 

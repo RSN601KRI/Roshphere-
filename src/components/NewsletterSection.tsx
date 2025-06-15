@@ -28,10 +28,10 @@ const NewsletterSection = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="bg-gradient-to-br from-gray-800/50 via-gray-900/50 to-black/50 backdrop-blur-lg border border-white/10 rounded-3xl p-8 sm:p-12 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-            Subscribe to Roshni's Newsletter
+            Smarter Tech, Bolder Futures
           </h2>
           <p className="text-base sm:text-lg text-white/70 mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed">
-            A passionate computer science student specializing in Data Science, Machine Learning, and DevOps. Stay updated with my latest projects, insights, and tutorials on cutting-edge technologies.
+            Dive into the world of AI and tech with insights that simplify the complex. Explore how smarter technologies are shaping bold futures—and what it means for you.
           </p>
           
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">

@@ -1,5 +1,3 @@
-
-
 const Gallery = () => {
   const galleryImages = [
     {

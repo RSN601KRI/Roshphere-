@@ -1,4 +1,5 @@
 
+
 const Gallery = () => {
   const galleryImages = [
     {
@@ -29,13 +30,13 @@ const Gallery = () => {
 
   return (
     <section className="py-12 sm:py-16 bg-gradient-to-br from-black via-gray-900 to-black relative">
-      {/* Grid Pattern Background with smaller 1x1 boxes */}
+      {/* Grid Pattern Background with navy blue theme */}
       <div 
-        className="absolute inset-0 opacity-15"
+        className="absolute inset-0 opacity-25"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(135,206,235,0.4) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(135,206,235,0.4) 1px, transparent 1px)
+            linear-gradient(rgba(30,58,138,0.6) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(30,58,138,0.6) 1px, transparent 1px)
           `,
           backgroundSize: '10px 10px'
         }}

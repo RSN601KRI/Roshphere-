@@ -13,13 +13,13 @@ const NewsletterSection = () => {
 
   return (
     <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative">
-      {/* Grid Pattern Background with smaller 1x1 boxes */}
+      {/* Grid Pattern Background with navy blue theme */}
       <div 
-        className="absolute inset-0 opacity-15"
+        className="absolute inset-0 opacity-25"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(135,206,235,0.4) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(135,206,235,0.4) 1px, transparent 1px)
+            linear-gradient(rgba(30,58,138,0.6) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(30,58,138,0.6) 1px, transparent 1px)
           `,
           backgroundSize: '10px 10px'
         }}

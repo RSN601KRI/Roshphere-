@@ -1,125 +1,101 @@
-
-import { ArrowRight, ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 const ProjectsSection = () => {
-  const featuredProjects = [
+  const projects = [
     {
-      title: "Budgetlyzer - AI-Powered Budgeting Tool",
-      description: "An AI-powered budgeting tool designed for project-based businesses. It leverages Payman AI's multi-account feature to help businesses efficiently track, analyze, and manage their project budgets in real-time.",
-      url: "https://budgetlyzer.vercel.app/",
-      tags: ["AI", "Budgeting", "Project Management"]
+      title: "GreenGuardian",
+      description: "AI-powered environmental monitoring platform with real-time data analytics and predictive insights for sustainable practices.",
+      tech: ["React", "Python", "TensorFlow", "AWS"],
+      image: "/lovable-uploads/1515876d-049d-4ff7-bbbf-7296661a9c1d.png",
+      github: "#",
+      demo: "#",
+      featured: true
     },
     {
-      title: "Nexalyst - Solana Blockchain Forensic Platform",
-      description: "A powerful web-based forensic analysis platform for the Solana blockchain enables security researchers, investigators and compliance teams to visualise, track and analyse on-chain fund movements precisely and clearly.",
-      url: "https://solana-trace-nexus.vercel.app/",
-      tags: ["Blockchain", "Forensics", "Solana"]
+      title: "CloudNative Dashboard",
+      description: "Comprehensive cloud infrastructure monitoring and management platform with automated scaling and cost optimization.",
+      tech: ["Vue.js", "Node.js", "Docker", "Kubernetes"],
+      image: "/lovable-uploads/cbc33d3c-5a4d-4292-9f93-d4173c06f41e.png",
+      github: "#",
+      demo: "#",
+      featured: false
     },
     {
-      title: "SolarShare - DePIN Solar Energy Marketplace",
-      description: "A DePIN (Decentralized Physical Infrastructure Network) project built on Solana, designed to revolutionize how communities in India share solar energy. Leveraging blockchain technology, SolarShare allows users to sell and buy excess solar energy locally through a secure, real-time marketplace.",
-      url: "https://solana-depin.vercel.app/",
-      tags: ["DePIN", "Solar Energy", "Blockchain"]
+      title: "Neural Network Visualizer",
+      description: "Interactive tool for visualizing and understanding deep learning model architectures and training processes.",
+      tech: ["D3.js", "Python", "PyTorch", "Flask"],
+      image: "/lovable-uploads/f2a2c04d-24c0-442f-a85a-47f640d709b4.png",
+      github: "#",
+      demo: "#",
+      featured: false
     },
     {
-      title: "TrendPulse - AI Trading News Application",
-      description: "An intuitive and powerful trading news application designed for modern retail investors. Track real-time market signals, social trends and on-chain data with ease—backed by AI and a sleek, dashboard-style interface.",
-      url: "http://trend-pulse-trade.vercel.app/",
-      tags: ["Trading", "AI", "Market Analysis"]
-    },
-    {
-      title: "DeFi Loan Options - Cross-Chain AI Agent",
-      description: "DeFi loan options across blockchains using AI-powered autonomous agents with Fetch.ai's Agentverse and powered by the ASI1-mini LLM.",
-      url: "https://crosschain-loan-whisperer.vercel.app/",
-      tags: ["DeFi", "AI", "Cross-Chain"]
-    }
-  ];
-
-  const blogPosts = [
-    {
-      title: "How Machine Learning and DevOps Are Revolutionizing Data-Driven Decision Making",
-      date: "March 15, 2025",
-      category: "Data Science"
-    },
-    {
-      title: "The Role of AI in Modern DevOps: Automating the Future of Software Development",
-      date: "February 20, 2025",
-      category: "DevOps"
+      title: "DevOps Pipeline Automator",
+      description: "End-to-end CI/CD pipeline automation tool with integrated testing, deployment, and monitoring capabilities.",
+      tech: ["Jenkins", "Terraform", "Ansible", "Prometheus"],
+      image: "/lovable-uploads/5b1b3909-9b75-44db-b8b5-0549d6f87766.png",
+      github: "#",
+      demo: "#",
+      featured: true
     }
   ];
 
   return (
     <section className="py-12 sm:py-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative">
-      {/* Grid Pattern Background with smaller 1x1 boxes */}
+      {/* Grid Pattern Background with navy blue theme */}
       <div 
-        className="absolute inset-0 opacity-15"
+        className="absolute inset-0 opacity-25"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(135,206,235,0.4) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(135,206,235,0.4) 1px, transparent 1px)
+            linear-gradient(rgba(30,58,138,0.6) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(30,58,138,0.6) 1px, transparent 1px)
           `,
           backgroundSize: '10px 10px'
         }}
       />
       
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
-        {/* Projects Section */}
-        <div className="space-y-8 sm:space-y-12">
-          {featuredProjects.map((project, index) => (
-            <div key={index} className="flex items-start gap-4 bg-blue-500/10 p-6 rounded-lg border border-blue-500/20 backdrop-blur-sm">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-white/10 rounded-full border border-white/20 flex items-center justify-center">
-                  <img 
-                    src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
-                    alt="Profile" 
-                    className="w-8 h-8 rounded-full"
-                  />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+            Projects
+          </h2>
+          <p className="text-white/70 text-lg max-w-2xl mx-auto">
+            Explore a curated selection of my most impactful projects, showcasing innovation and technical expertise.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+          {projects.map((project, index) => (
+            <div 
+              key={index} 
+              className="group relative overflow-hidden rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-300"
+            >
+              <img 
+                src={project.image}
+                alt={project.title}
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 p-4">
+                  <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
+                  <p className="text-white/80 text-sm mb-4">{project.description}</p>
+                  <div className="flex space-x-2">
+                    {project.tech.map((tech, i) => (
+                      <span key={i} className="bg-blue-600/20 text-blue-300 text-xs px-2 py-1 rounded-full">{tech}</span>
+                    ))}
+                  </div>
+                  <div className="flex space-x-3 mt-4">
+                    <a href={project.github} className="text-white hover:text-blue-400 transition-colors flex items-center">
+                      <Github className="w-4 h-4 mr-1" /> GitHub
+                    </a>
+                    <a href={project.demo} className="text-white hover:text-green-400 transition-colors flex items-center">
+                      <ExternalLink className="w-4 h-4 mr-1" /> Demo
+                    </a>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex-1 text-left">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{project.title}</h3>
-                <p className="text-sm text-white/70 mb-3 leading-relaxed">
-                  {project.description}
-                </p>
-                
-                <button className="flex items-center text-green-400 hover:text-green-300 transition-colors font-medium text-sm">
-                  Read case study
-                  <ArrowRight className="w-3 h-3 ml-2" />
-                </button>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Latest from the blog Section */}
-        <div className="mt-16 sm:mt-20">
-          <div className="mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2 text-left">
-              Latest from
-              <br />
-              the blog
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-            {blogPosts.map((post, index) => (
-              <div key={index} className="text-left space-y-3 bg-blue-500/10 p-6 rounded-lg border border-blue-500/20 backdrop-blur-sm">
-                <h3 className="text-lg sm:text-xl font-bold text-white leading-tight">
-                  {post.title}
-                </h3>
-                <p className="text-white/50 text-xs">{post.date}</p>
-                <div>
-                  <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                    post.category === 'Data Science' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' :
-                    'bg-green-500/20 text-green-400 border border-green-500/30'
-                  }`}>
-                    {post.category}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

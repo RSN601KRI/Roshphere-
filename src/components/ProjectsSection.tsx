@@ -31,10 +31,10 @@ const ProjectsSection = () => {
     <section className="py-12 sm:py-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
             Projects
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
+          <p className="text-white/70 text-base max-w-2xl mx-auto">
             Explore a curated selection of my most impactful projects, showcasing innovation and technical expertise.
           </p>
         </div>
@@ -50,23 +50,23 @@ const ProjectsSection = () => {
                   <img 
                     src={project.profileImage}
                     alt="Profile"
-                    className="w-12 h-12 rounded-full object-cover border-2 border-white/20"
+                    className="w-10 h-10 rounded-full object-cover border-2 border-white/20"
                   />
                 </div>
                 
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-xl font-bold text-white mb-3">
+                  <h3 className="text-lg font-bold text-white mb-2">
                     {project.title}
                   </h3>
                   
-                  <p className="text-white/80 text-base mb-4 leading-relaxed">
+                  <p className="text-white/80 text-sm mb-3 leading-relaxed">
                     {project.description}
                   </p>
                   
                   <div className="flex items-center justify-start">
                     <a 
                       href={project.caseStudyLink}
-                      className="text-green-400 hover:text-green-300 transition-colors text-sm font-medium inline-flex items-center"
+                      className="text-green-400 hover:text-green-300 transition-colors text-xs font-medium inline-flex items-center"
                     >
                       Read case study →
                     </a>

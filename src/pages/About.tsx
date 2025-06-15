@@ -1,3 +1,4 @@
+
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 import { useState } from 'react';
@@ -72,9 +73,9 @@ const About = () => {
             </div>
 
             {/* Main Content */}
-            <div className="lg:w-3/4 space-y-16">
+            <div className="lg:w-3/4 space-y-12">
               {/* Schedule a call button - positioned above name and aligned left */}
-              <div className="flex justify-start mb-8">
+              <div className="flex justify-start">
                 <button 
                   onClick={handleScheduleClick}
                   className={`relative flex items-center px-8 py-4 bg-white/5 border border-white/20 text-white rounded-xl transition-all duration-300 hover:bg-white/10 hover:border-blue-400/50 hover:scale-105 hover:shadow-lg backdrop-blur-sm ${
@@ -101,12 +102,12 @@ const About = () => {
               <div className="flex flex-col justify-start items-start gap-6">
                 <div>
                   <h1 className="text-5xl lg:text-6xl font-bold mb-4">Roshni Kumari</h1>
-                  <p className="text-xl text-white/70 mb-4">
+                  <p className="text-xl text-white/70 mb-6">
                     AWS Cloud Captain'25 • 3X @OCFA Certified • Business Fellow @perplexity • IEEE GU • Fellow @World Bank @McKinsey Forward • Flipkart Runner'24 • Fellow @AspireInstitute • β MLSA • AWS AL/ML Scholar'24
                   </p>
                   
                   {/* Social Links */}
-                  <div className="flex flex-wrap gap-3 mb-6">
+                  <div className="flex flex-wrap gap-3">
                     <a href="#" className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors">
                       <Github className="w-4 h-4 mr-2" />
                       GitHub
@@ -135,9 +136,9 @@ const About = () => {
 
               {/* Internship Experience */}
               <section id="internship">
-                <h2 className="text-4xl font-bold mb-12">Internship Experience</h2>
+                <h2 className="text-4xl font-bold mb-8">Internship Experience</h2>
                 
-                <div className="space-y-12">
+                <div className="space-y-8">
                   <div className="relative">
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-6">
                       <div>
@@ -208,7 +209,7 @@ const About = () => {
 
               {/* Education */}
               <section id="education">
-                <h2 className="text-4xl font-bold mb-12">Education</h2>
+                <h2 className="text-4xl font-bold mb-8">Education</h2>
                 
                 <div className="space-y-8">
                   <div className="relative">
@@ -226,9 +227,9 @@ const About = () => {
 
               {/* Projects */}
               <section id="projects">
-                <h2 className="text-4xl font-bold mb-12">Projects</h2>
+                <h2 className="text-4xl font-bold mb-8">Projects</h2>
                 
-                <div className="space-y-12">
+                <div className="space-y-8">
                   <div className="relative">
                     <div className="mb-6">
                       <h3 className="text-2xl font-bold text-white mb-4">Budgetlyzer</h3>
@@ -272,7 +273,7 @@ const About = () => {
               </section>
 
               {/* Copyright and Social Icons at the bottom */}
-              <section className="pt-16 border-t border-white/10">
+              <section className="pt-12 border-t border-white/10">
                 <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
                   <div className="flex items-center text-white/50 text-sm">
                     <span className="mr-2">©</span>

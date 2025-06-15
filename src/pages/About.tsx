@@ -1,7 +1,16 @@
+
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
+import { useState } from 'react';
 
 const About = () => {
+  const [clickEffect, setClickEffect] = useState(false);
+
+  const handleScheduleClick = () => {
+    setClickEffect(true);
+    setTimeout(() => setClickEffect(false), 600);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
       <Navigation />
@@ -65,12 +74,27 @@ const About = () => {
 
             {/* Main Content */}
             <div className="lg:w-3/4 space-y-16">
-              {/* Schedule a call button - positioned above name */}
-              <div className="flex justify-end mb-8">
-                <button className="flex items-center px-8 py-4 bg-white/5 border border-white/20 text-white rounded-xl transition-colors hover:bg-white/10 backdrop-blur-sm">
-                  <Calendar className="w-5 h-5 mr-3" />
-                  Schedule a call
-                  <span className="ml-3">→</span>
+              {/* Schedule a call button - positioned above name and aligned left */}
+              <div className="flex justify-start mb-8">
+                <button 
+                  onClick={handleScheduleClick}
+                  className={`relative flex items-center px-8 py-4 bg-white/5 border border-white/20 text-white rounded-xl transition-all duration-300 hover:bg-white/10 hover:border-blue-400/50 hover:scale-105 hover:shadow-lg backdrop-blur-sm ${
+                    clickEffect ? 'animate-pulse' : ''
+                  }`}
+                >
+                  {/* Blue light effect overlay */}
+                  <div className={`absolute inset-0 rounded-xl bg-gradient-to-r from-blue-400/20 to-cyan-400/20 transition-opacity duration-300 ${
+                    clickEffect ? 'opacity-100' : 'opacity-0'
+                  }`} />
+                  
+                  {/* Animated blue glow on click */}
+                  {clickEffect && (
+                    <div className="absolute inset-0 rounded-xl bg-blue-400/30 animate-ping" />
+                  )}
+                  
+                  <Calendar className="w-5 h-5 mr-3 relative z-10" />
+                  <span className="relative z-10">Schedule a call</span>
+                  <span className="ml-3 relative z-10 transition-transform duration-200 group-hover:translate-x-1">→</span>
                 </button>
               </div>
 

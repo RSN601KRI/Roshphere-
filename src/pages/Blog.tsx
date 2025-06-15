@@ -6,9 +6,9 @@ const Blog = () => {
   const blogPosts = [
     {
       id: "ml-devops-data-driven",
-      title: "How Machine Learning and DevOps Are Revolutionizing Data-Driven Decision Making",
-      date: "March 15, 2025",
-      category: "Data Science"
+      title: "It's Not Your Imagination: AI is Speeding Up the Pace of Change",
+      date: "May 31, 2025",
+      category: "AI & Technology"
     },
     {
       id: "ai-modern-devops",
@@ -64,6 +64,7 @@ const Blog = () => {
                     <span className={`px-2 py-1 rounded text-xs font-medium ${
                       post.category === 'Data Science' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' :
                       post.category === 'DevOps' ? 'bg-green-500/20 text-green-400 border border-green-500/30' :
+                      post.category === 'AI & Technology' ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30' :
                       'bg-purple-500/20 text-purple-400 border border-purple-500/30'
                     }`}>
                       {post.category}

@@ -28,11 +28,10 @@ const NewsletterSection = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="bg-gradient-to-br from-red-900/30 via-orange-900/20 to-yellow-900/30 backdrop-blur-lg border border-white/10 rounded-3xl p-8 sm:p-12 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-            Subscribe to Aditya's Newsletter
+            AI Unveiled: Smarter Tech, Bolder Futures
           </h2>
           <p className="text-base sm:text-lg text-white/80 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed">
-            A passionate computer science student specializing in Data Science, Machine Learning, and DevOps. 
-            Stay updated with my latest projects, insights, and tutorials on cutting-edge technologies.
+            Dive into the world of AI and tech with insights that simplify the complex. Explore how smarter technologies are shaping bold futures—and what it means for you.
           </p>
           
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -57,7 +56,7 @@ const NewsletterSection = () => {
       {/* Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-16 sm:mt-20">
         <div className="flex flex-col sm:flex-row justify-between items-center py-8 border-t border-white/10">
-          <p className="text-white/60 text-sm mb-4 sm:mb-0">© 2025 / Aditya Keshav</p>
+          <p className="text-white/60 text-sm mb-4 sm:mb-0">© 2025 / Roshni Kumari</p>
           <div className="flex space-x-4">
             <a href="#" className="text-white/60 hover:text-white transition-colors">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

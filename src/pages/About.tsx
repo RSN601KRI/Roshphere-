@@ -1,4 +1,5 @@
 
+
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 
@@ -191,10 +192,11 @@ const About = () => {
                   <div className="relative">
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-6">
                       <div>
-                        <h3 className="text-2xl font-bold text-white mb-2">Lovely Professional University</h3>
-                        <p className="text-green-400 font-medium">Bachelor of Technology in Computer Science and Engineering (CGPA: 7.76)</p>
+                        <h3 className="text-2xl font-bold text-white mb-2">Galgotias University</h3>
+                        <p className="text-green-400 font-medium">B.Tech in Computer Science and Engineering (CGPA: 8.33)</p>
+                        <p className="text-white/50 text-sm">Greater Noida, India</p>
                       </div>
-                      <span className="text-white/50 text-sm mt-2 sm:mt-0">2022 – 2026</span>
+                      <span className="text-white/50 text-sm mt-2 sm:mt-0">Oct 2022 – Aug 2026</span>
                     </div>
                   </div>
 
@@ -255,3 +257,4 @@ const About = () => {
 };
 
 export default About;
+

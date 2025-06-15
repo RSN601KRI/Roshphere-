@@ -1,4 +1,3 @@
-
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 import { useState } from 'react';
@@ -76,7 +75,7 @@ const About = () => {
             </div>
 
             {/* Main Content */}
-            <div className="lg:w-3/4 space-y-12">
+            <div className="lg:w-3/4 space-y-8">
               {/* Schedule a call button - positioned above name and aligned left */}
               <div className="flex justify-start">
                 <button 

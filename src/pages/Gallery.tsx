@@ -1,6 +1,9 @@
 import Navigation from '../components/Navigation';
+import { useState } from 'react';
 
 const Gallery = () => {
+  const [clickedItem, setClickedItem] = useState<number | null>(null);
+
   const galleryItems = [
     {
       type: 'project',
@@ -315,6 +318,10 @@ const Gallery = () => {
     }
   };
 
+  const handleItemClick = (index: number) => {
+    setClickedItem(clickedItem === index ? null : index);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
       <Navigation />
@@ -345,24 +352,39 @@ const Gallery = () => {
             {galleryItems.map((item, index) => (
               <div 
                 key={index}
-                className="break-inside-avoid bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer group"
+                className={`break-inside-avoid bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl overflow-hidden cursor-pointer group transition-all duration-500 ${
+                  clickedItem === index 
+                    ? 'scale-105 shadow-2xl shadow-purple-500/30 border-purple-500/50' 
+                    : 'hover:scale-102 hover:shadow-xl'
+                }`}
+                onClick={() => handleItemClick(index)}
               >
                 <div className="relative overflow-hidden">
                   <img 
                     src={item.image}
                     alt={item.title}
-                    className={`w-full object-cover rounded-t-3xl ${getSizeClasses(item.size)}`}
+                    className={`w-full object-cover rounded-t-3xl transition-all duration-500 ${getSizeClasses(item.size)} ${
+                      clickedItem === index ? 'scale-110' : 'group-hover:scale-105'
+                    }`}
                   />
                   
                   {/* Overlay with gradient */}
-                  <div className={`absolute inset-0 ${item.color} opacity-10 group-hover:opacity-20 transition-opacity duration-300 rounded-t-3xl`} />
+                  <div className={`absolute inset-0 ${item.color} transition-all duration-500 rounded-t-3xl ${
+                    clickedItem === index 
+                      ? 'opacity-40' 
+                      : 'opacity-10 group-hover:opacity-20'
+                  }`} />
                   
                   {/* Content overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 rounded-t-3xl">
+                  <div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-6 rounded-t-3xl transition-all duration-500 transform ${
+                    clickedItem === index 
+                      ? 'translate-y-0 opacity-100' 
+                      : 'translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100'
+                  }`}>
                     <h3 className="text-lg font-bold mb-2 text-white">{item.title}</h3>
                     <p className="text-sm text-white/90 mb-2">{item.subtitle}</p>
                     {item.brand && (
-                      <div className="text-xs text-white/75">{item.brand}</div>
+                      <div className="text-xs text-white/75 mb-2">{item.brand}</div>
                     )}
                     
                     {/* Type badge */}
@@ -377,6 +399,15 @@ const Gallery = () => {
                       </span>
                     </div>
                   </div>
+
+                  {/* Click indicator */}
+                  {clickedItem === index && (
+                    <div className="absolute top-4 right-4 bg-purple-500 text-white rounded-full p-2 animate-pulse">
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

@@ -1,3 +1,4 @@
+
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 
@@ -78,7 +79,7 @@ const About = () => {
                 <div>
                   <h1 className="text-5xl lg:text-6xl font-bold mb-4">Roshni Kumari</h1>
                   <p className="text-xl text-white/70 mb-4">
-                    Microsoft Certified | β MLSA | Data Science & DevOps Engineer
+                    AWS Cloud Captain'25 • 3X @OCFA Certified • Business Fellow @perplexity • IEEE GU • Fellow @World Bank @McKinsey Forward • Flipkart Runner'24 • Fellow @AspireInstitute • β MLSA • AWS AL/ML Scholar'24
                   </p>
                   
                   {/* Social Links */}

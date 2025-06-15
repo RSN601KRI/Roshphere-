@@ -168,6 +168,92 @@ const Gallery = () => {
       brand: 'Galgotias University',
       color: 'bg-gradient-to-br from-yellow-600 to-orange-700',
       size: 'large'
+    },
+    {
+      type: 'certificate',
+      title: 'Google Cloud Arcade Level 2',
+      subtitle: 'Google Cloud Arcade gaming achievement - Level 2 completion',
+      image: '/lovable-uploads/60809ba7-e71e-4dde-8617-40c19c1a34ac.png',
+      brand: 'Google Cloud',
+      color: 'bg-gradient-to-br from-blue-600 to-indigo-700',
+      size: 'medium'
+    },
+    {
+      type: 'certificate',
+      title: 'Google Cloud Arcade Level 1',
+      subtitle: 'Google Cloud Arcade gaming achievement - Level 1 completion',
+      image: '/lovable-uploads/2c09a3cf-8ed9-41d2-9f6f-2fc9db944f5f.png',
+      brand: 'Google Cloud',
+      color: 'bg-gradient-to-br from-blue-600 to-indigo-700',
+      size: 'medium'
+    },
+    {
+      type: 'swag',
+      title: 'Google Cloud T-Shirt',
+      subtitle: 'Google Cloud branded merchandise and apparel',
+      image: '/lovable-uploads/3e99edd2-0a3f-4f7d-818c-a5db01caacf3.png',
+      color: 'bg-gradient-to-br from-blue-500 to-cyan-600',
+      size: 'medium'
+    },
+    {
+      type: 'swag',
+      title: 'LinkedIn Marketing Insider Kit',
+      subtitle: 'LinkedIn MiiR branded mug and marketing insider merchandise',
+      image: '/lovable-uploads/78f97e7f-363b-4a1b-9000-e58f1fb75b90.png',
+      brand: 'LinkedIn',
+      color: 'bg-gradient-to-br from-blue-700 to-indigo-800',
+      size: 'large'
+    },
+    {
+      type: 'certificate',
+      title: 'LinkedIn Marketing Labs Certificate',
+      subtitle: 'Certified Marketing Expert program completion from LinkedIn',
+      image: '/lovable-uploads/d6cf12bf-b70e-4360-acef-875ef9a3f8fa.png',
+      brand: 'LinkedIn Marketing Labs',
+      color: 'bg-gradient-to-br from-blue-700 to-indigo-800',
+      size: 'large'
+    },
+    {
+      type: 'event',
+      title: 'Tech Conference Group Photo',
+      subtitle: 'Networking and collaboration at technology conference',
+      image: '/lovable-uploads/2cba9860-6d17-4f05-ac84-a7042ce054b5.png',
+      color: 'bg-gradient-to-br from-purple-600 to-pink-700',
+      size: 'large'
+    },
+    {
+      type: 'event',
+      title: 'DevFest Delhi 2023 Speaking',
+      subtitle: 'Speaking at Google Developer Groups DevFest Delhi 2023',
+      image: '/lovable-uploads/97fa3b22-669b-40ad-9fe3-008640fd000d.png',
+      brand: 'Google Developer Groups',
+      color: 'bg-gradient-to-br from-blue-600 to-green-600',
+      size: 'large'
+    },
+    {
+      type: 'swag',
+      title: 'DevFest Delhi 2023 Swag Kit',
+      subtitle: 'Google Developer Groups DevFest Delhi merchandise and swag',
+      image: '/lovable-uploads/ff7f2ec2-a63f-4905-8acb-5dd8cf3ff9b7.png',
+      brand: 'Google Developer Groups',
+      color: 'bg-gradient-to-br from-blue-600 to-green-600',
+      size: 'medium'
+    },
+    {
+      type: 'swag',
+      title: 'Community Motivation Sticker',
+      subtitle: 'Motivational community engagement merchandise',
+      image: '/lovable-uploads/e14c8fdd-3305-4bd8-8671-065aa578531c.png',
+      color: 'bg-gradient-to-br from-purple-600 to-pink-700',
+      size: 'small'
+    },
+    {
+      type: 'event',
+      title: 'Tech Community Networking',
+      subtitle: 'Building connections in the tech community',
+      image: '/lovable-uploads/a2d3debd-84de-4e61-802c-f98a8ff6cd7b.png',
+      color: 'bg-gradient-to-br from-gray-600 to-gray-800',
+      size: 'large'
     }
   ];
 

@@ -1,4 +1,3 @@
-
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -378,10 +377,16 @@ const CaseStudy = () => {
     },
     defi: {
       title: "🌐 Cross-Chain Loan Agent",
-      subtitle: "Cross-Chain DeFi Lending Platform",
+      subtitle: "Discover optimal DeFi lending opportunities across blockchains using AI-powered autonomous agents",
       date: "August 30, 2024",
-      introduction: "The Cross-Chain Loan Agent is a cutting-edge Web3-native tool that simplifies decentralized finance (DeFi) lending through agent-based AI architecture. Built with Fetch.ai's Agentverse and powered by ASI1-mini LLM, it autonomously discovers, ranks, and explains loan options across multiple chains—empowering users to make informed decisions in a fragmented lending ecosystem.",
-      objective: "DeFi lending spans across dozens of chains and protocols, making optimal loan discovery a time-consuming and error-prone task. This project solves that by automating discovery of lending offers across Ethereum, Polygon, BNB Chain, and others, ranking offers based on customizable preferences (e.g., lowest collateral, best APR), explaining choices using conversational AI with LLM-powered reasoning, and delivering insights in real-time via a user-friendly web interface.",
+      overview: "The Cross-Chain Loan Agent is a cutting-edge Web3-native tool that simplifies decentralized finance (DeFi) lending through agent-based AI architecture. Built with Fetch.ai's Agentverse and powered by ASI1-mini LLM, it autonomously discovers, ranks, and explains loan options across multiple chains—empowering users to make informed decisions in a fragmented lending ecosystem.",
+      quote: "The future of AI isn't centralized—it's agentic, decentralized, and Web3-native.",
+      introduction: "DeFi lending spans across dozens of chains and protocols, making optimal loan discovery a time-consuming and error-prone task. This project solves that by automating discovery of lending offers across Ethereum, Polygon, BNB Chain, and others, ranking offers based on customizable preferences (e.g., lowest collateral, best APR), explaining choices using conversational AI with LLM-powered reasoning, and delivering insights in real-time via a user-friendly web interface.",
+      objective: "To build an all-in-one platform where AI meets market data, providing real-time signals, insights, and community-driven strategies for smart trading in a volatile, multi-source investment landscape.",
+      useCase: {
+        query: "What's the best ETH loan with low collateral?",
+        response: "A ranked list of live loan offers (e.g., from Aave, Compound, Venus) across chains, along with a breakdown of why each offer is recommended."
+      },
       architecture: [
         { component: "Agents", stack: "Fetch.ai Agentverse, uAgents Framework" },
         { component: "AI/LLM", stack: "ASI1-mini for question understanding and reasoning" },
@@ -412,6 +417,37 @@ const CaseStudy = () => {
           description: "Responses are generated and explained using the ASI1-mini model."
         }
       ],
+      uiDesign: [
+        "Inspired by fintech dashboards such as Aave, BlockFi, and Zapper",
+        "Chat-style Interface for AI queries",
+        "Dark/Light Mode Toggle for accessibility", 
+        "Tabular + Card Views for ranked loan options",
+        "Interactive Filters: loan type, interest rate, chain, duration"
+      ],
+      architectureDiagram: `User
+  │
+  ▼
+[ASI:One Web App] — Conversational Interface
+  │
+  ▼
+[Cross-Chain Loan Agent] ↔ [ASI1-mini LLM]
+  │
+  ▼
+[DeFi Protocol APIs] (Aave, Compound, Venus, etc.)
+  │
+  ▼
+Ranked Loan List with Explanations`,
+      projectStructure: `/src
+  /components      → UI Components
+  /agents          → uAgent logic
+  /utils           → API + ranking logic
+  App.js
+  index.js
+
+/agentverse        → Config and metadata for Agent registration
+  config.yaml
+
+README.md`,
       techHighlights: [
         "Fully decentralized architecture using Fetch.ai chat protocol",
         "No user PII or private key storage",
@@ -436,11 +472,22 @@ const CaseStudy = () => {
           description: "Real-time rate monitoring for profitable opportunities."
         }
       ],
+      howToUse: [
+        "Open the ASI:One Web App",
+        "Search for Cross-Chain Loan Agent",
+        "Ask queries like: 'Compare loans for 2 ETH with lowest interest rate.' or 'What's the cheapest DAI loan on Polygon?'",
+        "View ranked loan results with reasons and metrics."
+      ],
+      security: [
+        "Fully decentralized architecture using Fetch.ai chat protocol",
+        "No user PII or private key storage", 
+        "All smart contract interactions are transparent and verifiable"
+      ],
       futureEnhancements: [
-        "Wallet integration for customized loan suggestions",
-        "Real-time DeFi protocol updates + push notifications",
-        "Support for NFT-backed loans and Real World Assets (RWAs)",
-        "AI-powered risk scoring system for loans"
+        "🔐 Wallet integration for customized loan suggestions",
+        "📈 Real-time DeFi protocol updates + push notifications",
+        "🖼 Support for NFT-backed loans and Real World Assets (RWAs)",
+        "📊 AI-powered risk scoring system for loans"
       ],
       installation: [
         "Prerequisites: Node.js v18+, Fetch.ai Agentverse account, Access to the ASI:One Web App",
@@ -448,6 +495,13 @@ const CaseStudy = () => {
         "Install dependencies: cd cross-chain-loan-agent && npm install",
         "Start development: npm run dev",
         "Note: Agent registration and simulation must be completed via Agentverse"
+      ],
+      finalThought: "Smart agents are the future of DeFi navigation. Cross-Chain Loan Agent brings clarity, precision, and intelligence to a chaotic lending ecosystem—one conversation at a time.",
+      links: [
+        { name: "🌐 Agentverse Portal", url: "#" },
+        { name: "🚀 ASI:One Web App", url: "#" },
+        { name: "🧠 Learn about ASI1-mini", url: "#" },
+        { name: "📖 Fetch.ai Documentation", url: "#" }
       ]
     }
   };
@@ -679,8 +733,271 @@ const CaseStudy = () => {
     );
   }
 
+  // For DeFi project, render the comprehensive case study
+  if (projectId === 'defi') {
+    const defiProject = project as typeof projectData.defi;
+    
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+        <Navigation />
+        
+        {/* Grid Pattern Background */}
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(135,206,235,0.2) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(135,206,235,0.2) 1px, transparent 1px)
+            `,
+            backgroundSize: '20px 20px'
+          }}
+        />
+
+        <div className="relative z-10 pt-32 pb-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            {/* Back Button */}
+            <button 
+              onClick={() => navigate('/work')}
+              className="flex items-center text-white/70 hover:text-white transition-colors mb-8"
+            >
+              <ArrowLeft className="w-5 h-5 mr-2" />
+              Projects
+            </button>
+
+            {/* Header */}
+            <div className="mb-12">
+              <h1 className="text-4xl sm:text-5xl font-bold mb-4">{defiProject.title}</h1>
+              <h2 className="text-xl sm:text-2xl text-white/80 mb-6">{defiProject.subtitle}</h2>
+              
+              <div className="flex items-center gap-4 mb-8">
+                <img 
+                  src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
+                  alt="Profile" 
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <span className="text-white/60">{defiProject.date}</span>
+              </div>
+            </div>
+
+            {/* Overview */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">📌 Overview</h3>
+              <p className="text-lg text-white/80 leading-relaxed mb-6">
+                {defiProject.overview}
+              </p>
+              <div className="bg-white/5 p-6 rounded-lg border border-white/10 text-center">
+                <p className="text-white/90 italic text-lg">
+                  "{defiProject.quote}"
+                </p>
+              </div>
+            </div>
+
+            {/* Objective */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🎯 Objective</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                {defiProject.introduction}
+              </p>
+            </div>
+
+            {/* Use Case Example */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🔍 Use Case Example</h3>
+              <div className="bg-gray-800/50 p-6 rounded-lg border border-white/10">
+                <p className="text-green-400 font-medium mb-2">User: "{defiProject.useCase.query}"</p>
+                <p className="text-white/80"><strong>Agent Response:</strong> {defiProject.useCase.response}</p>
+              </div>
+            </div>
+
+            {/* Core Features */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">💡 Core Features</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border border-white/20 rounded-lg">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left p-4 font-bold">Feature</th>
+                      <th className="text-left p-4 font-bold">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {defiProject.features.map((item, index) => (
+                      <tr key={index} className="border-b border-white/10">
+                        <td className="p-4 text-white/90 font-medium">{item.feature}</td>
+                        <td className="p-4 text-white/80">{item.description}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* UI Design */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🖼️ UI Design</h3>
+              <div className="space-y-3">
+                {defiProject.uiDesign.map((design, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{design}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Tech Stack */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">⚙️ Tech Stack</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border border-white/20 rounded-lg">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left p-4 font-bold">Layer</th>
+                      <th className="text-left p-4 font-bold">Tools / Libraries</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {defiProject.architecture.map((item, index) => (
+                      <tr key={index} className="border-b border-white/10">
+                        <td className="p-4 text-white/90">{item.component}</td>
+                        <td className="p-4 text-white/80">{item.stack}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Architecture */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🧠 Architecture</h3>
+              <div className="bg-gray-800/50 p-6 rounded-lg border border-white/10">
+                <pre className="text-white/80 text-sm whitespace-pre-wrap">
+                  {defiProject.architectureDiagram}
+                </pre>
+              </div>
+            </div>
+
+            {/* Getting Started */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🚀 Getting Started</h3>
+              <div className="space-y-3">
+                {defiProject.installation.map((step, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{step}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* How to Use */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">📚 How to Use</h3>
+              <div className="space-y-3">
+                {defiProject.howToUse.map((step, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{step}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Project Structure */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🧩 Project Structure</h3>
+              <div className="bg-gray-800/50 p-6 rounded-lg border border-white/10">
+                <pre className="text-white/80 text-sm whitespace-pre-wrap">
+                  {defiProject.projectStructure}
+                </pre>
+              </div>
+            </div>
+
+            {/* Security & Privacy */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🔐 Security & Privacy</h3>
+              <div className="space-y-3">
+                {defiProject.security.map((security, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{security}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Use Cases */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🔍 Use Cases</h3>
+              <div className="space-y-6">
+                {defiProject.useCases.map((useCase, index) => (
+                  <div key={index}>
+                    <h4 className="text-xl font-bold mb-2">{useCase.title}</h4>
+                    <p className="text-white/80 ml-6">{useCase.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Future Enhancements */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🚀 Future Enhancements</h3>
+              <div className="space-y-3">
+                {defiProject.futureEnhancements.map((enhancement, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{enhancement}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Important Links */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🔗 Important Links</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {defiProject.links.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.url}
+                    className="flex items-center p-4 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition-colors"
+                  >
+                    <span className="text-white/80">{link.name}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Final Thought */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🧠 Final Thought</h3>
+              <div className="bg-white/5 p-6 rounded-lg border border-white/10 text-center">
+                <p className="text-white/90 italic text-lg">
+                  "{defiProject.finalThought}"
+                </p>
+              </div>
+            </div>
+
+            {/* Demo Video */}
+            <div className="text-center">
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+              >
+                🎬 Watch Demo Video
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // For other projects with full structure, use detailed template
-  if (projectId === 'nexalyst' || projectId === 'solarshare' || projectId === 'budgetlyzer' || projectId === 'defi') {
+  if (projectId === 'nexalyst' || projectId === 'solarshare' || projectId === 'budgetlyzer') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
         <Navigation />

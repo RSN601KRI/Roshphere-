@@ -1,5 +1,3 @@
-
-
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 
@@ -200,16 +198,6 @@ const About = () => {
                       <span className="text-white/50 text-sm mt-2 sm:mt-0">Oct 2022 – Aug 2026</span>
                     </div>
                   </div>
-
-                  <div className="relative">
-                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-6">
-                      <div>
-                        <h3 className="text-2xl font-bold text-white mb-2">Resonance Eduventures Limited</h3>
-                        <p className="text-green-400 font-medium">Intermediate</p>
-                      </div>
-                      <span className="text-white/50 text-sm mt-2 sm:mt-0">2020 – 2022</span>
-                    </div>
-                  </div>
                 </div>
               </section>
 
@@ -258,4 +246,3 @@ const About = () => {
 };
 
 export default About;
-

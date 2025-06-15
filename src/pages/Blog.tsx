@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 
@@ -82,8 +81,72 @@ const Blog = () => {
             ))}
           </div>
 
+          {/* Social Links Section */}
+          <div className="mt-20">
+            <div className="text-center mb-8">
+              <h2 className="text-xl sm:text-2xl font-bold mb-6 text-white">
+                Connect with Roshni
+              </h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
+                <a 
+                  href="https://medium.com/@roshni_k06" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg p-4 transition-all duration-300 hover:scale-105 text-center"
+                >
+                  <div className="text-white font-medium text-sm">Medium</div>
+                </a>
+                
+                <a 
+                  href="https://rsnkrxz.hashnode.dev/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-500/20 hover:bg-blue-500/30 border border-blue-500/30 rounded-lg p-4 transition-all duration-300 hover:scale-105 text-center"
+                >
+                  <div className="text-blue-400 font-medium text-sm">Hashnode</div>
+                </a>
+                
+                <a 
+                  href="https://rsnkrzx.substack.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-orange-500/20 hover:bg-orange-500/30 border border-orange-500/30 rounded-lg p-4 transition-all duration-300 hover:scale-105 text-center"
+                >
+                  <div className="text-orange-400 font-medium text-sm">Substack</div>
+                </a>
+                
+                <a 
+                  href="https://www.youtube.com/@roshnikum_11" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-red-500/20 hover:bg-red-500/30 border border-red-500/30 rounded-lg p-4 transition-all duration-300 hover:scale-105 text-center"
+                >
+                  <div className="text-red-400 font-medium text-sm">YouTube</div>
+                </a>
+                
+                <a 
+                  href="https://lu.ma/user/rsnkrzx" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/30 rounded-lg p-4 transition-all duration-300 hover:scale-105 text-center"
+                >
+                  <div className="text-purple-400 font-medium text-sm">Workshops</div>
+                </a>
+                
+                <a 
+                  href="https://bento.me/roshnikri" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-green-500/20 hover:bg-green-500/30 border border-green-500/30 rounded-lg p-4 transition-all duration-300 hover:scale-105 text-center"
+                >
+                  <div className="text-green-400 font-medium text-sm">Portfolio</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
           {/* Newsletter Section */}
-          <div className="mt-24">
+          <div className="mt-16">
             <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 backdrop-blur-sm border border-red-500/20 rounded-2xl p-8 text-center">
               <h2 className="text-xl sm:text-2xl font-bold mb-4">
                 Subscribe to Roshni's Newsletter

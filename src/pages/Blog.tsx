@@ -5,6 +5,12 @@ import Navigation from '../components/Navigation';
 const Blog = () => {
   const blogPosts = [
     {
+      id: "solana-mixer-platforms",
+      title: "The Rise and Impact of Mixer Platforms in the Solana Ecosystem: A Comprehensive Analysis",
+      date: "April 27, 2025",
+      category: "Blockchain Research"
+    },
+    {
       id: "ml-devops-data-driven",
       title: "It's Not Your Imagination: AI is Speeding Up the Pace of Change",
       date: "May 31, 2025",
@@ -65,6 +71,7 @@ const Blog = () => {
                       post.category === 'Data Science' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' :
                       post.category === 'DevOps' ? 'bg-green-500/20 text-green-400 border border-green-500/30' :
                       post.category === 'AI & Technology' ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30' :
+                      post.category === 'Blockchain Research' ? 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30' :
                       'bg-purple-500/20 text-purple-400 border border-purple-500/30'
                     }`}>
                       {post.category}

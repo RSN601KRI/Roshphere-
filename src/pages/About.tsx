@@ -19,6 +19,14 @@ const About = () => {
         }}
       />
 
+      {/* Schedule a call button - positioned at top right */}
+      <div className="fixed top-32 right-8 z-40">
+        <button className="flex items-center px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-full transition-colors shadow-lg">
+          <Calendar className="w-5 h-5 mr-2" />
+          Schedule a call
+        </button>
+      </div>
+
       <div className="relative z-10 pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
@@ -67,7 +75,7 @@ const About = () => {
             {/* Main Content */}
             <div className="lg:w-3/4 space-y-16">
               {/* Header Section */}
-              <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+              <div className="flex flex-col justify-start items-start gap-6">
                 <div>
                   <h1 className="text-5xl lg:text-6xl font-bold mb-4">Roshni Kumari</h1>
                   <p className="text-xl text-white/70 mb-4">
@@ -93,12 +101,6 @@ const About = () => {
                     </a>
                   </div>
                 </div>
-                
-                {/* Schedule Button - Made smaller */}
-                <button className="flex items-center px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-lg transition-colors text-sm">
-                  <Calendar className="w-4 h-4 mr-2" />
-                  Schedule a call
-                </button>
               </div>
 
               {/* Introduction */}

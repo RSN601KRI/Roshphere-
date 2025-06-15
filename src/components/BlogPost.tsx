@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import Navigation from './Navigation';
 
@@ -24,8 +23,8 @@ A cryptocurrency mixer (or tumbler) is a service that accepts cryptocurrency dep
 
 Within the Solana ecosystem, mixers primarily manifest in two forms:
 
-1. **Native Mixers** operating directly on Solana
-2. **Cross-Chain Bridges** used to move funds off-chain, mix externally, and return
+1. Native Mixers operating directly on Solana
+2. Cross-Chain Bridges used to move funds off-chain, mix externally, and return
 
 ### Key Native Solana Mixers:
 
@@ -60,10 +59,10 @@ USDC remains the most bridged asset, representing 38% of total inbound bridge vo
 
 Key strategies employed:
 
-- **Transaction Delays**: Random waiting periods between deposit and withdrawal
-- **Splitting Funds**: Dividing transactions into many smaller outputs
-- **Stealth Addresses**: Temporary one-time addresses for withdrawals
-- **Zero-Knowledge Proofs (zk-SNARKs)**: Used by Wix.cash to create untraceable transactions
+- Transaction Delays: Random waiting periods between deposit and withdrawal
+- Splitting Funds: Dividing transactions into many smaller outputs
+- Stealth Addresses: Temporary one-time addresses for withdrawals
+- Zero-Knowledge Proofs (zk-SNARKs): Used by Wix.cash to create untraceable transactions
 
 These methods, especially when combined, significantly hinder tracking efforts.
 
@@ -71,23 +70,23 @@ These methods, especially when combined, significantly hinder tracking efforts.
 
 Using Arkham Intelligence and wallet clustering tools, common behaviors were observed:
 
-- **Linked Addresses**: Despite using mixers, sloppy patterns (e.g., repeated timing, fixed output sizes) allow clustering related wallets
-- **Bundled Transfers**: Funds often exit a mixer into "collector wallets" before further dispersion across multiple layers
-- **Bridge Back-and-Forth**: Funds bridged out (to ETH, BSC), mixed externally, then re-bridged to Solana for cashouts
+- Linked Addresses: Despite using mixers, sloppy patterns (e.g., repeated timing, fixed output sizes) allow clustering related wallets
+- Bundled Transfers: Funds often exit a mixer into "collector wallets" before further dispersion across multiple layers
+- Bridge Back-and-Forth: Funds bridged out (to ETH, BSC), mixed externally, then re-bridged to Solana for cashouts
 
 ## Validator Involvement and Ecosystem Risks
 
 While direct validator collusion has not been extensively evidenced, passive participation is notable:
 
-- **Validator Earnings**: Some validators process transactions linked to mixers, earning fees without performing active due diligence
-- **Economic Risks**: Reputational harm and potential regulatory penalties threaten validator operations if associated with illicit funds
+- Validator Earnings: Some validators process transactions linked to mixers, earning fees without performing active due diligence
+- Economic Risks: Reputational harm and potential regulatory penalties threaten validator operations if associated with illicit funds
 
 ## Recommendations to Mitigate Mixer Misuse
 
-1. **Enhanced Due Diligence**: Implement robust KYC/AML procedures
-2. **Transaction Monitoring**: Deploy advanced analytics to detect suspicious patterns
-3. **Regulatory Compliance**: Establish clear guidelines for mixer operations
-4. **Community Vigilance**: Encourage responsible reporting of illicit activities
+1. Enhanced Due Diligence: Implement robust KYC/AML procedures
+2. Transaction Monitoring: Deploy advanced analytics to detect suspicious patterns
+3. Regulatory Compliance: Establish clear guidelines for mixer operations
+4. Community Vigilance: Encourage responsible reporting of illicit activities
 
 ## Conclusion
 
@@ -129,7 +128,7 @@ Let's set the stage. In just 17 months, ChatGPT reached 800 million users. Costs
 
 The bottom line?
 
-**AI is cheaper, faster, and smarter — and now, it's in your hands.**
+AI is cheaper, faster, and smarter — and now, it's in your hands.
 
 But with hundreds of new tools launching every month, which ones are actually useful? Let me save you the scroll: here are my top AI tools for boosting productivity and creativity, complete with real-world use cases.
 
@@ -141,80 +140,80 @@ Forget feeling overwhelmed; let me share some game-changers:
 
 ## 🔍 1. ChatGPT — Your All-in-One Research Buddy
 
-**What it does:** Think of ChatGPT like a brainy assistant who's read the entire internet and can write, explain, brainstorm, or debug code in seconds.
+What it does: Think of ChatGPT like a brainy assistant who's read the entire internet and can write, explain, brainstorm, or debug code in seconds.
 
-**Use Case:**
+Use Case:
 
-- 💡 **Student hack:** Paste your lecture notes and ask ChatGPT to summarize them into flashcards or a quiz.
-- 🧑‍💼 **Solo founder trick:** Use it to draft email copy, marketing ideas, or even code for your landing page.
+- 💡 Student hack: Paste your lecture notes and ask ChatGPT to summarize them into flashcards or a quiz.
+- 🧑‍💼 Solo founder trick: Use it to draft email copy, marketing ideas, or even code for your landing page.
 
-🔗 **Pro Tip:** Combine ChatGPT with plugins (like Canva or Zapier) to automate content creation and workflows!
+🔗 Pro Tip: Combine ChatGPT with plugins (like Canva or Zapier) to automate content creation and workflows!
 
 ## ✍️ 2. Notion AI — Smarter Notes & Docs
 
-**What it does:** Notion AI lives inside your Notion workspace and helps you brainstorm, summarize, autofill tasks, or even rewrite your messy meeting notes.
+What it does: Notion AI lives inside your Notion workspace and helps you brainstorm, summarize, autofill tasks, or even rewrite your messy meeting notes.
 
-**Use Case:**
+Use Case:
 
-- 🗒️ **Creator boost:** Turn a rough blog outline into a full draft, complete with intro, headings, and SEO keywords.
-- 🎓 **Study smarter:** Ask it to turn class notes into an outline for an essay or explain concepts in simpler terms.
+- 🗒️ Creator boost: Turn a rough blog outline into a full draft, complete with intro, headings, and SEO keywords.
+- 🎓 Study smarter: Ask it to turn class notes into an outline for an essay or explain concepts in simpler terms.
 
-🧠 **Tip:** Try typing "/ask AI" in Notion to get started faster.
+🧠 Tip: Try typing "/ask AI" in Notion to get started faster.
 
 ## 🎨 3. Canva Magic Studio — Design Without the Designer
 
-**What it does:** Canva's Magic Studio now includes AI features like Magic Write (text generation), Magic Edit (smart image edits), and even video generation.
+What it does: Canva's Magic Studio now includes AI features like Magic Write (text generation), Magic Edit (smart image edits), and even video generation.
 
-**Use Case:**
+Use Case:
 
-- 📱 **Side hustle help:** Design Instagram posts, YouTube thumbnails, or ad creatives in minutes — even if you've never used Photoshop.
-- 📚 **Student bonus:** Create polished presentations and resumes with just a few clicks.
+- 📱 Side hustle help: Design Instagram posts, YouTube thumbnails, or ad creatives in minutes — even if you've never used Photoshop.
+- 📚 Student bonus: Create polished presentations and resumes with just a few clicks.
 
-🎥 **Bonus:** Use the AI video tools to storyboard your next content series.
+🎥 Bonus: Use the AI video tools to storyboard your next content series.
 
 ## 🧠 4. Perplexity AI — Google, But Smarter
 
-**What it does:** Perplexity AI is like a research assistant who doesn't just give links — it gives answers. It cites sources, breaks down topics, and helps you dig deep fast.
+What it does: Perplexity AI is like a research assistant who doesn't just give links — it gives answers. It cites sources, breaks down topics, and helps you dig deep fast.
 
-**Use Case:**
+Use Case:
 
-- 📖 **Essay pro:** Need to write a paper on climate policy? Ask Perplexity to summarize recent reports with citations.
-- 💼 **Startup founder:** Use it to research market trends or customer behaviors with source-backed data.
+- 📖 Essay pro: Need to write a paper on climate policy? Ask Perplexity to summarize recent reports with citations.
+- 💼 Startup founder: Use it to research market trends or customer behaviors with source-backed data.
 
 🔍 It's your shortcut to high-quality, reliable research.
 
 ## 🎤 5. Descript — Edit Video Like a Google Doc
 
-**What it does:** Descript lets you edit audio and video just by editing the transcript. Delete words = delete footage. It also offers AI-generated voiceovers, filler-word removal, and more.
+What it does: Descript lets you edit audio and video just by editing the transcript. Delete words = delete footage. It also offers AI-generated voiceovers, filler-word removal, and more.
 
-**Use Case:**
+Use Case:
 
-- 🎬 **YouTuber tool:** Record your video, upload it to Descript, cut out "ums" and pauses in seconds.
-- 🎤 **Podcaster ease:** Create audiograms, transcriptions, and clean edits in one place.
+- 🎬 YouTuber tool: Record your video, upload it to Descript, cut out "ums" and pauses in seconds.
+- 🎤 Podcaster ease: Create audiograms, transcriptions, and clean edits in one place.
 
 🎧 Great for creators and educators who want studio-level content with zero editing skills.
 
 ## 📆 6. Motion — AI-Powered Calendar & Task Planner
 
-**What it does:** Motion uses AI to automatically plan your day based on deadlines, meetings, and your working hours. It reshuffles tasks if you get off track.
+What it does: Motion uses AI to automatically plan your day based on deadlines, meetings, and your working hours. It reshuffles tasks if you get off track.
 
-**Use Case:**
+Use Case:
 
-- 🧑‍🎓 **Student win:** Block study sessions around classes and break down big projects.
-- 👩‍💻 **Entrepreneur peace:** Juggle 5 projects and still make time for lunch? Let Motion handle it.
+- 🧑‍🎓 Student win: Block study sessions around classes and break down big projects.
+- 👩‍💻 Entrepreneur peace: Juggle 5 projects and still make time for lunch? Let Motion handle it.
 
 ⏳ Ideal if your to-do list is always growing but never shrinking.
 
 ## 📸 7. Pika Labs — AI Video Generation from Text
 
-**What it does:** Pika turns simple text prompts into short animated videos. It's like DALL·E, but for video.
+What it does: Pika turns simple text prompts into short animated videos. It's like DALL·E, but for video.
 
-**Use Case:**
+Use Case:
 
-- 🔥 **Content creator hack:** Generate an eye-catching trailer or explain a concept with a 30-second animation.
-- 🎓 **Visual learners:** Bring textbook concepts to life in a way that sticks.
+- 🔥 Content creator hack: Generate an eye-catching trailer or explain a concept with a 30-second animation.
+- 🎓 Visual learners: Bring textbook concepts to life in a way that sticks.
 
-🌟 **Bonus:** It's still early — so being an early adopter gives you creative edge
+🌟 Bonus: It's still early — so being an early adopter gives you creative edge
 
 ## 🚀 The Bottom Line: Stay Curious, Stay Ahead
 
@@ -222,11 +221,11 @@ We're living in a time where anyone with curiosity and a laptop can build, creat
 
 The solution isn't to master everything. It's to strategically adopt the tools that solve your specific friction points:
 
-- **Stuck Writing?** → LLMs (ChatGPT/Gemini/Claude)
-- **Need Video Fast?** → AI Video Tools (HeyGen/Pika/Runway)
-- **Coding Taking Ages?** → Copilots (GitHub Copilot/Replit)
-- **Design Skills Lagging?** → AI Design (Canva Magic/Adobe Firefly)
-- **Drowning in Research?** → Knowledge Synthesizers (Perplexity/Scite)
+- Stuck Writing? → LLMs (ChatGPT/Gemini/Claude)
+- Need Video Fast? → AI Video Tools (HeyGen/Pika/Runway)
+- Coding Taking Ages? → Copilots (GitHub Copilot/Replit)
+- Design Skills Lagging? → AI Design (Canva Magic/Adobe Firefly)
+- Drowning in Research? → Knowledge Synthesizers (Perplexity/Scite)
 
 These tools leverage the insane speed of AI advancement to give you superpowers: saving time, boosting quality, and unlocking creativity. The competition among AI companies is fierce and their long-term profitability uncertain, but right now, this translates to powerful, accessible tools for you. As Mary Meeker wisely advises: patience is key as the market shakes out. But for productivity? The time to experiment and integrate is absolutely now.
 
@@ -288,10 +287,10 @@ AI-powered tools can adjust campaigns in real-time based on performance data, ma
 
 ## The Tools Transforming Marketing:
 
-- **Customer Segmentation**: AI identifies micro-segments for targeted campaigns
-- **Content Generation**: Automated creation of personalized content
-- **Chatbots and Virtual Assistants**: 24/7 customer engagement
-- **Programmatic Advertising**: Intelligent ad buying and placement
+- Customer Segmentation: AI identifies micro-segments for targeted campaigns
+- Content Generation: Automated creation of personalized content
+- Chatbots and Virtual Assistants: 24/7 customer engagement
+- Programmatic Advertising: Intelligent ad buying and placement
 
 The future belongs to marketers who can harness the power of AI while maintaining the human touch that builds lasting brand relationships.`
     }
@@ -372,8 +371,6 @@ The future belongs to marketers who can harness the power of AI while maintainin
                   return <h2 key={index} className="text-2xl font-bold mt-8 mb-4 text-white">{paragraph.substring(3)}</h2>;
                 } else if (paragraph.startsWith('### ')) {
                   return <h3 key={index} className="text-xl font-bold mt-6 mb-3 text-white">{paragraph.substring(4)}</h3>;
-                } else if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-                  return <p key={index} className="font-bold mt-4 mb-2 text-white">{paragraph.slice(2, -2)}</p>;
                 } else if (paragraph.startsWith('- ')) {
                   return <li key={index} className="ml-4 mb-2">{paragraph.substring(2)}</li>;
                 } else if (paragraph.trim() === '') {

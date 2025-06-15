@@ -1,8 +1,87 @@
-
 import Navigation from '../components/Navigation';
 
 const Gallery = () => {
   const galleryItems = [
+    {
+      type: 'project',
+      title: 'Web Development Project',
+      subtitle: 'Modern web development with latest technologies',
+      image: '/lovable-uploads/1515876d-049d-4ff7-bbbf-7296661a9c1d.png',
+      color: 'bg-gradient-to-br from-blue-600 to-purple-700',
+      size: 'large'
+    },
+    {
+      type: 'project',
+      title: 'Circuit Board Design',
+      subtitle: 'Hardware and electronics engineering',
+      image: '/lovable-uploads/cbc33d3c-5a4d-4292-9f93-d4173c06f41e.png',
+      color: 'bg-gradient-to-br from-green-600 to-teal-700',
+      size: 'medium'
+    },
+    {
+      type: 'project',
+      title: 'Programming Environment',
+      subtitle: 'Development workspace and coding setup',
+      image: '/lovable-uploads/cba0a704-0e14-453b-9715-9a66119f3fd9.png',
+      color: 'bg-gradient-to-br from-orange-600 to-red-700',
+      size: 'large'
+    },
+    {
+      type: 'project',
+      title: 'Laptop Development',
+      subtitle: 'Mobile development and programming',
+      image: '/lovable-uploads/bd415272-a62a-4d51-a3a8-ab140fc8f985.png',
+      color: 'bg-gradient-to-br from-purple-600 to-pink-700',
+      size: 'medium'
+    },
+    {
+      type: 'project',
+      title: 'AI & Robotics',
+      subtitle: 'Artificial intelligence and robotics research',
+      image: '/lovable-uploads/d657fe26-a7a6-4f7b-8a82-ac294aae001f.png',
+      color: 'bg-gradient-to-br from-gray-600 to-gray-800',
+      size: 'large'
+    },
+    {
+      type: 'project',
+      title: 'Matrix Code',
+      subtitle: 'Data visualization and matrix operations',
+      image: '/lovable-uploads/16dbee45-0330-47c6-a329-227eeca8aadb.png',
+      color: 'bg-gradient-to-br from-green-500 to-emerald-700',
+      size: 'medium'
+    },
+    {
+      type: 'project',
+      title: 'Code Development',
+      subtitle: 'Software development and programming',
+      image: '/lovable-uploads/3f01d0fc-fcfd-4eb0-8fb5-8928b60afa61.png',
+      color: 'bg-gradient-to-br from-blue-500 to-indigo-700',
+      size: 'large'
+    },
+    {
+      type: 'project',
+      title: 'Colorful Code',
+      subtitle: 'Web development with modern frameworks',
+      image: '/lovable-uploads/0cc6efe1-72be-4afd-9e5e-2cc43930ce96.png',
+      color: 'bg-gradient-to-br from-rainbow-500 to-rainbow-700',
+      size: 'medium'
+    },
+    {
+      type: 'project',
+      title: 'Female Developer',
+      subtitle: 'Women in technology and programming',
+      image: '/lovable-uploads/5ee80885-e3e4-415e-9a80-5506c2407d26.png',
+      color: 'bg-gradient-to-br from-pink-600 to-rose-700',
+      size: 'large'
+    },
+    {
+      type: 'project',
+      title: 'MacBook Development',
+      subtitle: 'iOS and macOS development environment',
+      image: '/lovable-uploads/1f28a446-5698-4948-8d64-3b7988785417.png',
+      color: 'bg-gradient-to-br from-gray-500 to-slate-700',
+      size: 'medium'
+    },
     {
       type: 'certificate',
       title: 'Create Image Captioning Models with Google Cloud',

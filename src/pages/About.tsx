@@ -1,3 +1,4 @@
+
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 import { useState } from 'react';
@@ -41,7 +42,7 @@ const About = () => {
                   />
                   
                   {/* Location below photo */}
-                  <div className="flex items-center text-white/60 mb-6">
+                  <div className="flex items-center text-white/60 mb-4">
                     <span className="text-orange-400 mr-2">📍</span>
                     <span>Asia/Kolkata</span>
                   </div>

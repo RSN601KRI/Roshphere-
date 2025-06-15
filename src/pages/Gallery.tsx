@@ -5,84 +5,89 @@ const Gallery = () => {
   const galleryItems = [
     {
       type: 'certificate',
-      title: 'DEXTERIX 4.0 Achievement Award',
-      subtitle: 'Winner at DEXTERIX 4.0 Hackathon',
-      image: '/lovable-uploads/3f01d0fc-fcfd-4eb0-8fb5-8928b60afa61.png',
-      brand: 'Galgotias University',
-      color: 'bg-gradient-to-br from-yellow-600 to-orange-700',
+      title: 'Create Image Captioning Models with Google Cloud',
+      subtitle: 'Udacity Course Certificate in collaboration with Google Cloud',
+      image: '/lovable-uploads/f2a2c04d-24c0-442f-a85a-47f640d709b4.png',
+      brand: 'Udacity & Google Cloud',
+      color: 'bg-gradient-to-br from-blue-600 to-indigo-700',
+      size: 'large'
+    },
+    {
+      type: 'certificate',
+      title: 'Introduction to Gen AI Studio with Google Cloud',
+      subtitle: 'Udacity Course Certificate in collaboration with Google Cloud',
+      image: '/lovable-uploads/1c94486a-afde-490b-bb3b-724e8a55d588.png',
+      brand: 'Udacity & Google Cloud',
+      color: 'bg-gradient-to-br from-blue-600 to-indigo-700',
+      size: 'large'
+    },
+    {
+      type: 'certificate',
+      title: 'Introduction to Large Language Models with Google Cloud',
+      subtitle: 'Udacity Course Certificate in collaboration with Google Cloud',
+      image: '/lovable-uploads/d26ef040-5555-4362-8307-ce3bbaf65eee.png',
+      brand: 'Udacity & Google Cloud',
+      color: 'bg-gradient-to-br from-blue-600 to-indigo-700',
+      size: 'large'
+    },
+    {
+      type: 'swag',
+      title: 'Google Swag Bag',
+      subtitle: 'Google branded gym bag and merchandise',
+      image: '/lovable-uploads/f0728883-e715-4fee-9076-dde0054663c9.png',
+      color: 'bg-gradient-to-br from-blue-500 to-cyan-600',
+      size: 'medium'
+    },
+    {
+      type: 'event',
+      title: 'PowerApps Mastery Challenge',
+      subtitle: 'Microsoft Learn Student Ambassador event hosting',
+      image: '/lovable-uploads/be9b0b0d-b0bf-4ee8-957b-3f85034e6c60.png',
+      brand: 'Microsoft Learn',
+      color: 'bg-gradient-to-br from-purple-600 to-pink-700',
+      size: 'large'
+    },
+    {
+      type: 'swag',
+      title: 'Google Cloud Cap',
+      subtitle: 'Google Cloud branded merchandise and swag',
+      image: '/lovable-uploads/b643327a-bfeb-4489-aabe-06767a7e8947.png',
+      color: 'bg-gradient-to-br from-blue-500 to-cyan-600',
+      size: 'medium'
+    },
+    {
+      type: 'certificate',
+      title: 'Microsoft Learn Student Ambassador',
+      subtitle: 'Certificate and swag kit from Microsoft Learn Student Ambassador program',
+      image: '/lovable-uploads/5b1b3909-9b75-44db-b8b5-0549d6f87766.png',
+      brand: 'Microsoft Learn',
+      color: 'bg-gradient-to-br from-indigo-600 to-blue-700',
+      size: 'large'
+    },
+    {
+      type: 'swag',
+      title: 'Microsoft Learn Swag Collection',
+      subtitle: 'Complete Microsoft Learn Student Ambassador swag collection',
+      image: '/lovable-uploads/3572fddc-1ea3-4971-92ba-10d08dff3e90.png',
+      color: 'bg-gradient-to-br from-indigo-500 to-purple-600',
       size: 'large'
     },
     {
       type: 'event',
-      title: 'UP International Trade Show',
-      subtitle: 'Representing at trade exhibition',
-      image: '/lovable-uploads/1515876d-049d-4ff7-bbbf-7296661a9c1d.png',
-      color: 'bg-gradient-to-br from-blue-600 to-purple-700',
-      size: 'medium'
-    },
-    {
-      type: 'conference',
-      title: 'Team Collaboration',
-      subtitle: 'Working with amazing colleagues at tech conference',
-      image: '/lovable-uploads/0cc6efe1-72be-4afd-9e5e-2cc43930ce96.png',
+      title: 'DEXTERIX 4.0 Group Photo',
+      subtitle: 'Team photo from DEXTERIX 4.0 hackathon event',
+      image: '/lovable-uploads/d3d08176-56ca-47db-8313-423da8bdb189.png',
+      brand: 'Galgotias University',
       color: 'bg-gradient-to-br from-gray-600 to-gray-800',
       size: 'large'
     },
     {
       type: 'certificate',
-      title: 'Smart India Hackathon Certificate',
-      subtitle: 'Certificate of participation in Smart India Hackathon',
-      image: '/lovable-uploads/cbc33d3c-5a4d-4292-9f93-d4173c06f41e.png',
-      brand: 'Government of India',
-      color: 'bg-gradient-to-br from-green-600 to-teal-700',
-      size: 'medium'
-    },
-    {
-      type: 'swag',
-      title: 'Google Cloud Swag',
-      subtitle: 'Google Cloud merchandise and goodies',
-      image: '/lovable-uploads/cba0a704-0e14-453b-9715-9a66119f3fd9.png',
-      color: 'bg-gradient-to-br from-blue-500 to-cyan-600',
-      size: 'medium'
-    },
-    {
-      type: 'networking',
-      title: 'Tech Meetup',
-      subtitle: 'Networking at technology conference',
-      image: '/lovable-uploads/5ee80885-e3e4-415e-9a80-5506c2407d26.png',
-      color: 'bg-gradient-to-br from-purple-600 to-pink-700',
-      size: 'medium'
-    },
-    {
-      type: 'event',
-      title: 'Conference Networking',
-      subtitle: 'Building connections in tech community',
-      image: '/lovable-uploads/bd415272-a62a-4d51-a3a8-ab140fc8f985.png',
-      color: 'bg-gradient-to-br from-pink-600 to-red-600',
-      size: 'medium'
-    },
-    {
-      type: 'team',
-      title: 'Microsoft Team Event',
-      subtitle: 'Team collaboration and innovation session',
-      image: '/lovable-uploads/1f28a446-5698-4948-8d64-3b7988785417.png',
-      color: 'bg-gradient-to-br from-indigo-600 to-blue-700',
-      size: 'large'
-    },
-    {
-      type: 'pitch',
-      title: 'AICSSYC Startup Pitching',
-      subtitle: 'Presenting at AICSSYC startup competition',
-      image: '/lovable-uploads/d657fe26-a7a6-4f7b-8a82-ac294aae001f.png',
-      color: 'bg-gradient-to-br from-teal-600 to-green-700',
-      size: 'medium'
-    },
-    {
-      type: 'celebration',
-      title: 'Tech Community Celebration',
-      subtitle: 'Celebrating achievements with the tech community',
-      image: '/lovable-uploads/16dbee45-0330-47c6-a329-227eeca8aadb.png',
-      color: 'bg-gradient-to-br from-orange-600 to-yellow-600',
+      title: 'DEXTERIX 4.0 Achievement Award',
+      subtitle: 'Winner certificate from DEXTERIX 4.0 Hackathon',
+      image: '/lovable-uploads/64ff099d-2e66-4bce-8e61-cc65a89739c3.png',
+      brand: 'Galgotias University',
+      color: 'bg-gradient-to-br from-yellow-600 to-orange-700',
       size: 'large'
     }
   ];
@@ -155,9 +160,6 @@ const Gallery = () => {
                       <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                         item.type === 'certificate' ? 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30' :
                         item.type === 'event' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' :
-                        item.type === 'conference' ? 'bg-purple-500/20 text-purple-400 border border-purple-500/30' :
-                        item.type === 'team' ? 'bg-green-500/20 text-green-400 border border-green-500/30' :
-                        item.type === 'pitch' ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30' :
                         item.type === 'swag' ? 'bg-orange-500/20 text-orange-400 border border-orange-500/30' :
                         'bg-pink-500/20 text-pink-400 border border-pink-500/30'
                       }`}>

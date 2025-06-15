@@ -1,13 +1,21 @@
-
 import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
 
 const NewsletterSection = () => {
   const [email, setEmail] = useState('');
+  const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle newsletter subscription
     console.log('Newsletter subscription:', email);
+    
+    // Show success toast
+    toast({
+      title: "Thanks for subscribing!",
+      description: "You'll receive updates about smarter tech and bolder futures.",
+    });
+    
     setEmail('');
   };
 

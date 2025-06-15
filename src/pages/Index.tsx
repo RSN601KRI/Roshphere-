@@ -5,6 +5,7 @@ import ProjectsSection from '../components/ProjectsSection';
 import Gallery from '../components/Gallery';
 import NewsletterSection from '../components/NewsletterSection';
 import SparkleEffect from '../components/SparkleEffect';
+import { Toaster } from '@/components/ui/toaster';
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Gallery />
       <NewsletterSection />
       <SparkleEffect />
+      <Toaster />
     </div>
   );
 };

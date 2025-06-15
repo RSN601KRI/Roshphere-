@@ -1,4 +1,3 @@
-
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 import { useState } from 'react';
@@ -254,40 +253,6 @@ const About = () => {
                         <a href="https://solana-trace-nexus.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
                           https://solana-trace-nexus.vercel.app/
                         </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="relative">
-                    <div className="mb-6">
-                      <h3 className="text-2xl font-bold text-white mb-4">DevOps Project: Flask App Deployment on Azure</h3>
-                      <p className="text-white/80 mb-4">
-                        Designed and deployed a Flask app on Azure using Docker, Terraform, and GitHub Actions, automating deployments and reducing manual effort by 80%.
-                      </p>
-                      <div className="mb-4">
-                        <span className="text-green-400 font-medium">Tech Stack: </span>
-                        <span className="text-white/70">Flask, Docker, Terraform, GitHub Actions, Azure Container Instance.</span>
-                      </div>
-                      <div>
-                        <span className="text-green-400 font-medium">Results: </span>
-                        <span className="text-white/70">Deployed a production-ready Flask app on Azure with 99.9% uptime, accessible at: devops.adityakeshav.tech.</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="relative">
-                    <div className="mb-6">
-                      <h3 className="text-2xl font-bold text-white mb-4">YouTube Slide Extractor</h3>
-                      <p className="text-white/80 mb-4">
-                        Engineered an AI-powered Python application to automate the creation of editable PowerPoint presentations from YouTube videos.
-                      </p>
-                      <div className="mb-4">
-                        <span className="text-green-400 font-medium">Tech Stack: </span>
-                        <span className="text-white/70">Python, OpenCV, pytesseract, yt-dlp, Streamlit, PowerPoint (pptx).</span>
-                      </div>
-                      <div>
-                        <span className="text-green-400 font-medium">Outcome: </span>
-                        <span className="text-white/70">Processed 50+ videos, helping students and educators generate structured slides from lecture videos.</span>
                       </div>
                     </div>
                   </div>

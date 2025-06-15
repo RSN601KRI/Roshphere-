@@ -10,9 +10,22 @@ const ProjectsSection = () => {
       tags: ["Azure", "Docker", "Terraform", "CI/CD"]
     },
     {
-      title: "YouTube Slide Extractor: AI-Powered Presentation Generator",
-      description: "Engineered an AI-powered Python application to automate the creation of editable PowerPoint presentations from YouTube videos.",
-      tags: ["Python", "AI", "OpenCV", "Machine Learning"]
+      title: "InFocus Photography Studio - Digital Marketing Campaign",
+      description: "Developed and led a digital marketing campaign for InFocus Photography Studio to enhance its online presence and attract more clients.",
+      tags: ["Digital Marketing", "SEO", "Social Media"]
+    }
+  ];
+
+  const blogPosts = [
+    {
+      title: "How Machine Learning and DevOps Are Revolutionizing Data-Driven Decision Making",
+      date: "March 15, 2025",
+      category: "Data Science"
+    },
+    {
+      title: "The Role of AI in Modern DevOps: Automating the Future of Software Development",
+      date: "February 20, 2025",
+      category: "DevOps"
     }
   ];
 
@@ -31,35 +44,57 @@ const ProjectsSection = () => {
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-        <div className="space-y-16 sm:space-y-20">
+        {/* Projects Section */}
+        <div className="space-y-12 sm:space-y-16">
           {featuredProjects.map((project, index) => (
-            <div key={index} className="text-left">
-              <div className="flex items-center mb-4">
-                <img 
-                  src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
-                  alt="Profile" 
-                  className="w-8 h-8 sm:w-10 sm:h-10 rounded-full mr-3 object-cover"
-                />
-                <span className="text-white/60">Roshni Kumari</span>
-              </div>
-              
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">{project.title}</h3>
-              <p className="text-lg sm:text-xl text-white/80 mb-6 max-w-2xl leading-relaxed">
+            <div key={index} className="text-center">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">{project.title}</h3>
+              <p className="text-base sm:text-lg text-white/80 mb-6 max-w-3xl mx-auto leading-relaxed">
                 {project.description}
               </p>
               
-              <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
-                <button className="flex items-center text-green-400 hover:text-green-300 transition-colors font-medium text-lg">
+              <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <button className="flex items-center justify-center text-green-400 hover:text-green-300 transition-colors font-medium text-base">
                   Read case study
-                  <ArrowRight className="w-5 h-5 ml-2" />
+                  <ArrowRight className="w-4 h-4 ml-2" />
                 </button>
-                <button className="flex items-center text-white/60 hover:text-white transition-colors font-medium text-lg">
+                <button className="flex items-center justify-center text-white/60 hover:text-white transition-colors font-medium text-base">
                   View project
-                  <ExternalLink className="w-5 h-5 ml-2" />
+                  <ExternalLink className="w-4 h-4 ml-2" />
                 </button>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Latest from the blog Section */}
+        <div className="mt-20 sm:mt-24">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2">
+              Latest from
+              <br />
+              the blog
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {blogPosts.map((post, index) => (
+              <div key={index} className="text-center space-y-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight">
+                  {post.title}
+                </h3>
+                <p className="text-white/60 text-sm">{post.date}</p>
+                <div className="inline-block">
+                  <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                    post.category === 'Data Science' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' :
+                    'bg-green-500/20 text-green-400 border border-green-500/30'
+                  }`}>
+                    {post.category}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-16 sm:mt-20">

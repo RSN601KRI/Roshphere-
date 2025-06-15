@@ -1,4 +1,3 @@
-
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 import { useState } from 'react';
@@ -272,18 +271,25 @@ const About = () => {
                 </div>
               </section>
 
-              {/* Social Icons at the bottom */}
+              {/* Copyright and Social Icons at the bottom */}
               <section className="pt-16 border-t border-white/10">
-                <div className="flex justify-center space-x-6">
-                  <a href="#" className="text-white/70 hover:text-white transition-colors">
-                    <Github className="w-6 h-6" />
-                  </a>
-                  <a href="#" className="text-white/70 hover:text-white transition-colors">
-                    <Linkedin className="w-6 h-6" />
-                  </a>
-                  <a href="#" className="text-white/70 hover:text-white transition-colors">
-                    <Mail className="w-6 h-6" />
-                  </a>
+                <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+                  <div className="flex items-center text-white/50 text-sm">
+                    <span className="mr-2">©</span>
+                    <span>2025 / Roshni Kumari</span>
+                  </div>
+                  
+                  <div className="flex justify-center space-x-6">
+                    <a href="#" className="text-white/70 hover:text-white transition-colors">
+                      <Github className="w-6 h-6" />
+                    </a>
+                    <a href="#" className="text-white/70 hover:text-white transition-colors">
+                      <Linkedin className="w-6 h-6" />
+                    </a>
+                    <a href="#" className="text-white/70 hover:text-white transition-colors">
+                      <Mail className="w-6 h-6" />
+                    </a>
+                  </div>
                 </div>
               </section>
             </div>

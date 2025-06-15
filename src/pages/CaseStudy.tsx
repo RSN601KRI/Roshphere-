@@ -1,4 +1,3 @@
-
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -108,25 +107,84 @@ const CaseStudy = () => {
       ]
     },
     nexalyst: {
-      title: "Nexalyst - Solana Blockchain Forensic Platform",
-      subtitle: "Blockchain Forensic Analysis Platform",
+      title: "Nexalyst - Solana Forensic Analysis Tool",
+      subtitle: "A Web-Based Blockchain Investigation Platform",
       date: "November 20, 2024",
-      overview: "I developed Nexalyst, a powerful web-based forensic analysis platform for the Solana blockchain that enables security researchers, investigators and compliance teams to visualise, track and analyse on-chain fund movements precisely and clearly.",
-      strategies: [
+      introduction: "With the rise of decentralized finance (DeFi) and increasing on-chain activity, transparency, accountability, and investigation tools are critical in the blockchain space. The Solana Forensic Analysis Tool addresses this need by providing a powerful web-based solution to track, analyze, and visualize fund movements on the Solana blockchain. Designed for security researchers, investigators, compliance teams, and blockchain auditors, the platform offers intuitive, visual insights into transaction patterns, wallet histories, and suspicious activity clusters.",
+      objective: "To build a comprehensive forensic analysis platform for the Solana blockchain that simplifies on-chain investigation, visualizes fund flows across wallets, detects suspicious patterns and wallet clusters, and enables real-time analysis for compliance and threat response teams.",
+      architecture: [
+        { component: "Frontend", stack: "React.js, Tailwind CSS, Chart.js / D3.js" },
+        { component: "Backend", stack: "Node.js, Express.js" },
+        { component: "Blockchain", stack: "Solana RPC, Web3.js, Solana APIs" },
+        { component: "Database", stack: "MongoDB / PostgreSQL (used for clustering & tagging)" },
+        { component: "Deployment", stack: "Vercel / Netlify / Render" }
+      ],
+      features: [
         {
-          title: "Blockchain Data Visualization",
-          points: [
-            "Used advanced graph algorithms to map complex transaction networks.",
-            "Implemented real-time tracking of fund movements across multiple addresses."
-          ]
+          feature: "🔁 Transaction Flow Mapping",
+          description: "Visualize money movement through interactive charts. Filter by date, wallet, or amount."
         },
         {
-          title: "Security & Compliance",
-          points: [
-            "Built compliance tools for regulatory reporting requirements.",
-            "Created automated flagging systems for suspicious transaction patterns."
-          ]
+          feature: "👛 Wallet Analysis",
+          description: "View complete transaction history, trace funding origins, and detect inter-wallet links."
+        },
+        {
+          feature: "🔗 Transaction Clustering",
+          description: "Identify and visualize clusters of related transactions and wallets."
+        },
+        {
+          feature: "🏷️ Entity & Exchange Labelling",
+          description: "Built-in datasets tag known addresses, exchanges, and services. Detect deposit/withdrawal patterns."
         }
+      ],
+      techHighlights: [
+        "Custom Transaction Clustering Algorithm - Groups transactions based on frequency, wallet linkage, and temporal proximity.",
+        "Graph-Based Visualizations (D3.js) - Enables clear, explorable fund flows with filters and highlights.",
+        "Entity Labeling Dataset - Maintains a curated database of known exchanges, services, and DAO wallets.",
+        "Read-Only Access - Fully secure and privacy-preserving, requiring no private key exposure."
+      ],
+      useCases: [
+        {
+          title: "Blockchain Security Teams",
+          description: "For incident response & forensic reporting."
+        },
+        {
+          title: "Regulatory Compliance Officers",
+          description: "AML, sanctions screening, transaction tracing."
+        },
+        {
+          title: "Crypto Forensics Researchers",
+          description: "Academic & institutional investigations."
+        },
+        {
+          title: "DeFi Protocols",
+          description: "Fraud detection & ecosystem monitoring."
+        }
+      ],
+      marketContext: [
+        "The global blockchain forensic market is projected to exceed $8.5B by 2030, growing at a CAGR of 15.2%.",
+        "Post-FTX and similar collapses, forensic analysis tools are in high demand by VCs, exchanges, and governments."
+      ],
+      securityFeatures: [
+        {
+          feature: "Read-Only RPC Access",
+          description: "No transactions are signed or executed."
+        },
+        {
+          feature: "No Key Storage",
+          description: "The tool operates without accessing private keys."
+        },
+        {
+          feature: "GDPR-Compliant Logs",
+          description: "Minimal user data, optional session anonymization."
+        }
+      ],
+      installation: [
+        "Prerequisites: Node.js & npm, Git, Solana CLI, MongoDB / PostgreSQL",
+        "Clone repository and setup backend with npm install and npm run dev",
+        "Setup frontend with npm install and npm start",
+        "Open web interface and input wallet address or transaction hash",
+        "Explore Transaction Flows, Wallet Interactions, Clustering Patterns, and Exchange Tagging"
       ]
     },
     solarshare: {
@@ -421,8 +479,217 @@ const CaseStudy = () => {
     );
   }
 
+  // For Nexalyst, render the comprehensive forensic analysis case study
+  if (projectId === 'nexalyst') {
+    const nexalystProject = project as typeof projectData.nexalyst;
+    
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+        <Navigation />
+        
+        {/* Grid Pattern Background */}
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(135,206,235,0.2) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(135,206,235,0.2) 1px, transparent 1px)
+            `,
+            backgroundSize: '20px 20px'
+          }}
+        />
+
+        <div className="relative z-10 pt-32 pb-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            {/* Back Button */}
+            <button 
+              onClick={() => navigate('/work')}
+              className="flex items-center text-white/70 hover:text-white transition-colors mb-8"
+            >
+              <ArrowLeft className="w-5 h-5 mr-2" />
+              Projects
+            </button>
+
+            {/* Header */}
+            <div className="mb-12">
+              <h1 className="text-3xl sm:text-4xl font-bold mb-4">{nexalystProject.title}</h1>
+              <h2 className="text-xl sm:text-2xl text-white/80 mb-6">{nexalystProject.subtitle}</h2>
+              
+              <div className="flex items-center gap-4 mb-8">
+                <img 
+                  src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
+                  alt="Profile" 
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <span className="text-white/60">{nexalystProject.date}</span>
+              </div>
+            </div>
+
+            {/* Introduction */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🔍 Introduction</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                {nexalystProject.introduction}
+              </p>
+            </div>
+
+            {/* Objective */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🎯 Objective</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                {nexalystProject.objective}
+              </p>
+            </div>
+
+            {/* Architecture Overview */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🛠 Architecture Overview</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border border-white/20 rounded-lg">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left p-4 font-bold">Component</th>
+                      <th className="text-left p-4 font-bold">Technologies Used</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {nexalystProject.architecture.map((item, index) => (
+                      <tr key={index} className="border-b border-white/10">
+                        <td className="p-4 text-white/90">{item.component}</td>
+                        <td className="p-4 text-white/80">{item.stack}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Core Features */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🧠 Core Features</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border border-white/20 rounded-lg">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left p-4 font-bold">Feature</th>
+                      <th className="text-left p-4 font-bold">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {nexalystProject.features.map((item, index) => (
+                      <tr key={index} className="border-b border-white/10">
+                        <td className="p-4 text-white/90 font-medium">{item.feature}</td>
+                        <td className="p-4 text-white/80">{item.description}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Technical Innovations */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🧪 Technical Innovations</h3>
+              <div className="space-y-3">
+                {nexalystProject.techHighlights.map((highlight, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{highlight}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Target Users */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">👥 Target Users</h3>
+              <div className="space-y-6">
+                {nexalystProject.useCases.map((useCase, index) => (
+                  <div key={index}>
+                    <h4 className="text-xl font-bold mb-2">{useCase.title}</h4>
+                    <p className="text-white/80 ml-6">{useCase.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Market Context */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">📊 Market Context</h3>
+              <div className="space-y-3">
+                {nexalystProject.marketContext.map((context, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{context}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Security & Privacy */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🔒 Security & Privacy</h3>
+              <div className="space-y-6">
+                {nexalystProject.securityFeatures.map((feature, index) => (
+                  <div key={index}>
+                    <h4 className="text-lg font-bold mb-2">{feature.feature}</h4>
+                    <p className="text-white/80 ml-6">{feature.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Installation & Usage */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">⚙️ Installation & Usage</h3>
+              <div className="space-y-3">
+                {nexalystProject.installation.map((step, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{step}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Quote */}
+            <div className="mb-12">
+              <div className="bg-white/5 p-6 rounded-lg border border-white/10 text-center">
+                <p className="text-white/90 italic text-lg mb-4">"Security is not a product, but a process."</p>
+                <p className="text-white/60">— Bruce Schneier</p>
+              </div>
+            </div>
+
+            {/* Conclusion */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">📌 Conclusion</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                The Solana Forensic Analysis Tool is a vital innovation for blockchain intelligence. By combining on-chain data with intelligent visualization and clustering, it equips professionals to analyze, detect, and prevent financial crime in the Solana ecosystem.
+              </p>
+              <p className="text-lg text-white/80 leading-relaxed mt-4">
+                With robust architecture, secure practices, and open-source collaboration, it lays the foundation for the future of crypto compliance and security research.
+              </p>
+            </div>
+
+            {/* Live Demo */}
+            <div className="text-center">
+              <a 
+                href="https://solana-trace-nexus.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+              >
+                🔗 Live Tool
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // For other projects, use the original format
-  const standardProject = project as typeof projectData.nexalyst;
+  const standardProject = project as typeof projectData.solarshare;
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">

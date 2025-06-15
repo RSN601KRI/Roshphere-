@@ -21,7 +21,7 @@ const ProjectsSection = () => {
       title: "SolarShare - DePIN Solar Energy Marketplace",
       description: "A revolutionary DePIN (Decentralized Physical Infrastructure Network) project built on Solana blockchain, designed to transform how communities in India share and trade solar energy. This platform enables peer-to-peer energy trading through a secure, real-time marketplace where households can monetize excess solar power, promoting sustainable energy distribution and community ownership in developing regions.",
       profileImage: "/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png",
-      projectLink: "https://solana-depin.vercel.app/"
+      projectLink: "https://github.com/RSN601KRI/solana-depin-breakout"
     },
     {
       id: "trendpulse",

@@ -22,7 +22,7 @@ const Work = () => {
       title: "SolarShare - DePIN Solar Energy Marketplace",
       description: "A DePIN (Decentralized Physical Infrastructure Network) project built on Solana, designed to revolutionize how communities in India share solar energy. Leveraging blockchain technology, SolarShare allows users to sell and buy excess solar energy locally through a secure, real-time marketplace.",
       tags: ["DePIN", "Solar Energy", "Blockchain", "Solana"],
-      projectLink: "https://solana-depin.vercel.app/"
+      projectLink: "https://github.com/RSN601KRI/solana-depin-breakout"
     },
     {
       id: "trendpulse",

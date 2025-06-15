@@ -1,3 +1,4 @@
+
 import { ExternalLink, Github } from 'lucide-react';
 
 const ProjectsSection = () => {
@@ -42,18 +43,6 @@ const ProjectsSection = () => {
 
   return (
     <section className="py-12 sm:py-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative">
-      {/* Grid Pattern Background with more visible navy blue theme */}
-      <div 
-        className="absolute inset-0 opacity-40"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(59,130,246,0.8) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(59,130,246,0.8) 1px, transparent 1px)
-          `,
-          backgroundSize: '10px 10px'
-        }}
-      />
-      
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">

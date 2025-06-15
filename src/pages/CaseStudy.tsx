@@ -89,6 +89,11 @@ const CaseStudy = () => {
         "According to Statista, the global budgeting software market is expected to grow by 7.5% CAGR, reaching $9.87 billion by 2028.",
         "AI-powered fintech tools have shown a 22% increase in productivity and 37% reduction in financial errors across SMBs and nonprofits."
       ],
+      researchSignificance: [
+        "Human + AI collaboration ensures decisions are data-backed, yet flexible.",
+        "Enhances financial transparency, compliance, and scalability in budgeting processes.",
+        "Its modular and pluggable architecture supports expansion into ERP, supply chain, or HR financial management."
+      ],
       testimonials: [
         {
           quote: "With Budgetlyzer, we've reduced budget overruns by 45% in just 3 months.",
@@ -104,7 +109,12 @@ const CaseStudy = () => {
         "Enhanced mobile experience using React Native.",
         "Visualized forecasting with chart-based spending simulations.",
         "Voice-enabled commands for quick budget checks (via GPT/Whisper)."
-      ]
+      ],
+      licensing: {
+        license: "MIT",
+        contributions: "Open Source Contributions: Welcomed via GitHub"
+      },
+      liveDemo: "budgetlyzer.vercel.app"
     },
     nexalyst: {
       title: "Nexalyst - Solana Forensic Analysis Tool",
@@ -510,6 +520,248 @@ README.md`,
 
   if (!project) {
     return <div>Project not found</div>;
+  }
+
+  // For Budgetlyzer, render the comprehensive case study
+  if (projectId === 'budgetlyzer') {
+    const budgetlyzerProject = project as typeof projectData.budgetlyzer;
+    
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+        <Navigation />
+        
+        {/* Grid Pattern Background */}
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(135,206,235,0.2) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(135,206,235,0.2) 1px, transparent 1px)
+            `,
+            backgroundSize: '20px 20px'
+          }}
+        />
+
+        <div className="relative z-10 pt-32 pb-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            {/* Back Button */}
+            <button 
+              onClick={() => navigate('/work')}
+              className="flex items-center text-white/70 hover:text-white transition-colors mb-8"
+            >
+              <ArrowLeft className="w-5 h-5 mr-2" />
+              Projects
+            </button>
+
+            {/* Header */}
+            <div className="mb-12">
+              <h1 className="text-3xl sm:text-4xl font-bold mb-4">{budgetlyzerProject.title}</h1>
+              
+              <div className="flex items-center gap-4 mb-8">
+                <img 
+                  src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
+                  alt="Profile" 
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <span className="text-white/60">{budgetlyzerProject.date}</span>
+              </div>
+            </div>
+
+            {/* Introduction */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🧠 Introduction</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                {budgetlyzerProject.introduction}
+              </p>
+            </div>
+
+            {/* Objective */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🎯 Objective</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                {budgetlyzerProject.objective}
+              </p>
+            </div>
+
+            {/* Architecture Overview */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🏗️ Architecture Overview</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border border-white/20 rounded-lg">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left p-4 font-bold">Component</th>
+                      <th className="text-left p-4 font-bold">Stack / Tooling</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {budgetlyzerProject.architecture.map((item, index) => (
+                      <tr key={index} className="border-b border-white/10">
+                        <td className="p-4 text-white/90 font-medium">{item.component}</td>
+                        <td className="p-4 text-white/80">{item.stack}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* How Budgetlyzer Works */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🔍 How Budgetlyzer Works</h3>
+              <div className="space-y-6">
+                {budgetlyzerProject.workflow.map((item, index) => (
+                  <div key={index} className="bg-white/5 p-6 rounded-lg border border-white/10">
+                    <h4 className="text-xl font-bold mb-3 text-green-400">{index + 1}. {item.step}</h4>
+                    <p className="text-white/80">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Key Features & Innovations */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🚀 Key Features & Innovations</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border border-white/20 rounded-lg">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left p-4 font-bold">Feature</th>
+                      <th className="text-left p-4 font-bold">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {budgetlyzerProject.features.map((item, index) => (
+                      <tr key={index} className="border-b border-white/10">
+                        <td className="p-4 text-white/90 font-medium">{item.feature}</td>
+                        <td className="p-4 text-white/80">{item.description}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Tech Highlights */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🧪 Tech Highlights</h3>
+              <div className="space-y-3">
+                {budgetlyzerProject.techHighlights.map((highlight, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{highlight}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Use Cases */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🧾 Use Cases</h3>
+              <div className="space-y-6">
+                {budgetlyzerProject.useCases.map((useCase, index) => (
+                  <div key={index}>
+                    <h4 className="text-xl font-bold mb-2">{index + 1}. {useCase.title}</h4>
+                    <p className="text-white/80 ml-6">{useCase.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Market Context */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">📈 Market Context</h3>
+              <div className="space-y-3">
+                {budgetlyzerProject.marketContext.map((context, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{context}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Research Significance */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🧪 Research Significance</h3>
+              <p className="text-lg text-white/80 leading-relaxed mb-4">
+                Budgetlyzer represents a paradigm shift in financial tooling:
+              </p>
+              <div className="space-y-3">
+                {budgetlyzerProject.researchSignificance.map((significance, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{significance}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* User Testimonials */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">👥 User Testimonials</h3>
+              <p className="text-white/60 text-sm mb-6">(Fictional for study purpose)</p>
+              <div className="space-y-6">
+                {budgetlyzerProject.testimonials.map((testimonial, index) => (
+                  <div key={index} className="bg-white/5 p-6 rounded-lg border border-white/10">
+                    <p className="text-white/90 italic text-lg mb-4">"{testimonial.quote}"</p>
+                    <p className="text-white/60">— {testimonial.author}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Future Improvements */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🛠 Future Improvements</h3>
+              <div className="space-y-3">
+                {budgetlyzerProject.futureImprovements.map((improvement, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{improvement}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Licensing & Contributions */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">📜 Licensing & Contributions</h3>
+              <div className="bg-white/5 p-6 rounded-lg border border-white/10">
+                <p className="text-white/80 mb-2"><strong>License:</strong> {budgetlyzerProject.licensing.license}</p>
+                <p className="text-white/80">{budgetlyzerProject.licensing.contributions}</p>
+              </div>
+            </div>
+
+            {/* Live Demo */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🔗 Live Demo</h3>
+              <div className="text-center">
+                <a 
+                  href={`https://${budgetlyzerProject.liveDemo}`}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors"
+                >
+                  Access Budgetlyzer at: {budgetlyzerProject.liveDemo}
+                </a>
+              </div>
+            </div>
+
+            {/* Conclusion */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">📌 Conclusion</h3>
+              <p className="text-lg text-white/80 leading-relaxed mb-4">
+                Budgetlyzer addresses a pressing gap in real-time, intelligent budget management. Through Payman AI integration and a robust AI backbone, it offers an efficient, secure, and scalable solution for modern, multi-project businesses.
+              </p>
+              <p className="text-lg text-white/80 leading-relaxed">
+                Whether you are a developer, researcher, or financial manager—Budgetlyzer is a prime example of how AI is redefining financial operations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   // For TrendPulse, render the comprehensive case study
@@ -997,7 +1249,7 @@ README.md`,
   }
 
   // For other projects with full structure, use detailed template
-  if (projectId === 'nexalyst' || projectId === 'solarshare' || projectId === 'budgetlyzer') {
+  if (projectId === 'nexalyst' || projectId === 'solarshare') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
         <Navigation />

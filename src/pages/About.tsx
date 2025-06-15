@@ -48,6 +48,12 @@ const About = () => {
                   </div>
                 </div>
 
+                {/* Languages - moved above navigation */}
+                <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+                  <span className="px-3 py-1 bg-white/10 border border-white/20 rounded-full text-sm">English</span>
+                  <span className="px-3 py-1 bg-white/10 border border-white/20 rounded-full text-sm">Hindi</span>
+                </div>
+
                 {/* Navigation Menu */}
                 <nav className="space-y-1">
                   <a href="#introduction" className="flex items-center text-white/70 hover:text-white transition-colors py-2 text-sm">
@@ -63,12 +69,6 @@ const About = () => {
                     — Projects
                   </a>
                 </nav>
-
-                {/* Languages */}
-                <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-                  <span className="px-3 py-1 bg-white/10 border border-white/20 rounded-full text-sm">English</span>
-                  <span className="px-3 py-1 bg-white/10 border border-white/20 rounded-full text-sm">Hindi</span>
-                </div>
               </div>
             </div>
 
@@ -232,6 +232,34 @@ const About = () => {
                 <div className="space-y-12">
                   <div className="relative">
                     <div className="mb-6">
+                      <h3 className="text-2xl font-bold text-white mb-4">Budgetlyzer</h3>
+                      <p className="text-white/80 mb-4">
+                        Budgetlyzer is an AI-powered budgeting tool designed for project-based businesses. It leverages Payman AI's multi-account feature to help businesses efficiently track, analyze, and manage their project budgets in real-time.
+                      </p>
+                      <div className="mb-4">
+                        <a href="https://budgetlyzer.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
+                          https://budgetlyzer.vercel.app/
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="relative">
+                    <div className="mb-6">
+                      <h3 className="text-2xl font-bold text-white mb-4">Nexalyst</h3>
+                      <p className="text-white/80 mb-4">
+                        Nexalyst is a powerful web-based forensic analysis platform for the Solana blockchain that enables security researchers, investigators and compliance teams to visualise, track and analyse on-chain fund movements precisely and clearly.
+                      </p>
+                      <div className="mb-4">
+                        <a href="https://solana-trace-nexus.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
+                          https://solana-trace-nexus.vercel.app/
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="relative">
+                    <div className="mb-6">
                       <h3 className="text-2xl font-bold text-white mb-4">DevOps Project: Flask App Deployment on Azure</h3>
                       <p className="text-white/80 mb-4">
                         Designed and deployed a Flask app on Azure using Docker, Terraform, and GitHub Actions, automating deployments and reducing manual effort by 80%.
@@ -259,6 +287,21 @@ const About = () => {
                       </div>
                     </div>
                   </div>
+                </div>
+              </section>
+
+              {/* Social Icons at the bottom */}
+              <section className="pt-16 border-t border-white/10">
+                <div className="flex justify-center space-x-6">
+                  <a href="#" className="text-white/70 hover:text-white transition-colors">
+                    <Github className="w-6 h-6" />
+                  </a>
+                  <a href="#" className="text-white/70 hover:text-white transition-colors">
+                    <Linkedin className="w-6 h-6" />
+                  </a>
+                  <a href="#" className="text-white/70 hover:text-white transition-colors">
+                    <Mail className="w-6 h-6" />
+                  </a>
                 </div>
               </section>
             </div>

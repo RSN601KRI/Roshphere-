@@ -1,3 +1,4 @@
+
 import Navigation from '../components/Navigation';
 import { ExternalLink } from 'lucide-react';
 
@@ -101,7 +102,7 @@ const Work = () => {
                         rel="noopener noreferrer"
                         className="text-green-400 hover:text-green-300 transition-colors font-medium"
                       >
-                        Live Demo →
+                        Read Case Study →
                       </a>
                       <a 
                         href={project.projectLink}

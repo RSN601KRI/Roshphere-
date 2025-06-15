@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 
 const ProjectsSection = () => {
@@ -82,7 +83,7 @@ const ProjectsSection = () => {
                       rel="noopener noreferrer"
                       className="text-green-400 hover:text-green-300 transition-colors text-xs font-medium inline-flex items-center"
                     >
-                      Live Demo →
+                      Read Case Study →
                     </a>
                     <a 
                       href={project.projectLink}

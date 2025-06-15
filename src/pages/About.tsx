@@ -20,14 +20,6 @@ const About = () => {
         }}
       />
 
-      {/* Schedule a call button - positioned at top right */}
-      <div className="fixed top-32 right-8 z-40">
-        <button className="flex items-center px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-full transition-colors shadow-lg">
-          <Calendar className="w-5 h-5 mr-2" />
-          Schedule a call
-        </button>
-      </div>
-
       <div className="relative z-10 pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
@@ -75,6 +67,15 @@ const About = () => {
 
             {/* Main Content */}
             <div className="lg:w-3/4 space-y-16">
+              {/* Schedule a call button - positioned above name */}
+              <div className="flex justify-end mb-8">
+                <button className="flex items-center px-8 py-4 bg-white/5 border border-white/20 text-white rounded-xl transition-colors hover:bg-white/10 backdrop-blur-sm">
+                  <Calendar className="w-5 h-5 mr-3" />
+                  Schedule a call
+                  <span className="ml-3">→</span>
+                </button>
+              </div>
+
               {/* Header Section */}
               <div className="flex flex-col justify-start items-start gap-6">
                 <div>

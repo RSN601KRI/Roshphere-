@@ -1,3 +1,4 @@
+
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -72,22 +73,22 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <div className="flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 sm:px-6 py-3 hover:bg-white/15 transition-all duration-300">
+          <div className="flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-3 hover:bg-white/15 transition-all duration-300">
             <img 
               src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
               alt="Profile" 
-              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full mr-3 object-cover"
+              className="w-6 h-6 rounded-full mr-3 object-cover"
             />
             <Link 
               to="/about"
-              className="text-white font-medium hover:text-blue-400 transition-colors flex items-center text-sm sm:text-base"
+              className="text-white font-medium hover:text-blue-400 transition-colors flex items-center text-sm"
             >
               About Me
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </div>
           
-          <button className="flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 text-sm sm:text-base">
+          <button className="flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-full transition-all duration-300 hover:scale-105 text-sm">
             <Calendar className="w-4 h-4 mr-2" />
             Schedule a call
           </button>

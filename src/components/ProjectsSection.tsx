@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 
 const ProjectsSection = () => {
@@ -51,28 +52,19 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        <div className="space-y-20 max-w-5xl mx-auto">
+        <div className="space-y-16 max-w-5xl mx-auto">
           {projects.map((project, index) => (
             <div 
               key={index} 
               className="group relative"
             >
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
                 <div className="lg:w-2/3">
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 leading-tight">
                     {project.title}
                   </h3>
                   
-                  <div className="flex items-center mb-6">
-                    <img 
-                      src={project.profileImage}
-                      alt="Profile"
-                      className="w-8 h-8 rounded-full object-cover border border-white/20 mr-3"
-                    />
-                    <span className="text-white/60 text-sm">Roshni Kumari</span>
-                  </div>
-                  
-                  <p className="text-white/80 text-base leading-relaxed mb-8">
+                  <p className="text-white/80 text-base leading-relaxed mb-6">
                     {project.description}
                   </p>
                   
@@ -97,7 +89,7 @@ const ProjectsSection = () => {
               
               {/* Divider line except for last item */}
               {index < projects.length - 1 && (
-                <div className="mt-20 border-b border-white/10"></div>
+                <div className="mt-16 border-b border-white/10"></div>
               )}
             </div>
           ))}

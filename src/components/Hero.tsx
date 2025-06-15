@@ -74,15 +74,18 @@ const Hero = () => {
           
           <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6 text-base sm:text-lg text-white/80 leading-relaxed px-4">
             <p>
-              I'm <span className="text-white font-bold">Aditya Keshav</span>, a <span className="text-blue-400 font-semibold">Microsoft Certified professional</span> and 
-              <span className="text-green-400 font-semibold"> β MLSA</span> with expertise in <span className="text-purple-400 font-semibold">Data Science</span>, 
-              <span className="text-orange-400 font-semibold"> Machine Learning</span>, and <span className="text-yellow-400 font-semibold">DevOps</span>. 
-              I specialize in building scalable data-driven solutions, automating workflows, and deploying machine learning models to solve real-world problems.
+              I'm <span className="text-white font-bold">Roshni Kumari</span> — a passionate <span className="text-blue-400 font-semibold">Developer</span>, 
+              <span className="text-green-400 font-semibold"> Cloud Captain</span> and <span className="text-purple-400 font-semibold">AI/ML Scholar</span> driven by purpose and impact. 💡
             </p>
             <p>
-              With a strong foundation in <span className="text-blue-400 font-semibold">Python</span>, <span className="text-green-400 font-semibold">Azure</span>, and 
-              <span className="text-purple-400 font-semibold"> CI/CD pipelines</span>, I'm passionate about leveraging technology to drive innovation and deliver measurable results. 
-              Let's collaborate to transform your ideas into impactful solutions!
+              As an <span className="text-orange-400 font-semibold">AWS Cloud Captain '25</span> and <span className="text-yellow-400 font-semibold">3X OCFA Certified Developer</span>, 
+              and <span className="text-purple-400 font-semibold">MLSA</span>, <span className="text-blue-400 font-semibold">AWS AI/ML Scholar</span> and 
+              <span className="text-green-400 font-semibold"> Web3 Contributor</span>, I regularly create content and host webinars to guide 5K+ monthly learners 
+              through the evolving landscape of tech. From cloud-native solutions to deep learning models, I build tools that solve real-world problems.
+            </p>
+            <p>
+              I'm deeply passionate about <span className="text-orange-400 font-semibold">communities</span>, <span className="text-blue-400 font-semibold">hackathons</span> and 
+              <span className="text-green-400 font-semibold"> storytelling</span> through tech. If you're building something meaningful in AI, Web3, or Cloud — let's collaborate!
             </p>
           </div>
         </div>

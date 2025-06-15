@@ -77,17 +77,19 @@ const ProjectsSection = () => {
                   </p>
                   
                   <div className="flex items-center justify-between">
-                    <Link 
-                      to={`/case-study/${project.id}`}
-                      className="text-blue-400 hover:text-blue-300 transition-colors text-xs font-medium inline-flex items-center"
-                    >
-                      Read case study →
-                    </Link>
                     <a 
                       href={project.projectLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-green-400 hover:text-green-300 transition-colors text-xs font-medium inline-flex items-center"
+                    >
+                      Live Demo →
+                    </a>
+                    <a 
+                      href={project.projectLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 transition-colors text-xs font-medium inline-flex items-center"
                     >
                       View project →
                     </a>

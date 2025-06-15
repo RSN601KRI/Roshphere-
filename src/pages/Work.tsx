@@ -1,7 +1,6 @@
 
 import Navigation from '../components/Navigation';
 import { ExternalLink } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const Work = () => {
   const projects = [
@@ -97,12 +96,14 @@ const Work = () => {
                   
                   <div className="lg:w-1/3 lg:text-right">
                     <div className="flex flex-col sm:flex-row lg:flex-col gap-4">
-                      <Link 
-                        to={`/case-study/${project.id}`}
-                        className="text-blue-400 hover:text-blue-300 transition-colors font-medium"
+                      <a 
+                        href={project.projectLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-green-400 hover:text-green-300 transition-colors font-medium"
                       >
-                        Read case study →
-                      </Link>
+                        Live Demo →
+                      </a>
                       <a 
                         href={project.projectLink}
                         target="_blank"

@@ -81,28 +81,28 @@ const About = () => {
               <div className="flex justify-start">
                 <button 
                   onClick={handleScheduleClick}
-                  className={`relative flex items-center px-8 py-4 bg-white/5 border border-white/20 text-white rounded-xl transition-all duration-300 hover:bg-white/10 hover:border-blue-400/50 hover:scale-105 hover:shadow-lg backdrop-blur-sm cursor-pointer ${
+                  className={`relative flex items-center px-4 py-3 bg-white/5 border border-white/20 text-white rounded-full transition-all duration-300 hover:bg-white/10 hover:border-blue-400/50 hover:scale-105 hover:shadow-lg backdrop-blur-sm cursor-pointer text-sm ${
                     clickEffect ? 'animate-pulse' : ''
                   }`}
                 >
                   {/* Blue light effect overlay */}
-                  <div className={`absolute inset-0 rounded-xl bg-gradient-to-r from-blue-400/20 to-cyan-400/20 transition-opacity duration-300 ${
+                  <div className={`absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/20 to-cyan-400/20 transition-opacity duration-300 ${
                     clickEffect ? 'opacity-100' : 'opacity-0'
                   }`} />
                   
                   {/* Animated blue glow on click */}
                   {clickEffect && (
-                    <div className="absolute inset-0 rounded-xl bg-blue-400/30 animate-ping" />
+                    <div className="absolute inset-0 rounded-full bg-blue-400/30 animate-ping" />
                   )}
                   
-                  <Calendar className="w-5 h-5 mr-3 relative z-10" />
+                  <Calendar className="w-4 h-4 mr-2 relative z-10" />
                   <span className="relative z-10">Schedule a call</span>
-                  <span className="ml-3 relative z-10 transition-transform duration-200 group-hover:translate-x-1">→</span>
+                  <span className="ml-2 relative z-10 transition-transform duration-200 group-hover:translate-x-1">→</span>
                 </button>
               </div>
 
               {/* Header Section */}
-              <div className="flex flex-col justify-start items-start gap-6">
+              <div className="flex flex-col justify-start items-start">
                 <div>
                   <h1 className="text-5xl lg:text-6xl font-bold mb-4">Roshni Kumari</h1>
                   <p className="text-xl text-white/70 mb-6">

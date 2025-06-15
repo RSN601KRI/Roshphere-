@@ -111,19 +111,39 @@ const About = () => {
                   
                   {/* Social Links */}
                   <div className="flex flex-wrap gap-3">
-                    <a href="#" className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors">
+                    <a 
+                      href="https://github.com/RSN601KRI" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors"
+                    >
                       <Github className="w-4 h-4 mr-2" />
                       GitHub
                     </a>
-                    <a href="#" className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors">
+                    <a 
+                      href="https://www.linkedin.com/in/roshnikumari1" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors"
+                    >
                       <Linkedin className="w-4 h-4 mr-2" />
                       LinkedIn
                     </a>
-                    <a href="#" className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors">
-                      <Mail className="w-4 h-4 mr-2" />
-                      Email
+                    <a 
+                      href="https://x.com/rsnkyx" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors"
+                    >
+                      <span className="w-4 h-4 mr-2 text-blue-400">𝕏</span>
+                      Twitter
                     </a>
-                    <a href="#" className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors">
+                    <a 
+                      href="https://leetcode.com/u/roshni_449/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors"
+                    >
                       LeetCode
                     </a>
                   </div>
@@ -284,14 +304,29 @@ const About = () => {
                   </div>
                   
                   <div className="flex justify-center space-x-6">
-                    <a href="#" className="text-white/70 hover:text-white transition-colors">
+                    <a 
+                      href="https://github.com/RSN601KRI" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-white/70 hover:text-white transition-colors"
+                    >
                       <Github className="w-6 h-6" />
                     </a>
-                    <a href="#" className="text-white/70 hover:text-white transition-colors">
+                    <a 
+                      href="https://www.linkedin.com/in/roshnikumari1" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-white/70 hover:text-white transition-colors"
+                    >
                       <Linkedin className="w-6 h-6" />
                     </a>
-                    <a href="#" className="text-white/70 hover:text-white transition-colors">
-                      <Mail className="w-6 h-6" />
+                    <a 
+                      href="https://x.com/rsnkyx" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-white/70 hover:text-white transition-colors"
+                    >
+                      <span className="text-xl text-blue-400">𝕏</span>
                     </a>
                   </div>
                 </div>

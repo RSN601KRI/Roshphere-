@@ -13,10 +13,22 @@ const NewsletterSection = () => {
 
   return (
     <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative">
+      {/* Grid Pattern Background */}
+      <div 
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(135,206,235,0.2) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(135,206,235,0.2) 1px, transparent 1px)
+          `,
+          backgroundSize: '50px 50px'
+        }}
+      />
+      
       <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
-        <div className="bg-gradient-to-r from-gray-800/50 to-gray-700/50 backdrop-blur-lg border border-white/10 rounded-3xl p-8 sm:p-12 text-center">
+        <div className="bg-gradient-to-br from-red-900/30 via-orange-900/20 to-yellow-900/30 backdrop-blur-lg border border-white/10 rounded-3xl p-8 sm:p-12 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-            Subscribe to Roshni's Newsletter
+            Subscribe to Aditya's Newsletter
           </h2>
           <p className="text-base sm:text-lg text-white/80 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed">
             A passionate computer science student specializing in Data Science, Machine Learning, and DevOps. 
@@ -30,11 +42,11 @@ const NewsletterSection = () => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Email"
               required
-              className="flex-1 px-4 sm:px-6 py-3 sm:py-4 bg-gray-800/80 border border-white/20 rounded-full text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="flex-1 px-4 sm:px-6 py-3 sm:py-4 bg-black/50 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
             />
             <button
               type="submit"
-              className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-medium rounded-full hover:bg-gray-100 transition-all duration-300 hover:scale-105"
+              className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-medium rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105"
             >
               Subscribe
             </button>
@@ -45,7 +57,7 @@ const NewsletterSection = () => {
       {/* Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-16 sm:mt-20">
         <div className="flex flex-col sm:flex-row justify-between items-center py-8 border-t border-white/10">
-          <p className="text-white/60 text-sm mb-4 sm:mb-0">© 2025 / Roshni Kumari</p>
+          <p className="text-white/60 text-sm mb-4 sm:mb-0">© 2025 / Aditya Keshav</p>
           <div className="flex space-x-4">
             <a href="#" className="text-white/60 hover:text-white transition-colors">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

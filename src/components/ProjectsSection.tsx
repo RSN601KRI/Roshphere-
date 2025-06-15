@@ -28,7 +28,7 @@ const ProjectsSection = () => {
       title: "TrendPulse - AI Trading News Application",
       description: "An advanced AI-driven trading intelligence platform that fuses real-time market data, social sentiment analysis, and blockchain analytics into a unified dashboard. Designed for modern retail investors, it provides AI-curated trading signals, community-driven strategies, and actionable insights through an intuitive interface that rivals professional trading terminals while remaining accessible to everyday traders.",
       profileImage: "/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png",
-      projectLink: "http://trend-pulse-trade.vercel.app/"
+      projectLink: "https://github.com/RSN601KRI/trend-pulse-trade"
     },
     {
       id: "defi",

@@ -29,7 +29,7 @@ const Work = () => {
       title: "TrendPulse - AI Trading News Application",
       description: "An intuitive and powerful trading news application designed for modern retail investors. Track real-time market signals, social trends and on-chain data with ease—backed by AI and a sleek, dashboard-style interface.",
       tags: ["Trading", "AI", "Market Analysis", "Real-time Data"],
-      projectLink: "http://trend-pulse-trade.vercel.app/"
+      projectLink: "https://github.com/RSN601KRI/trend-pulse-trade"
     },
     {
       id: "defi",

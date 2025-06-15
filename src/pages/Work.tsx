@@ -5,57 +5,48 @@ import { ExternalLink, ArrowRight } from 'lucide-react';
 const Work = () => {
   const projects = [
     {
-      title: "DevOps Project: Flask App Deployment on Azure",
-      description: "Designed and deployed a Flask app on Azure using Docker, Terraform, and GitHub Actions, automating deployments and reducing manual effort by 80%.",
-      tags: ["Azure", "Docker", "Terraform", "CI/CD"],
+      title: "Budgetlyzer - AI-Powered Budgeting Tool",
+      description: "An AI-powered budgeting tool designed for project-based businesses. It leverages Payman AI's multi-account feature to help businesses efficiently track, analyze, and manage their project budgets in real-time.",
+      tags: ["AI", "Budgeting", "Project Management", "Real-time Analytics"],
       links: {
         case: "#",
-        project: "#"
+        project: "https://budgetlyzer.vercel.app/"
       }
     },
     {
-      title: "InFocus Photography Studio - Digital Marketing Campaign",
-      description: "Developed and led a digital marketing campaign for InFocus Photography Studio to enhance its online presence and attract more clients.",
-      tags: ["Digital Marketing", "Analytics", "SEO"],
+      title: "Nexalyst - Solana Blockchain Forensic Platform",
+      description: "A powerful web-based forensic analysis platform for the Solana blockchain enables security researchers, investigators and compliance teams to visualise, track and analyse on-chain fund movements precisely and clearly.",
+      tags: ["Blockchain", "Forensics", "Solana", "Security"],
       links: {
         case: "#",
-        project: "#"
+        project: "https://solana-trace-nexus.vercel.app/"
       }
     },
     {
-      title: "YouTube Slide Extractor: AI-Powered Presentation Generator",
-      description: "Engineered an AI-powered Python application to automate the creation of editable PowerPoint presentations from YouTube videos.",
-      tags: ["Python", "AI", "OpenCV", "Machine Learning"],
+      title: "SolarShare - DePIN Solar Energy Marketplace",
+      description: "A DePIN (Decentralized Physical Infrastructure Network) project built on Solana, designed to revolutionize how communities in India share solar energy. Leveraging blockchain technology, SolarShare allows users to sell and buy excess solar energy locally through a secure, real-time marketplace.",
+      tags: ["DePIN", "Solar Energy", "Blockchain", "Solana"],
       links: {
         case: "#",
-        project: "#"
+        project: "https://solana-depin.vercel.app/"
       }
     },
     {
-      title: "E-commerce Analytics Dashboard",
-      description: "Built a comprehensive analytics dashboard for e-commerce data visualization using Power BI and Python, providing real-time insights.",
-      tags: ["Power BI", "Python", "Data Analysis", "SQL"],
+      title: "TrendPulse - AI Trading News Application",
+      description: "An intuitive and powerful trading news application designed for modern retail investors. Track real-time market signals, social trends and on-chain data with ease—backed by AI and a sleek, dashboard-style interface.",
+      tags: ["Trading", "AI", "Market Analysis", "Real-time Data"],
       links: {
         case: "#",
-        project: "#"
+        project: "http://trend-pulse-trade.vercel.app/"
       }
     },
     {
-      title: "Predictive Maintenance System",
-      description: "Developed a machine learning model to predict equipment failures in manufacturing, reducing downtime by 35%.",
-      tags: ["Machine Learning", "Python", "IoT", "Predictive Analytics"],
+      title: "DeFi Loan Options - Cross-Chain AI Agent",
+      description: "DeFi loan options across blockchains using AI-powered autonomous agents with Fetch.ai's Agentverse and powered by the ASI1-mini LLM.",
+      tags: ["DeFi", "AI", "Cross-Chain", "Autonomous Agents"],
       links: {
         case: "#",
-        project: "#"
-      }
-    },
-    {
-      title: "Cloud Migration Strategy",
-      description: "Led the migration of legacy applications to Azure cloud, implementing microservices architecture and improving scalability.",
-      tags: ["Azure", "Microservices", "Cloud Migration", "DevOps"],
-      links: {
-        case: "#",
-        project: "#"
+        project: "https://crosschain-loan-whisperer.vercel.app/"
       }
     }
   ];
@@ -72,7 +63,7 @@ const Work = () => {
             linear-gradient(rgba(135,206,235,0.2) 1px, transparent 1px),
             linear-gradient(90deg, rgba(135,206,235,0.2) 1px, transparent 1px)
           `,
-          backgroundSize: '50px 50px'
+          backgroundSize: '20px 20px'
         }}
       />
 
@@ -81,7 +72,7 @@ const Work = () => {
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">My Work</h1>
             <p className="text-lg sm:text-xl text-white/70 max-w-3xl mx-auto">
-              A showcase of my projects spanning Data Science, Machine Learning, DevOps, and Digital Solutions
+              A showcase of my projects spanning AI, Blockchain, DeFi, and Data-driven Solutions
             </p>
           </div>
 
@@ -119,10 +110,15 @@ const Work = () => {
                         Read case study
                         <ArrowRight className="w-4 h-4 ml-2" />
                       </button>
-                      <button className="flex items-center justify-center lg:justify-end text-blue-400 hover:text-blue-300 transition-colors font-medium">
+                      <a 
+                        href={project.links.project}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center lg:justify-end text-blue-400 hover:text-blue-300 transition-colors font-medium"
+                      >
                         View project
                         <ExternalLink className="w-4 h-4 ml-2" />
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>

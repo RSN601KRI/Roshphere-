@@ -188,26 +188,86 @@ const CaseStudy = () => {
       ]
     },
     solarshare: {
-      title: "SolarShare - DePIN Solar Energy Marketplace",
-      subtitle: "Decentralized Solar Energy Trading Platform",
+      title: "SolarShare - A Decentralized Solar Energy Marketplace on Solana for India",
+      subtitle: "DePIN Solar Energy Trading Platform",
       date: "October 10, 2024",
-      overview: "I developed SolarShare, a DePIN (Decentralized Physical Infrastructure Network) project built on Solana, designed to revolutionize how communities in India share solar energy. Leveraging blockchain technology, SolarShare allows users to sell and buy excess solar energy locally through a secure, real-time marketplace.",
-      strategies: [
+      introduction: "SolarShare is a revolutionary DePIN (Decentralized Physical Infrastructure Network) solution that leverages Solana blockchain to enable peer-to-peer solar energy sharing. Designed specifically for Indian communities, SolarShare connects local producers and consumers through a real-time decentralized marketplace, encouraging sustainable and accessible energy distribution. Built during the Industrial47 x Superteam India Hackathon, this project brings transparency, scalability, and community ownership to the forefront of clean energy initiatives in developing regions.",
+      objective: "To empower Indian households and microgrids to produce, consume, and trade solar energy locally using a secure, blockchain-based decentralized system. Key goals include making renewable energy tradable and accessible, eliminating central energy distribution inefficiencies, and enabling real-time tracking and monetization of surplus solar energy.",
+      architecture: [
+        { component: "Frontend", stack: "React.js, TailwindCSS, Recharts, Framer Motion" },
+        { component: "Blockchain", stack: "Solana, Solana Web3.js, Phantom Wallet" },
+        { component: "Simulation", stack: "Mock IoT Device Simulator (dummy solar and meter data)" },
+        { component: "Backend (optional V1)", stack: "Express.js, Node.js, MongoDB" },
+        { component: "Deployment", stack: "Vercel / Netlify (Frontend), Render / Railway (Optional Backend)" }
+      ],
+      features: [
         {
-          title: "DePIN Infrastructure",
-          points: [
-            "Used Solana blockchain for fast and low-cost energy transactions.",
-            "Implemented smart contracts for automated energy trading and payments."
-          ]
+          feature: "🔐 User Registration & Profiles",
+          description: "Register as a producer or consumer and link energy usage profiles."
         },
         {
-          title: "Community Network",
-          points: [
-            "Built a peer-to-peer energy sharing network for local communities.",
-            "Created incentive mechanisms to encourage renewable energy adoption."
-          ]
+          feature: "🛒 Decentralized Marketplace",
+          description: "Trade solar credits through a visual P2P interface using blockchain."
+        },
+        {
+          feature: "📊 Real-Time Dashboard",
+          description: "View live production, consumption, and energy credit dynamics."
+        },
+        {
+          feature: "🔄 IoT Simulation",
+          description: "Simulates IoT smart meter and solar panel output using mock data."
+        },
+        {
+          feature: "💸 Solana Wallet Integration",
+          description: "Uses Phantom Wallet for seamless energy credit transactions."
+        },
+        {
+          feature: "📈 Energy Tracking System",
+          description: "Visualize usage, sales, and credit history with charts and animations."
+        },
+        {
+          feature: "🎨 UI/UX Design",
+          description: "Mobile-first, responsive layout with vibrant, interactive visualizations."
         }
-      ]
+      ],
+      techHighlights: [
+        "DePIN with Solana - Enables decentralized handling of real-world energy systems.",
+        "Mock IoT Integration - Bridges simulated hardware data with blockchain actions.",
+        "Energy Credit Transactions - Tokenizes real-time production/consumption into traceable digital credits.",
+        "Wallet-Based Interactions - Every transaction is self-sovereign, secure, and transparent."
+      ],
+      useCases: [
+        {
+          title: "Village Microgrid Sharing",
+          description: "Community members trade excess solar power locally."
+        },
+        {
+          title: "School Rooftop Panel Program",
+          description: "Students learn to track and sell unused school energy."
+        },
+        {
+          title: "NGO-Led Clean Energy Drives",
+          description: "Verified transactions show impact to donors and governments."
+        },
+        {
+          title: "Urban Solar Entrepreneurs",
+          description: "Enables rooftop owners to monetize power even in dense cities."
+        }
+      ],
+      whySolarShare: [
+        "India's rural and semi-urban regions face intermittent power supply and overloaded grids.",
+        "Lack of efficient resale systems for surplus solar energy.",
+        "Limited infrastructure for energy credit-based economies.",
+        "SolarShare introduces local energy monetization via tokenized credits.",
+        "Community-first clean energy models, powered by DePIN.",
+        "Scalable infrastructure using Solana's high-speed, low-cost blockchain."
+      ],
+      environmentalImpact: [
+        "Incentivizes solar adoption by creating a marketplace for surplus energy.",
+        "Decentralizes power ownership, reducing grid stress.",
+        "Educates users on sustainable energy economics."
+      ],
+      hackathonInfo: "Submitted to Industrial47 x Superteam India Hackathon, SolarShare showcases the first steps toward community-owned renewable energy networks through the Solana ecosystem."
     },
     trendpulse: {
       title: "TrendPulse - AI Trading News Application",
@@ -688,8 +748,232 @@ const CaseStudy = () => {
     );
   }
 
+  // For SolarShare, render the comprehensive case study
+  if (projectId === 'solarshare') {
+    const solarShareProject = project as typeof projectData.solarshare;
+    
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+        <Navigation />
+        
+        {/* Grid Pattern Background */}
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(135,206,235,0.2) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(135,206,235,0.2) 1px, transparent 1px)
+            `,
+            backgroundSize: '20px 20px'
+          }}
+        />
+
+        <div className="relative z-10 pt-32 pb-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            {/* Back Button */}
+            <button 
+              onClick={() => navigate('/work')}
+              className="flex items-center text-white/70 hover:text-white transition-colors mb-8"
+            >
+              <ArrowLeft className="w-5 h-5 mr-2" />
+              Projects
+            </button>
+
+            {/* Header */}
+            <div className="mb-12">
+              <h1 className="text-3xl sm:text-4xl font-bold mb-4">{solarShareProject.title}</h1>
+              
+              <div className="flex items-center gap-4 mb-8">
+                <img 
+                  src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
+                  alt="Profile" 
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <span className="text-white/60">{solarShareProject.date}</span>
+              </div>
+            </div>
+
+            {/* Introduction */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🔍 Introduction</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                {solarShareProject.introduction}
+              </p>
+            </div>
+
+            {/* Objective */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🎯 Objective</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                {solarShareProject.objective}
+              </p>
+            </div>
+
+            {/* Key Features */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🌟 Key Features</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border border-white/20 rounded-lg">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left p-4 font-bold">Feature</th>
+                      <th className="text-left p-4 font-bold">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {solarShareProject.features.map((item, index) => (
+                      <tr key={index} className="border-b border-white/10">
+                        <td className="p-4 text-white/90 font-medium">{item.feature}</td>
+                        <td className="p-4 text-white/80">{item.description}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Architecture Overview */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🏗️ Architecture Overview</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border border-white/20 rounded-lg">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left p-4 font-bold">Layer</th>
+                      <th className="text-left p-4 font-bold">Technology Stack</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {solarShareProject.architecture.map((item, index) => (
+                      <tr key={index} className="border-b border-white/10">
+                        <td className="p-4 text-white/90">{item.component}</td>
+                        <td className="p-4 text-white/80">{item.stack}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Installation Guide */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">⚙️ Installation Guide</h3>
+              <div className="bg-gray-800/50 p-6 rounded-lg border border-white/10">
+                <h4 className="text-lg font-bold mb-4">Prerequisites:</h4>
+                <ul className="list-disc list-inside space-y-2 text-white/80 mb-6">
+                  <li>Node.js & npm</li>
+                  <li>Phantom Wallet (set to Devnet)</li>
+                  <li>Git</li>
+                </ul>
+                
+                <h4 className="text-lg font-bold mb-4">Steps:</h4>
+                <div className="bg-black/30 p-4 rounded font-mono text-sm text-green-400">
+                  git clone https://github.com/your-username/solarshare.git<br />
+                  cd solarshare<br />
+                  npm install<br />
+                  npm run dev
+                </div>
+              </div>
+            </div>
+
+            {/* Why SolarShare */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🧠 Why SolarShare?</h3>
+              <div className="space-y-3">
+                {solarShareProject.whySolarShare.map((reason, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{reason}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Technical Innovations */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🧪 Technical Innovations</h3>
+              <div className="space-y-3">
+                {solarShareProject.techHighlights.map((highlight, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{highlight}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Use Case Scenarios */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">📈 Use Case Scenarios</h3>
+              <div className="space-y-6">
+                {solarShareProject.useCases.map((useCase, index) => (
+                  <div key={index}>
+                    <h4 className="text-xl font-bold mb-2">{useCase.title}</h4>
+                    <p className="text-white/80 ml-6">{useCase.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Environmental & Social Impact */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🌱 Environmental & Social Impact</h3>
+              <div className="space-y-3">
+                {solarShareProject.environmentalImpact.map((impact, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white/80">{impact}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Hackathon Submission */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">🏆 Hackathon Submission</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                {solarShareProject.hackathonInfo}
+              </p>
+            </div>
+
+            {/* Quote */}
+            <div className="mb-12">
+              <div className="bg-white/5 p-6 rounded-lg border border-white/10 text-center">
+                <p className="text-white/90 italic text-lg mb-4">"The sun shines for everyone—let's build the systems that let it empower everyone."</p>
+                <p className="text-white/60">— SolarShare Vision Statement</p>
+              </div>
+            </div>
+
+            {/* Conclusion */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6">📌 Conclusion</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                SolarShare is not just a tech project—it's a vision for a decentralized, equitable, and sustainable energy future. By leveraging blockchain, IoT simulation, and community participation, it introduces a scalable model for clean energy distribution in developing nations.
+              </p>
+              <p className="text-lg text-white/80 leading-relaxed mt-4">
+                This project exemplifies how Web3 can power real-world change—one solar panel at a time.
+              </p>
+            </div>
+
+            {/* Live Demo */}
+            <div className="text-center">
+              <a 
+                href="https://solana-depin.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+              >
+                🔗 Live Preview
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // For other projects, use the original format
-  const standardProject = project as typeof projectData.solarshare;
+  const standardProject = project as typeof projectData.trendpulse | typeof projectData.defi;
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">

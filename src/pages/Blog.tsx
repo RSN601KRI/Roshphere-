@@ -1,19 +1,23 @@
 
+import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 
 const Blog = () => {
   const blogPosts = [
     {
+      id: "ml-devops-data-driven",
       title: "How Machine Learning and DevOps Are Revolutionizing Data-Driven Decision Making",
       date: "March 15, 2025",
       category: "Data Science"
     },
     {
+      id: "ai-modern-devops",
       title: "The Role of AI in Modern DevOps: Automating the Future of Software Development",
       date: "February 20, 2025",
       category: "DevOps"
     },
     {
+      id: "digital-marketing-ai",
       title: "The Future of Digital Marketing: How AI and Data Analytics Are Transforming the Industry",
       date: "February 15, 2025",
       category: "Digital Marketing"
@@ -50,21 +54,23 @@ const Blog = () => {
           {/* Blog Posts */}
           <div className="space-y-12">
             {blogPosts.map((post, index) => (
-              <article key={index} className="space-y-3">
-                <h2 className="text-xl sm:text-2xl font-bold leading-tight">
-                  {post.title}
-                </h2>
-                <p className="text-white/60 text-sm">{post.date}</p>
-                <div className="inline-block">
-                  <span className={`px-2 py-1 rounded text-xs font-medium ${
-                    post.category === 'Data Science' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' :
-                    post.category === 'DevOps' ? 'bg-green-500/20 text-green-400 border border-green-500/30' :
-                    'bg-purple-500/20 text-purple-400 border border-purple-500/30'
-                  }`}>
-                    {post.category}
-                  </span>
-                </div>
-              </article>
+              <Link key={index} to={`/blog/${post.id}`} className="block">
+                <article className="space-y-3 hover:bg-white/5 p-4 rounded-lg transition-all duration-300 cursor-pointer">
+                  <h2 className="text-xl sm:text-2xl font-bold leading-tight hover:text-blue-400 transition-colors">
+                    {post.title}
+                  </h2>
+                  <p className="text-white/60 text-sm">{post.date}</p>
+                  <div className="inline-block">
+                    <span className={`px-2 py-1 rounded text-xs font-medium ${
+                      post.category === 'Data Science' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' :
+                      post.category === 'DevOps' ? 'bg-green-500/20 text-green-400 border border-green-500/30' :
+                      'bg-purple-500/20 text-purple-400 border border-purple-500/30'
+                    }`}>
+                      {post.category}
+                    </span>
+                  </div>
+                </article>
+              </Link>
             ))}
           </div>
 

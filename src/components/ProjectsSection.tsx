@@ -14,7 +14,7 @@ const ProjectsSection = () => {
       title: "Nexalyst - Solana Blockchain Forensic Platform",
       description: "A comprehensive web-based forensic analysis platform for the Solana blockchain that empowers security researchers, investigators, and compliance teams to visualize, track, and analyze on-chain fund movements with precision. Features transaction flow mapping, wallet analysis, clustering algorithms, and entity labeling to detect suspicious patterns and ensure regulatory compliance in the DeFi ecosystem.",
       profileImage: "/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png",
-      projectLink: "https://solana-trace-nexus.vercel.app/"
+      projectLink: "https://github.com/RSN601KRI/solana-trace-nexus"
     },
     {
       id: "solarshare",

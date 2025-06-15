@@ -15,7 +15,7 @@ const Work = () => {
       title: "Nexalyst - Solana Blockchain Forensic Platform",
       description: "A powerful web-based forensic analysis platform for the Solana blockchain enables security researchers, investigators and compliance teams to visualise, track and analyse on-chain fund movements precisely and clearly.",
       tags: ["Blockchain", "Forensics", "Solana", "Security"],
-      projectLink: "https://solana-trace-nexus.vercel.app/"
+      projectLink: "https://github.com/RSN601KRI/solana-trace-nexus"
     },
     {
       id: "solarshare",

@@ -1,3 +1,4 @@
+
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 
@@ -24,14 +25,14 @@ const About = () => {
             {/* Left Sidebar */}
             <div className="lg:w-1/4">
               <div className="sticky top-32 space-y-8">
-                {/* Location */}
-                <div className="flex items-center text-white/60 justify-center lg:justify-start">
-                  <span className="text-orange-400 mr-2">📍</span>
-                  <span>Asia/Kolkata</span>
-                </div>
-
                 {/* Profile Section */}
                 <div className="flex flex-col items-center lg:items-start">
+                  {/* Location above photo */}
+                  <div className="flex items-center text-white/60 mb-4">
+                    <span className="text-orange-400 mr-2">📍</span>
+                    <span>Asia/Kolkata</span>
+                  </div>
+                  
                   <img 
                     src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
                     alt="Roshni Kumari" 
@@ -44,8 +45,8 @@ const About = () => {
                   <a href="#introduction" className="flex items-center text-white/70 hover:text-white transition-colors py-2 text-sm">
                     — Introduction
                   </a>
-                  <a href="#experience" className="flex items-center text-white hover:text-white transition-colors py-2 text-sm font-medium">
-                    — Professional Experience
+                  <a href="#internship" className="flex items-center text-white hover:text-white transition-colors py-2 text-sm font-medium">
+                    — Internship
                   </a>
                   <a href="#education" className="flex items-center text-white/70 hover:text-white transition-colors py-2 text-sm">
                     — Education
@@ -65,9 +66,51 @@ const About = () => {
 
             {/* Main Content */}
             <div className="lg:w-3/4 space-y-16">
-              {/* Professional Experience */}
-              <section id="experience">
-                <h2 className="text-4xl font-bold mb-12">Professional Experience</h2>
+              {/* Header Section */}
+              <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+                <div>
+                  <h1 className="text-5xl lg:text-6xl font-bold mb-4">Roshni Kumari</h1>
+                  <p className="text-xl text-white/70 mb-4">
+                    Microsoft Certified | β MLSA | Data Science & DevOps Engineer
+                  </p>
+                  
+                  {/* Social Links */}
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <a href="#" className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors">
+                      <Github className="w-4 h-4 mr-2" />
+                      GitHub
+                    </a>
+                    <a href="#" className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors">
+                      <Linkedin className="w-4 h-4 mr-2" />
+                      LinkedIn
+                    </a>
+                    <a href="#" className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors">
+                      <Mail className="w-4 h-4 mr-2" />
+                      Email
+                    </a>
+                    <a href="#" className="flex items-center px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-sm hover:bg-white/20 transition-colors">
+                      LeetCode
+                    </a>
+                  </div>
+                </div>
+                
+                {/* Schedule Button - Made smaller */}
+                <button className="flex items-center px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-lg transition-colors text-sm">
+                  <Calendar className="w-4 h-4 mr-2" />
+                  Schedule a call
+                </button>
+              </div>
+
+              {/* Introduction */}
+              <section id="introduction">
+                <p className="text-lg text-white/80 leading-relaxed">
+                  Roshni Kumari is a tech enthusiast and engineer with a passion for solving complex problems using Data Science, Machine Learning, and DevOps. With expertise in Microsoft Azure, Python, and cloud-native technologies, I bring creativity and precision to every project I undertake. Let's build something amazing together!
+                </p>
+              </section>
+
+              {/* Internship */}
+              <section id="internship">
+                <h2 className="text-4xl font-bold mb-12">Internship</h2>
                 
                 <div className="space-y-12">
                   <div className="relative">
@@ -136,14 +179,6 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-              </section>
-
-              {/* Other sections minimal */}
-              <section id="introduction" className="text-center lg:text-left">
-                <h1 className="text-3xl font-bold mb-4">Introduction</h1>
-                <p className="text-white/70 leading-relaxed">
-                  Tech enthusiast and engineer with a passion for solving complex problems using Data Science, Machine Learning, and DevOps.
-                </p>
               </section>
 
               <section id="education">

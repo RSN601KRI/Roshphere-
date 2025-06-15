@@ -42,13 +42,13 @@ const ProjectsSection = () => {
 
   return (
     <section className="py-12 sm:py-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative">
-      {/* Grid Pattern Background with navy blue theme */}
+      {/* Grid Pattern Background with more visible navy blue theme */}
       <div 
-        className="absolute inset-0 opacity-25"
+        className="absolute inset-0 opacity-40"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(30,58,138,0.6) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(30,58,138,0.6) 1px, transparent 1px)
+            linear-gradient(rgba(59,130,246,0.8) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(59,130,246,0.8) 1px, transparent 1px)
           `,
           backgroundSize: '10px 10px'
         }}

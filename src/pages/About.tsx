@@ -1,4 +1,3 @@
-
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 import { useState } from 'react';
@@ -145,7 +144,7 @@ const About = () => {
                         <h3 className="text-2xl font-bold text-white mb-2">Amazon Web Services (Accenture)</h3>
                         <p className="text-green-400 font-medium">AI/ML Scholar Research Intern: Neural Network with Transformer Models</p>
                       </div>
-                      <span className="text-white/50 text-sm mt-2 sm:mt-0">June 2024 – Oct 2024 | Seattle, United Kingdom (Remote)</span>
+                      <span className="text-white/50 text-sm mt-2 sm:mt-0">June 2024 – Oct 2024 | Seattle, USA (Remote)</span>
                     </div>
                     
                     <div className="space-y-4">

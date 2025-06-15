@@ -40,9 +40,6 @@ const ProjectsSection = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Projects
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            Explore a curated selection of my most impactful projects, showcasing innovation and technical expertise across AI, Blockchain, and Cloud technologies.
-          </p>
         </div>
 
         <div className="space-y-16 max-w-5xl mx-auto mb-20">

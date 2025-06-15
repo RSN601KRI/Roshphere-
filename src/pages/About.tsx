@@ -1,4 +1,3 @@
-
 import Navigation from '../components/Navigation';
 import { Calendar, Github, Linkedin, Mail } from 'lucide-react';
 
@@ -183,25 +182,66 @@ const About = () => {
                 </div>
               </section>
 
+              {/* Education */}
               <section id="education">
-                <h2 className="text-3xl font-bold mb-8">Education</h2>
-                <div className="bg-white/5 border border-white/10 rounded-lg p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">Bachelor of Technology in Computer Science</h3>
-                  <p className="text-green-400 font-medium mb-2">XYZ University</p>
-                  <span className="text-white/50 text-sm">2021 – 2025 | CGPA: 8.5/10</span>
+                <h2 className="text-4xl font-bold mb-12">Education</h2>
+                
+                <div className="space-y-8">
+                  <div className="relative">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-6">
+                      <div>
+                        <h3 className="text-2xl font-bold text-white mb-2">Lovely Professional University</h3>
+                        <p className="text-green-400 font-medium">Bachelor of Technology in Computer Science and Engineering (CGPA: 7.76)</p>
+                      </div>
+                      <span className="text-white/50 text-sm mt-2 sm:mt-0">2022 – 2026</span>
+                    </div>
+                  </div>
+
+                  <div className="relative">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-6">
+                      <div>
+                        <h3 className="text-2xl font-bold text-white mb-2">Resonance Eduventures Limited</h3>
+                        <p className="text-green-400 font-medium">Intermediate</p>
+                      </div>
+                      <span className="text-white/50 text-sm mt-2 sm:mt-0">2020 – 2022</span>
+                    </div>
+                  </div>
                 </div>
               </section>
 
+              {/* Projects */}
               <section id="projects">
-                <h2 className="text-3xl font-bold mb-8">Projects</h2>
-                <div className="space-y-6">
-                  <div className="bg-white/5 border border-white/10 rounded-lg p-6">
-                    <h3 className="text-lg font-semibold mb-2">DevOps Project: Flask App Deployment on Azure</h3>
-                    <p className="text-white/70 text-sm">Automated deployment with Docker, Terraform, and GitHub Actions</p>
+                <h2 className="text-4xl font-bold mb-12">Projects</h2>
+                
+                <div className="space-y-12">
+                  <div className="relative">
+                    <div className="mb-6">
+                      <h3 className="text-2xl font-bold text-white mb-4">DevOps Project: Flask App Deployment on Azure</h3>
+                      <p className="text-white/80 mb-4">
+                        Designed and deployed a Flask app on Azure using Docker, Terraform, and GitHub Actions, automating deployments and reducing manual effort by 80%.
+                      </p>
+                      <div className="mb-4">
+                        <span className="text-green-400 font-medium">Tech Stack: </span>
+                        <span className="text-white/70">Flask, Docker, Terraform, GitHub Actions, Azure Container Instance.</span>
+                      </div>
+                      <div>
+                        <span className="text-green-400 font-medium">Results: </span>
+                        <span className="text-white/70">Deployed a production-ready Flask app on Azure with 99.9% uptime, accessible at: devops.adityakeshav.tech.</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="bg-white/5 border border-white/10 rounded-lg p-6">
-                    <h3 className="text-lg font-semibold mb-2">YouTube Slide Extractor</h3>
-                    <p className="text-white/70 text-sm">AI-powered Python application for presentation generation</p>
+
+                  <div className="relative">
+                    <div className="mb-6">
+                      <h3 className="text-2xl font-bold text-white mb-4">YouTube Slide Extractor</h3>
+                      <p className="text-white/80 mb-4">
+                        Engineered an AI-powered Python application to automate the creation of editable PowerPoint presentations from YouTube videos.
+                      </p>
+                      <div>
+                        <span className="text-green-400 font-medium">Tech Stack: </span>
+                        <span className="text-white/70">Python, OpenCV, pytesseract, yt-dlp, Streamlit, PowerPoint (pptx).</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </section>

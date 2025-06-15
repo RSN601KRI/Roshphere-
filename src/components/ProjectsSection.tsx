@@ -5,14 +5,34 @@ import { Link } from 'react-router-dom';
 const ProjectsSection = () => {
   const featuredProjects = [
     {
-      title: "DevOps Project: Flask App Deployment on Azure",
-      description: "Designed and deployed a Flask app on Azure using Docker, Terraform, and GitHub Actions, automating deployments and reducing manual effort by 80%.",
-      tags: ["Azure", "Docker", "Terraform", "CI/CD"]
+      title: "Budgetlyzer - AI-Powered Budgeting Tool",
+      description: "An AI-powered budgeting tool designed for project-based businesses. It leverages Payman AI's multi-account feature to help businesses efficiently track, analyze, and manage their project budgets in real-time.",
+      url: "https://budgetlyzer.vercel.app/",
+      tags: ["AI", "Budgeting", "Project Management"]
     },
     {
-      title: "InFocus Photography Studio - Digital Marketing Campaign",
-      description: "Developed and led a digital marketing campaign for InFocus Photography Studio to enhance its online presence and attract more clients.",
-      tags: ["Digital Marketing", "SEO", "Social Media"]
+      title: "Nexalyst - Solana Blockchain Forensic Platform",
+      description: "A powerful web-based forensic analysis platform for the Solana blockchain enables security researchers, investigators and compliance teams to visualise, track and analyse on-chain fund movements precisely and clearly.",
+      url: "https://solana-trace-nexus.vercel.app/",
+      tags: ["Blockchain", "Forensics", "Solana"]
+    },
+    {
+      title: "SolarShare - DePIN Solar Energy Marketplace",
+      description: "A DePIN (Decentralized Physical Infrastructure Network) project built on Solana, designed to revolutionize how communities in India share solar energy. Leveraging blockchain technology, SolarShare allows users to sell and buy excess solar energy locally through a secure, real-time marketplace.",
+      url: "https://solana-depin.vercel.app/",
+      tags: ["DePIN", "Solar Energy", "Blockchain"]
+    },
+    {
+      title: "TrendPulse - AI Trading News Application",
+      description: "An intuitive and powerful trading news application designed for modern retail investors. Track real-time market signals, social trends and on-chain data with ease—backed by AI and a sleek, dashboard-style interface.",
+      url: "http://trend-pulse-trade.vercel.app/",
+      tags: ["Trading", "AI", "Market Analysis"]
+    },
+    {
+      title: "DeFi Loan Options - Cross-Chain AI Agent",
+      description: "DeFi loan options across blockchains using AI-powered autonomous agents with Fetch.ai's Agentverse and powered by the ASI1-mini LLM.",
+      url: "https://crosschain-loan-whisperer.vercel.app/",
+      tags: ["DeFi", "AI", "Cross-Chain"]
     }
   ];
 
@@ -58,10 +78,15 @@ const ProjectsSection = () => {
                   Read case study
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </button>
-                <button className="flex items-center justify-center text-white/60 hover:text-white transition-colors font-medium text-base">
+                <a 
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center text-white/60 hover:text-white transition-colors font-medium text-base"
+                >
                   View project
                   <ExternalLink className="w-4 h-4 ml-2" />
-                </button>
+                </a>
               </div>
             </div>
           ))}

@@ -5,11 +5,20 @@ import { useEffect, useState } from 'react';
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [currentTime, setCurrentTime] = useState(new Date());
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
   }, []);
 
   return (
@@ -36,7 +45,7 @@ const Hero = () => {
             </span>
           </div>
           <div className="text-white/70 text-sm sm:text-base">
-            {new Date().toLocaleTimeString('en-US', { 
+            {currentTime.toLocaleTimeString('en-US', { 
               hour12: false,
               hour: '2-digit',
               minute: '2-digit',

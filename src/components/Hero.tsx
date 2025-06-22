@@ -84,8 +84,8 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <div className="flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-3 hover:bg-white/15 transition-all duration-300">
             <img 
-              src="/lovable-uploads/1af11ca9-78c5-4306-9957-f8b24a19aeb7.png" 
-              alt="Profile" 
+              src="/lovable-uploads/3c1284a7-715c-4c59-9fb6-bfdb843a36fc.png" 
+              alt="Roshni Kumari Profile" 
               className="w-6 h-6 rounded-full mr-3 object-cover"
             />
             <Link 

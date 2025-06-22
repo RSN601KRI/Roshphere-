@@ -29,7 +29,7 @@ const Hero = () => {
       
       {/* Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center relative z-10">
-        <div className="flex flex-col sm:flex-row items-center justify-between mb-8 sm:mb-16">
+        <div className="flex flex-col sm:flex-row items-center justify-between mb-8 sm:mb-16 px-2 sm:px-0">
           <div className="text-white/70 mb-4 sm:mb-0">
             <span className="inline-flex items-center text-sm sm:text-base">
               📍 Asia/Kolkata

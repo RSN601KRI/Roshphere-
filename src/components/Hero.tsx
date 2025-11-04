@@ -55,7 +55,7 @@ const Hero = () => {
         </div>
 
         <div className="mb-8 sm:mb-12 animate-fade-in">
-          <h1 className="font-inter-tight text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 leading-tight">
             Building Innovative
             <br />
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -65,7 +65,7 @@ const Hero = () => {
             Data & Technology
           </h1>
           
-          <div className="font-instrument max-w-4xl mx-auto space-y-6 text-lg text-white/80 leading-relaxed">
+          <div className="max-w-4xl mx-auto space-y-6 text-lg text-white/80 leading-relaxed">
             <p>
               Hi, I'm <span className="text-white font-bold">Roshni Kumari</span> — a <span className="text-blue-400 font-semibold">Microsoft Certified Professional</span>, 
               <span className="text-green-400 font-semibold"> AWS Cloud Captain '25</span> and <span className="text-purple-400 font-semibold">AI/ML Scholar</span> with expertise in Data Science, DevOps and Cloud Computing.

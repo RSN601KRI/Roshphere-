@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, User, Briefcase, FileText, Image, Menu, X } from 'lucide-react';
+import { Home, User, Briefcase, FileText, Image, Menu, X, Sparkles } from 'lucide-react';
 
 const Navigation = () => {
   const location = useLocation();
@@ -14,6 +14,7 @@ const Navigation = () => {
     { icon: Briefcase, label: 'Work', path: '/work' },
     { icon: FileText, label: 'Blog', path: '/blog' },
     { icon: Image, label: 'Gallery', path: '/gallery' },
+    { icon: Sparkles, label: 'Creator', path: '/creator' },
   ];
 
   const toggleMobileMenu = () => {

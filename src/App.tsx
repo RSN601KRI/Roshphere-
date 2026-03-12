@@ -12,6 +12,7 @@ import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 import BlogPost from "./components/BlogPost";
 import CaseStudy from "./pages/CaseStudy";
+import Creator from "./pages/Creator";
 import SparkleEffect from "./components/SparkleEffect";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/blog/:articleId" element={<BlogPost />} />
           <Route path="/case-study/:projectId" element={<CaseStudy />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/creator" element={<Creator />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

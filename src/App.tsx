@@ -12,6 +12,7 @@ import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 import BlogPost from "./components/BlogPost";
 import CaseStudy from "./pages/CaseStudy";
+import Creator from "./pages/Creator";
 import SparkleEffect from "./components/SparkleEffect";
 
 const queryClient = new QueryClient();

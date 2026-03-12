@@ -14,6 +14,7 @@ const Navigation = () => {
     { icon: Briefcase, label: 'Work', path: '/work' },
     { icon: FileText, label: 'Blog', path: '/blog' },
     { icon: Image, label: 'Gallery', path: '/gallery' },
+    { icon: Sparkles, label: 'Creator', path: '/creator' },
   ];
 
   const toggleMobileMenu = () => {

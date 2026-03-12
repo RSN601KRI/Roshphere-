@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, User, Briefcase, FileText, Image, Menu, X } from 'lucide-react';
+import { Home, User, Briefcase, FileText, Image, Menu, X, Sparkles } from 'lucide-react';
 
 const Navigation = () => {
   const location = useLocation();

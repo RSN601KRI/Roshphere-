@@ -1,6 +1,6 @@
 
 import Navigation from '../components/Navigation';
-import { ExternalLink, Play, Heart, MessageCircle, Share2 } from 'lucide-react';
+import { ExternalLink, Play, Heart, MessageCircle, Share2, BookOpen } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -12,64 +12,68 @@ import {
 const twitterPosts = [
   {
     id: 1,
+    content: "Wrapped 2025:\n> upgrade my content creation\n> attend 6+ events & talk with real OG's @Google @gdgcloudnd @Atlassian\n> featured on @MLHacks as Top fellow hacker\n> got first collab @GitHubEducation (5.5k+ views)\n> earned & gave gift to my family",
+    date: "Dec 31, 2024",
+    likes: 89,
+    retweets: 15,
+    replies: 12,
+    url: "https://x.com/rsnkyx/status/1874009498498584886",
+  },
+  {
+    id: 2,
     content: "Most people think Nvidia is winning because of power. They're wrong. They're winning because of Velocity. By acquiring Groq, Nvidia is solving the biggest problem in AI: Latency. 🚀 #Nvidia #GroqAI #TechSimplified",
     date: "Recent",
     likes: 124,
     retweets: 32,
     replies: 8,
+    url: "https://x.com/rsnkyx",
   },
   {
-    id: 2,
+    id: 3,
     content: "The future isn't just 'Smart' — it's Fast. Save this case study if you're building for the real-time era. #casestudy #series",
     date: "Recent",
     likes: 89,
     retweets: 15,
     replies: 12,
+    url: "https://x.com/rsnkyx",
   },
   {
-    id: 3,
+    id: 4,
     content: "Complexity is a tax on your growth. Whether it's a global chip architecture or your personal No-Code workflow, the goal is the same: Zero-latency execution. 💡",
     date: "Recent",
     likes: 256,
     retweets: 78,
     replies: 22,
-  },
-  {
-    id: 4,
-    content: "HelloCV the free AI resume builder that automatically transforms your resume into a personal site. Check it out! ✨ #AI #resume",
-    date: "Recent",
-    likes: 167,
-    retweets: 45,
-    replies: 14,
+    url: "https://x.com/rsnkyx",
   },
 ];
 
 const instagramPosts = [
   {
     id: 1,
-    image: "https://i.ytimg.com/vi/SVsFd0pFY44/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLDNbXljdBLfXTO5VOO3bMLsz9QFJA",
-    caption: "Most problems don't need fixing - they need reframing 🔄 #problemsolving",
+    image: "https://miro.medium.com/v2/resize:fill:320:214/1*Q3cNsGHbrspwHRYIFC383Q.jpeg",
+    caption: "The Agentic AI Inflection Point 🤖 #AI #AgenticAI",
     likes: 342,
     comments: 28,
   },
   {
     id: 2,
-    image: "https://i.ytimg.com/vi/2p7hqj38qDg/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBTssH0N5FKqsyw_aWbGj73Kx--Uw",
-    caption: "HelloCV — AI resume builder that transforms your resume into a personal site ✨",
+    image: "https://miro.medium.com/v2/resize:fill:320:214/1*_SPGQkwyCX2salLO9ytZeQ.png",
+    caption: "Vibe Coding Revolution 📊 #VibeCoding #Startups",
     likes: 278,
     comments: 19,
   },
   {
     id: 3,
-    image: "https://i.ytimg.com/vi/mXZu5GLLeZY/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLAjLWMRqU2gmrmMm-NdnLi_UkWlcw",
-    caption: "GitHub Spark AI coding study partner 💻 #coding #AI",
+    image: "https://miro.medium.com/v2/resize:fill:320:214/1*sA4ldrp-xA7gFeU97thsxQ.jpeg",
+    caption: "Built in the Cloud, Landed in Las Vegas ☁️ #AWS #CloudComputing",
     likes: 456,
     comments: 35,
   },
   {
     id: 4,
-    image: "https://i.ytimg.com/vi/i-VLfO3HA7Q/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCqaVIu_TUG2EiCQ0zbUv4HXW2U0w",
-    caption: "ChatGPT Study Mode – Learn Smarter, Not Faster! 🔍 #openai",
+    image: "https://miro.medium.com/v2/resize:fill:320:214/1*JIA4gTGSbawfJCRNXOYnNQ.png",
+    caption: "How This Startup Is Building a 10,000-Year AI 🧠 #AI #Startups",
     likes: 189,
     comments: 12,
   },
@@ -132,48 +136,55 @@ const youtubeVideos = [
   },
 ];
 
-const youtubeShorts = [
+const mediumArticles = [
   {
     id: 1,
-    title: "Most problems don't need fixing - they need reframing",
-    thumbnail: "https://i.ytimg.com/vi/SVsFd0pFY44/oardefault.jpg",
-    views: "4",
-    url: "https://www.youtube.com/shorts/SVsFd0pFY44",
+    title: "The Agentic AI Inflection Point: Scaling Beyond Pilots for Tangible Business Value",
+    subtitle: "Your Competitors Aren't Waiting: Is Your Enterprise Strategy for Agentic AI Set for 2026?",
+    date: "Mar 27, 2026",
+    image: "https://miro.medium.com/v2/resize:fill:320:214/1*Q3cNsGHbrspwHRYIFC383Q.jpeg",
+    url: "https://medium.com/@roshni_k06/the-agentic-ai-inflection-point-scaling-beyond-pilots-for-tangible-business-value-329dba134545",
   },
   {
     id: 2,
-    title: "HelloCV the free AI resume builder",
-    thumbnail: "https://i.ytimg.com/vi/2p7hqj38qDg/oar2.jpg",
-    views: "32",
-    url: "https://www.youtube.com/shorts/2p7hqj38qDg",
+    title: "The Vibe Coding Revolution: Market Analysis, Viral Startups & What You Must Build in 2026📊",
+    subtitle: "A structured intelligence briefing for founders, developers, and growth operators navigating the AI-native development era.",
+    date: "Mar 23, 2026",
+    image: "https://miro.medium.com/v2/resize:fill:320:214/1*_SPGQkwyCX2salLO9ytZeQ.png",
+    url: "https://medium.com/@roshni_k06/the-vibe-coding-revolution-market-analysis-viral-startups-what-you-must-build-in-2026-e5815ac32ebe",
+    claps: 4,
   },
   {
     id: 3,
-    title: "GitHub Spark AI coding study partner",
-    thumbnail: "https://i.ytimg.com/vi/mXZu5GLLeZY/oar2.jpg",
-    views: "19",
-    url: "https://www.youtube.com/shorts/mXZu5GLLeZY",
+    title: "Built in the Cloud, Landed in Las Vegas: My AWS Builder Journey to the Global Stage🌍☁️",
+    subtitle: "A few years ago, cloud computing was just another buzzword...",
+    date: "Mar 20, 2026",
+    image: "https://miro.medium.com/v2/resize:fill:320:214/1*sA4ldrp-xA7gFeU97thsxQ.jpeg",
+    url: "https://medium.com/@roshni_k06/built-in-the-cloud-landed-in-las-vegas-my-aws-builder-journey-to-the-global-stage-%EF%B8%8F-9b38c2adbd63",
   },
   {
     id: 4,
-    title: "ChatGPT Study Mode – Learn Smarter, Not Faster!",
-    thumbnail: "https://i.ytimg.com/vi/i-VLfO3HA7Q/oar2.jpg",
-    views: "13",
-    url: "https://www.youtube.com/shorts/i-VLfO3HA7Q",
+    title: "How This Startup Is Building a 10,000‑Year AI",
+    subtitle: "An unnamed Silicon Valley team claims to be creating an AI system designed to operate for 10 millennia...",
+    date: "Mar 15, 2026",
+    image: "https://miro.medium.com/v2/resize:fill:320:214/1*JIA4gTGSbawfJCRNXOYnNQ.png",
+    url: "https://medium.com/@roshni_k06/how-this-startup-is-building-a-10-000-year-ai-d0854d6e398f",
   },
   {
     id: 5,
-    title: "Build Your Own AI Voice Agent in 30 Days!",
-    thumbnail: "https://i.ytimg.com/vi/65vamnXtyWc/oar2.jpg",
-    views: "102",
-    url: "https://www.youtube.com/shorts/65vamnXtyWc",
+    title: "Rules of AI Monetization: Stop Selling Access, Start Selling Outcomes",
+    subtitle: "In the age of AI, your charge metric isn't just a line on an invoice — it's your company's core strategic statement.",
+    date: "Feb 12, 2026",
+    image: "https://miro.medium.com/v2/resize:fill:320:214/1*WcvNHoGhuA_wcc19sJqv3A.png",
+    url: "https://medium.com/@roshni_k06/rules-of-ai-monetization-stop-selling-access-start-selling-outcomes-b96eada027c9",
   },
   {
     id: 6,
-    title: "Tata Technologies x AWS – InnoVent'25 Hackathon",
-    thumbnail: "https://i.ytimg.com/vi/aZO3sfvNFDM/oar2.jpg",
-    views: "110",
-    url: "https://www.youtube.com/shorts/aZO3sfvNFDM",
+    title: "Vectorized Thinking 101: A Practical Guide to Getting Started with Vector Search in Elasticsearch",
+    subtitle: "Traditional keyword search finds words. Vector search finds meaning.",
+    date: "Feb 7, 2026",
+    image: "https://miro.medium.com/v2/resize:fill:320:214/1*SgoThk5iOc9CwMF6DFpoYQ.png",
+    url: "https://medium.com/@roshni_k06/vectorized-thinking-101-a-practical-guide-to-getting-started-with-vector-search-in-elasticsearch-d4738a6e1512",
   },
 ];
 
@@ -203,6 +214,12 @@ const YouTubeLogo = () => (
   <svg viewBox="0 0 24 24" className="w-6 h-6" aria-hidden="true">
     <path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z" />
     <path fill="#FFFFFF" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+  </svg>
+);
+
+const MediumLogo = () => (
+  <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white" aria-hidden="true">
+    <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
   </svg>
 );
 
@@ -250,7 +267,7 @@ const Creator = () => {
               {twitterPosts.map((post) => (
                 <CarouselItem key={post.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <a
-                    href="https://x.com/rsnkyx"
+                    href={post.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 h-full"
@@ -262,7 +279,8 @@ const Creator = () => {
                         <p className="text-xs text-white/40">@rsnkyx</p>
                       </div>
                     </div>
-                    <p className="text-white/80 text-sm leading-relaxed mb-4">{post.content}</p>
+                    <p className="text-white/80 text-sm leading-relaxed mb-4 whitespace-pre-line">{post.content}</p>
+                    <p className="text-white/30 text-xs mb-3">{post.date}</p>
                     <div className="flex items-center gap-6 text-white/30 text-xs">
                       <span className="flex items-center gap-1"><MessageCircle className="w-3.5 h-3.5" /> {post.replies}</span>
                       <span className="flex items-center gap-1"><Share2 className="w-3.5 h-3.5" /> {post.retweets}</span>
@@ -395,43 +413,54 @@ const Creator = () => {
         </div>
       </section>
 
-      {/* YouTube Shorts Section */}
+      {/* Medium Articles Section */}
       <section className="py-12 pb-24 px-6 md:px-12 lg:px-20">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 flex items-center justify-center">
-                <YouTubeLogo />
+              <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                <MediumLogo />
               </div>
-              <h2 className="text-2xl font-bold">YouTube Shorts</h2>
+              <div>
+                <h2 className="text-2xl font-bold">Medium Articles</h2>
+                <a
+                  href="https://medium.com/@roshni_k06"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/40 text-sm hover:text-white/60 transition-colors flex items-center gap-1"
+                >
+                  @roshni_k06 <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
             </div>
           </div>
 
           <Carousel opts={{ align: "start", loop: true }} className="w-full">
             <CarouselContent className="-ml-4">
-              {youtubeShorts.map((short) => (
-                <CarouselItem key={short.id} className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+              {mediumArticles.map((article) => (
+                <CarouselItem key={article.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <a
-                    href={short.url}
+                    href={article.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-300 h-full"
                   >
-                    <div className="aspect-[9/16] overflow-hidden relative group">
+                    <div className="aspect-video overflow-hidden">
                       <img
-                        src={short.thumbnail}
-                        alt={short.title}
-                        className="w-full h-full object-cover"
+                        src={article.image}
+                        alt={article.title}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
-                          <Play className="w-5 h-5 fill-white text-white ml-0.5" />
-                        </div>
-                      </div>
                     </div>
-                    <div className="p-3">
-                      <h3 className="text-white font-medium text-xs mb-1 line-clamp-2">{short.title}</h3>
-                      <p className="text-white/40 text-xs">{short.views} views</p>
+                    <div className="p-5">
+                      <h3 className="text-white font-semibold text-sm mb-2 line-clamp-2">{article.title}</h3>
+                      <p className="text-white/50 text-xs mb-3 line-clamp-2">{article.subtitle}</p>
+                      <div className="flex items-center justify-between text-white/30 text-xs">
+                        <span>{article.date}</span>
+                        <span className="flex items-center gap-1">
+                          <BookOpen className="w-3 h-3" /> Read
+                        </span>
+                      </div>
                     </div>
                   </a>
                 </CarouselItem>
